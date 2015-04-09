@@ -3,14 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SpinW documentation's documentation!
-===============================================
-
-Contents:
+SpinW documentation
+===================
 
 .. toctree::
-   :maxdepth: 2
+    :caption: Table of Contents
+    :maxdepth: 2
 
+    Introduction to SpinW <intro>
+    Crystal structures <cryst>
 
 
 Indices and tables
