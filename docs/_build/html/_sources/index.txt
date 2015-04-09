@@ -10,7 +10,7 @@ SpinW documentation
     :caption: Table of Contents
     :maxdepth: 2
 
-    Introduction to SpinW <intro>
+    Introduction to SpinW <intro.rst>
 
 ..  Crystal structures <cryst>
     Definition of the magnetic Hamiltonian <ham>
