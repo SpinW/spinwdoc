@@ -12,7 +12,14 @@ SpinW documentation
 
     Introduction to SpinW <intro>
     Crystal structures <cryst>
+    Definition of the magnetic Hamiltonian <ham>
+    Magnetic structures <mag>
+    Plotting <plot>
+    Determination of magnetic structure from Hamiltonian <optmag>
+    Calculation of the spin-spin correlation function <spinwave>
+    List of functions <func>
 
+TEST2.
 
 Indices and tables
 ==================
