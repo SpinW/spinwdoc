@@ -7,12 +7,10 @@ SpinW documentation
 ===================
 
 .. toctree::
-    :caption: Table of Contents
     :maxdepth: 2
 
-    Introduction to SpinW <intro.rst>
-
-..  Crystal structures <cryst>
+    Introduction to SpinW <intro>
+    Crystal structures <cryst>
     Definition of the magnetic Hamiltonian <ham>
     Magnetic structures <mag>
     Plotting <plot>
