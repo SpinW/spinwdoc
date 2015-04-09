@@ -11,7 +11,8 @@ SpinW documentation
     :maxdepth: 2
 
     Introduction to SpinW <intro>
-    Crystal structures <cryst>
+
+..  Crystal structures <cryst>
     Definition of the magnetic Hamiltonian <ham>
     Magnetic structures <mag>
     Plotting <plot>
