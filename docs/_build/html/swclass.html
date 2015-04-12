@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SW Class &mdash; SpinW documentation 0.1 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SpinW documentation 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Introduction to SpinW" href="intro.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> SpinW documentation</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to SpinW</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#model">Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#features">Features</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">sw class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#properties">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complete-list-of-properties">Complete list of properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copy">Copy</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SpinW documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>SW Class</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/swclass.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="sw-class">
+<h1>SW Class<a class="headerlink" href="#sw-class" title="Permalink to this headline">¶</a></h1>
+<p>To perform calculation using the SpinW library, we need to create an
+object (sw class type). It stores all the necessary parameters for the
+calculation (crystal structure, interactions, magnetic structure, etc.).
+In the object oriented programming dictionary, the data stored in an object,
+are called properties. Beside the data, the object also has assigned
+functions that perform different computations on the object data. These
+functions are called methods and they take the object as first input
+argument. To create an sw class object you can simply type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model1</span> <span class="o">=</span> <span class="n">sw</span>
+</pre></div>
+</div>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>The output of the previous command shows all the data fields of model1.
+Each data field has an initial value and any of them can be modified
+directly:</p>
+<div class="highlight-python"><div class="highlight"><pre>model1.lattice.lat_const = [3 5 5];
+</pre></div>
+</div>
+<p>The above command directly modifies the lattice parameters of the
+lattice. Modifying propoerties directly is quick and very flexible but
+prone to error. The most common mistake is that the new values are not
+the same data type as the original ones. For example the field that
+stores the lattice space group is integer type:</p>
+<div class="highlight-python"><div class="highlight"><pre>class(model1.lattice.sym)
+</pre></div>
+</div>
+<p>Thus if we want to change it directly, we need an integer number:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model1</span><span class="o">.</span><span class="n">lattice</span><span class="o">.</span><span class="n">sym</span> <span class="o">=</span> <span class="n">int32</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This will change the crystal space group to &#8216;C 2&#8217;. To avoid most common
+mistakes, there are several methods (functions) for modifying the above
+properties that also perform additional error checking and makes certain
+input conversions. For example all lattice related properties can be
+modified using the genlattice() function:</p>
+<div class="highlight-python"><div class="highlight"><pre>model1.genlattice(&#39;lat_const&#39;,[3 5 5],&#39;sym&#39;,&#39;C 2&#39;,&#39;angled&#39;,[90 90 90])
+</pre></div>
+</div>
+<p>The alternative usage of the above function is the following:</p>
+<div class="highlight-python"><div class="highlight"><pre>genlattice(model1,&#39;lat_const&#39;,[3 5 5],&#39;sym&#39;,&#39;C 2&#39;,&#39;angled&#39;,[90 90 90])
+</pre></div>
+</div>
+<p>This reflects better the input argument structure. The first argument is
+the sw object &#8216;model1&#8217;. After the first argument comes option name and
+value pairs. The first options is &#8216;lat_const&#8217; and the value it expects
+is a vector with 3 elements if the input vector has different length, the
+function throws an error. The second option is &#8216;sym&#8217; that also accepts
+string input (name of the space group) that is automatically converted to
+the index of the space group and stored in model1:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model1</span><span class="o">.</span><span class="n">lattice</span><span class="o">.</span><span class="n">sym</span>
+</pre></div>
+</div>
+<p>The last option is &#8216;angled&#8217; that requires a vector with three elements
+and defines the alpha, beta, gamma lattice angles in degree. This will be
+converted into radian and stored:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model1</span><span class="o">.</span><span class="n">lattice</span><span class="o">.</span><span class="n">angle</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="complete-list-of-properties">
+<h2>Complete list of properties<a class="headerlink" href="#complete-list-of-properties" title="Permalink to this headline">¶</a></h2>
+<p>There are eight public properties of sw each with several subfields:</p>
+<blockquote>
+<div><ul class="simple">
+<li>sw.lattice</li>
+<li>sw.unit_cell</li>
+<li>sw.twin</li>
+<li>sw.matrix</li>
+<li>sw.single_ion</li>
+<li>sw.coupling</li>
+<li>sw.mag_str</li>
+<li>sw.unit</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<p>In line with the above example the general argument structure of the
+method functions is one of the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">function</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="s">&#39;Option1&#39;</span><span class="p">,</span><span class="n">Value1</span><span class="p">,</span><span class="s">&#39;Option2&#39;</span><span class="p">,</span><span class="n">Value2</span><span class="p">,</span><span class="o">...</span><span class="p">)</span>
+<span class="n">function</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="n">Value1</span><span class="p">,</span><span class="n">Value2</span><span class="p">,</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The first type of argument list is used for functions that require
+variable number of input parameters with default values. The second type
+of argument structure is used for functions that require maximum up to
+three fixed input parameter. Every method has help that can be called by
+one of the following methods:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">selecting the function name in the Editor/Command Window and pressing F1</p>
+</li>
+<li><p class="first">in the Command Window typing for example:</p>
+<div class="highlight-python"><div class="highlight"><pre>help sw.genlattice
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+<p>This shows the help of the genlattice() function in the Command Window.
+To open the help in a separate window you need to write:</p>
+<div class="highlight-python"><div class="highlight"><pre>doc sw.genlattice
+</pre></div>
+</div>
+<p>To unambiguously identify the functions it is usefull to refer them as
+sw.function() this way matlab knows which function to select from several
+that has the same name. For example the plot() funcion is also defined
+for the sw class. However by writing:</p>
+<div class="highlight-python"><div class="highlight"><pre>help plot
+</pre></div>
+</div>
+<p>we get the help for the standard Matlab plot function. To get what we
+want use:</p>
+<div class="highlight-python"><div class="highlight"><pre>help sw.plot
+</pre></div>
+</div>
+<p>By the way this function is one of the most usefull ones. It can show
+effectively all information stored in the sw object by plotting crystal
+structure, couplings, magnetic structure etc. Calling it on an empty
+object shows only the unit cell:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">plot</span><span class="p">(</span><span class="n">model1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As you might noticed, there is an alternative calling of any method
+function: obj.function(...), this is just equivalent to the previous
+argument structures.</p>
+</div>
+<div class="section" id="copy">
+<h2>Copy<a class="headerlink" href="#copy" title="Permalink to this headline">¶</a></h2>
+<p>The sw class belong to the so called handle class. It means in short that
+the model1 variable is just a pointer to the memory where the class is
+stored. Thus doing the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model2</span> <span class="o">=</span> <span class="n">model1</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>It only copies the pointer. Thus if I change something on model1, model2
+will change as well. Thus to clone the object (the equivalent of the
+usual &#8216;=&#8217; operation in Matlab) is the copy() function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">model2</span> <span class="o">=</span> <span class="n">copy</span><span class="p">(</span><span class="n">model1</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="intro.html" class="btn btn-neutral" title="Introduction to SpinW"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Tóth Sándor.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
