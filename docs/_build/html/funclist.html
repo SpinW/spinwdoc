@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; SpinW documentation 0.1 documentation</title>
+  <title>List of functions &mdash; SpinW documentation 0.1 documentation</title>
   
 
   
@@ -30,7 +30,8 @@
   
 
   
-    <link rel="top" title="SpinW documentation 0.1 documentation" href="index.html"/> 
+    <link rel="top" title="SpinW documentation 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Crystal structure" href="cryst.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -49,7 +50,7 @@
         
         
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -61,7 +62,7 @@
         
           
           
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to SpinW</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro.html#model">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro.html#features">Features</a></li>
@@ -75,7 +76,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cryst.html">Crystal structure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="funclist.html">List of functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">List of functions</a></li>
 </ul>
 
           
@@ -100,8 +101,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>List of functions</li>
       <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/funclist.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -109,22 +112,75 @@
 </div>
           <div role="main" class="document">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="list-of-functions">
+<h1>List of functions<a class="headerlink" href="#list-of-functions" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="sw">
+<em class="property">class </em><code class="descname">sw</code><a class="headerlink" href="#sw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
-  
-  <div id="search-results">
-  
-  </div>
+<dl class="method">
+<dt id="sw.genlattice">
+<code class="descclassname">sw.</code><code class="descname">genlattice</code><span class="sig-paren">(</span><em>obj</em>, <em>'option1'</em>, <em>value1</em>, <em>'option2'</em>, <em>value2...</em><span class="sig-paren">)</span><a class="headerlink" href="#sw.genlattice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates crystal lattice from given parameters.</p>
+<p><strong>Input</strong></p>
+<dl class="docutils">
+<dt>obj</dt>
+<dd>sw class object.</dd>
+</dl>
+<p><strong>Options</strong></p>
+<dl class="docutils">
+<dt>angled</dt>
+<dd><span class="math">\(\alpha, \beta, \gamma\)</span> angles in degree, row vector with three elements.</dd>
+<dt>angle</dt>
+<dd><span class="math">\(\alpha, \beta, \gamma\)</span> angles in radian, row vector with three elements.</dd>
+<dt>lat_const</dt>
+<dd><span class="math">\(a, b, c\)</span> lattice parameters, row vector with three elements.</dd>
+<dt>sym</dt>
+<dd>Space group index, or space group name (string).</dd>
+</dl>
+<p><strong>Description</strong></p>
+<p>Alternatively the lattice parameters can be given directly when the sw
+object is created using: sw(inpStr), where struct contains the fields
+with initial parameters, e.g.:</p>
+<div class="highlight-python"><div class="highlight"><pre>inpStr.lattice.lat_const = [3 3 4];
+</pre></div>
+</div>
+<p>The sym option points to the appropriate line in the symmetry.dat file,
+where every line defines a space group by its generators. The first 230
+lines contains all crystallographic space groups with standard setting
+from the International Tables of Crystallography. Additional lines
+can be added to the symmetry.dat file using the <code class="xref py py-func docutils literal"><span class="pre">sw_addsym()</span></code> function.
+Every line in the symmetry.dat file can be referenced by either its line
+index or by its label (string).</p>
+<p>If the sym option is 0, no symmetry will be used. The <code class="xref py py-meth docutils literal"><span class="pre">gencoupling()</span></code>
+method will determine the equivalent bonds based on bond length.</p>
+<p><strong>Output</strong></p>
+<p>The <a class="reference internal" href="swclass.html#lattice" title="lattice"><code class="xref py py-attr docutils literal"><span class="pre">lattice</span></code></a> field will be changed based on the input, the lattice
+constants stored directly and the optional space group string is
+converted to the integer type index.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-python"><div class="highlight"><pre>crystal = sw;
+crystal.genlattice(&#39;lat_const&#39;,[3 3 4],&#39;angled&#39;,[90 90 120],&#39;sym&#39;,&#39;P 6&#39;)
+crystal.genlattice(&#39;lat_const&#39;,[3 3 4],&#39;angled&#39;,[90 90 120],&#39;sym&#39;,168)
+</pre></div>
+</div>
+<p>The two lines are equivalent, both will create hexagonal lattice, with
+<em>P 6</em> space group.</p>
+</dd></dl>
+
+</div>
+
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="cryst.html" class="btn btn-neutral" title="Crystal structure"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -162,7 +218,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -178,14 +233,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
