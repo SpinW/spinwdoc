@@ -7,7 +7,7 @@ SpinW documentation
 ===================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Introduction to SpinW <intro>
     sw class <swclass>
