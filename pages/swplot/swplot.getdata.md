@@ -34,6 +34,23 @@ model = sw_model('triAF',1)
 plot(model)
 swplot.getdata
 ```
+*Output*
+```
+  struct with fields:
+          h: [1×1 Transform]
+     button: [1×1 struct]
+       axis: [1×1 Axes]
+     legend: [1×1 struct]
+      light: [1×1 Light]
+       icon: [1×1 struct]
+       base: [3×3 double]
+    tooltip: [1×1 struct]
+    objects: [1×44 struct]
+        obj: [1×1 spinw]
+      range: [1×1 struct]
+      param: {}
+```
+ 
   
 ### Input Arguments
   

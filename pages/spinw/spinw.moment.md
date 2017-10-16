@@ -34,6 +34,12 @@ tri = sw_model('triAF',1)
 M = tri.moment('nRand',1e7)
 dS = 1-M.moment
 ```
+*Output*
+```
+dS =
+    0.2612
+```
+ 
  
 #### Square lattice antiferromagnet
  
@@ -48,6 +54,12 @@ sq = sw_model('squareAF',1)
 M = sq.moment('nRand',1e7)
 dS = 1-M.moment
 ```
+*Output*
+```
+dS =
+    0.1968    0.1968    0.1968    0.1968
+```
+ 
  
 ### Input Arguments
   

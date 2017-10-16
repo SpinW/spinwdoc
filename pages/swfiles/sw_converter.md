@@ -28,12 +28,22 @@ Calculate the energy of a neutron (in meV) which has a wavelength of
 ```matlab
 sw_converter(5,'A','meV')
 ```
+*Output*
+```
+    3.2722
+```
+ 
  
 Calculate the wavelength of X-ray in Å that has 7.5 keV energy:
  
 ```matlab
 sw_converter(7.5,'keV','A','photon')
 ```
+*Output*
+```
+    1.6531
+```
+ 
  
 ### Input Arguments
   

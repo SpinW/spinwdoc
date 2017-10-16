@@ -27,6 +27,12 @@ The radius of the hydrogen atom:
 ```matlab
 r_H = sw_atomdata('H','radius')
 ```
+*Output*
+```
+r_H =
+    0.3700
+```
+ 
   
 ### Input Arguments
   

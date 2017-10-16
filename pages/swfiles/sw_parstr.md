@@ -23,6 +23,14 @@ Simple test:
 ```matlab
 sw_parstr('Sxx + Syy')
 ```
+*Output*
+```
+  struct with fields:
+       type: {[2 1 1]  [2 2 2]}
+    preFact: [1 1]
+     string: 'Sxx + Syy'
+```
+ 
  
 ### Input Arguments
  

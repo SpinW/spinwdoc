@@ -28,6 +28,13 @@ S = cat(3,[0 0 0;0 0 1;0 -1 0],[0 0 -1;0 0 0;1 0 0],[0 1 0;-1 0 0;0 0 0])
 cryst.matparser('param',P,'mat',M,'selector',S)
 cryst.matrix.mat
 ```
+*Output*
+```
+    1.0000    3.1400   -0.3500
+   -3.1400    1.0000    0.2000
+    0.3500   -0.2000    1.0000
+```
+ 
  
 ### Input Arguments
   

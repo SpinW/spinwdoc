@@ -25,6 +25,14 @@ specSq  = sq.spinwave({[0 0 0] [1 1 0] 21})
 specTri = tri.spinwave({[0 0 0] [1 0 0] 21})
 sw_filelist
 ```
+*Output*
+```
+SpinW variables in the Matlab base workspace:
+        VarName                                         Title             Creation Date           Completion Date
+    LMIOpowspec                          Powder LSWT spectrum                         -                         -
+       LMIOspec                       Numerical LSWT spectrum      16-Oct-2017 09:39:47      16-Oct-2017 09:39:47
+```
+ 
  
 ### Name-Value Pair Arguments
   

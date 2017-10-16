@@ -35,6 +35,11 @@ cryst.genmagstr('mode','random','nExt',[3 3 1])
 cryst.optmagsteep('nRun',10)
 cryst.energy
 ```
+*Output*
+```
+Ground state energy: -1.500 meV/spin.
+```
+ 
   
 ### Input Arguments
   

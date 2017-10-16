@@ -32,9 +32,37 @@ model = spinw
 model.addatom('r',[0 0 0],'S',1)
 model.genmagstr('mode','fourier','S',[1i 1 0]','k',[1/3 0 0])
 model.mag_str.F
+```
+*Output*
+```
+   0.0000 - 1.0000i
+   1.0000 + 0.0000i
+   0.0000 + 0.0000i
+```
+ 
+```matlab
 model.magstr
+```
+*Output*
+```
+  struct with fields:
+        S: [3×1 double]
+        k: [0.3333 0 0]
+        n: [0 0 1]
+    N_ext: [1 1 1]
+    exact: 1
+```
+ 
+```matlab
 model.magstr.S
 ```
+*Output*
+```
+     0
+     1
+     0
+```
+ 
  
 ### Name-Value Pair Arguments
   

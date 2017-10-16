@@ -22,8 +22,26 @@ Raising any operator to the calculated order will alway return identity:
  
 ```matlab
 O = swsym.generator('y,z,x')
+```
+*Output*
+```
+O =
+     0     1     0     0
+     0     0     1     0
+     1     0     0     0
+```
+ 
+```matlab
 R = O(:,1:3)^swsym.oporder(O)
 ```
+*Output*
+```
+R =
+     1     0     0
+     0     1     0
+     0     0     1
+```
+ 
   
 ### Input Arguments
   

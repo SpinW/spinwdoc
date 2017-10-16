@@ -55,7 +55,7 @@ spec = tri_orth.spinwave({[0 0 0] [1 1 0] 501});
 sw_plotspec(sw_egrid(tri_orth.spinwave({[0 0 0] [1 1 0] 501})),'mode','color','dE',0.2)
 ```
  
-{% include image.html file="generated/spinw_ne_1.png" alt="sw_plotspec(sw_egrid(tri_orth.spinwave({[0 0 0] [1 1 0] 501})),'mode','color','dE',0.2)" %}
+{% include image.html file="generated/spinw_ne_2.png" alt="sw_plotspec(sw_egrid(tri_orth.spinwave({[0 0 0] [1 1 0] 501})),'mode','color','dE',0.2)" %}
   
 ### Input Arguments
   

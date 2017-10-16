@@ -38,6 +38,14 @@ X1 = [0 0 0 0 0 0]
 X2 = [0 1/2 1/2 0 0 0]
 optRes = tri.optmagstr('func',@gm_planard,'xmin',X1,'xmax',X2)
 km = optRes.x(1:3)
+```
+*Output*
+```
+km =
+         0    0.3333    0.3333
+```
+ 
+```matlab
 plot(tri)
 ```
  

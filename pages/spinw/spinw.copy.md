@@ -34,8 +34,26 @@ cryst1 = cryst
 cryst2 = cryst.copy
 cryst.addmatrix('label','J1','value',1)
 J1a = cryst1.matrix.mat
+```
+*Output*
+```
+J1a =
+     1     0     0
+     0     1     0
+     0     0     1
+```
+ 
+```matlab
 J1b = cryst2.matrix.mat
 ```
+*Output*
+```
+J1b =
+    3.1415         0         0
+         0    3.1415         0
+         0         0    3.1415
+```
+ 
  
 ### Input Arguments
   

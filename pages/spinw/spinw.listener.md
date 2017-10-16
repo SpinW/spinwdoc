@@ -4,13 +4,10 @@
   sidebar: sw_sidebar, permalink: spinw_listener, folder: spinw, mathjax: 'true'}
 
 ---
-
-### Syntax
-
-`    object hsource.  if hsource is an array of source handles, the listener`
-
-### Description
-
+    el = LISTENER(hSource, 'Eventname', callbackFcn) creates a listener
+    for the event named Eventname.  The source of the event is the handle  
+    object hSource.  If hSource is an array of source handles, the listener
+    responds to the named event on any handle in the array.  callbackFcn
     is a function handle that is invoked when the event is triggered.
  
     el = LISTENER(hSource, PropName, 'Eventname', callback) adds a 
@@ -37,10 +34,7 @@
     to it exist.  To tie the lifecycle of the listener to the lifecycle
     of the source object, use addlistener.
  
-
-### See Also
-
-[also] \| [addlistener] \| [event.listener] \| [spinw](spinw) \| [notify] \| [delete] \| [meta.property] \| [events]
+    See also ADDLISTENER, EVENT.LISTENER, SPINW, NOTIFY, DELETE, META.PROPERTY, EVENTS
 Help for spinw/listener is inherited from superclass HANDLE
     Reference page in Doc Center
        doc spinw/listener

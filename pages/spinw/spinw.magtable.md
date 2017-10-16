@@ -4,26 +4,20 @@
   permalink: spinw_magtable, folder: spinw, mathjax: 'true'}
 
 ---
-
-### Syntax
-
-`moments = magtable(obj)`
-
-### Description
-
+ 
+moments = MAGTABLE(obj)
+ 
 The function lists the APPROXIMATED moment directions (using the rotating
 coordinate system notation) in the magnetic supercell, whose size is
 defined by the obj.mag_str.nExt field. The positions of the magnetic
 atoms are in lattice units.
  
-
-### Input Arguments
-
-`obj`
-: [spinw](spinw) object.
-
-### Output Arguments
-
+Input:
+ 
+obj           spinw class object.
+ 
+Output:
+ 
 'moments' is struct type data that contains the following fields:
   M           Matrix, where every column defines a magnetic moment,
               dimensions are [3 nMagExt].
@@ -36,9 +30,8 @@ atoms are in lattice units.
               magnetic atom in lattice units.
   atom        Pointer to the magnetic atom in the subfields of
               spinw.unit_cell.
-
-### See Also
-
-[spinw.genmagstr](spinw_genmagstr)
+ 
+See also SPINW.GENMAGSTR.
+ 
 
 {% include links.html %}

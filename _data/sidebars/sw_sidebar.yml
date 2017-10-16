@@ -1,11 +1,24 @@
 entries:
 - title: Sidebar
   product: SpinW
-  version: R1447
+  version: R1450
   folders:
   - title: Documentation
     output: web, pdf
-    folderitems: []
+    folderitems:
+    - {title: Features of SpinW, url: /features, output: 'web, pdf'}
+    - {title: Introduction, url: /introduction, output: 'web, pdf'}
+    - {title: Crystal structure, url: /crystal, output: 'web, pdf'}
+    - {title: Symmetry and coordinate systems, url: /symmetry, output: 'web, pdf'}
+    - {title: Spin Hamiltonian, url: /hamiltonian, output: 'web, pdf'}
+    - {title: Magnetic structure, url: /magstr, output: 'web, pdf'}
+    - {title: Solvers, url: /spinwave, output: 'web, pdf'}
+    - {title: Correlation function post processing and fitting, url: /spec, output: 'web,
+      - pdf'}
+    - {title: Symbolic calculation, url: /symbolic, output: 'web, pdf'}
+    - {title: Usefull functions in neutron/x-ray scattering, url: /onemorething, output: 'web,
+      - pdf'}
+    - {title: How to contribute and discuss, url: /contribute, output: 'web, pdf'}
   - title: spinw
     output: web, pdf
     folderitems:

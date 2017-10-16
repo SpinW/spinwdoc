@@ -4,13 +4,8 @@
   folder: spinw, mathjax: 'true'}
 
 ---
-
-### Syntax
-
-`validate(obj, {fieldtovalidate})`
-
-### Description
-
-
+ 
+VALIDATE(obj, {fieldToValidate})
+ 
 
 {% include links.html %}
