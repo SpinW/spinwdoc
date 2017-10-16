@@ -30,19 +30,6 @@ arbitrary energy transfer value.
  
 ```matlab
 resDat = [0 2.31;10 1.80;20 1.37;30 1.02;40 0.78;49 0.67]
-```
-*Output*
-```
-resDat =
-         0    2.3100
-   10.0000    1.8000
-   20.0000    1.3700
-   30.0000    1.0200
-   40.0000    0.7800
-   49.0000    0.6700
-```
- 
-```matlab
 polyRes = sw_res(resDat,3)
 ```
  
@@ -51,12 +38,6 @@ polyRes = sw_res(resDat,3)
 EN = 13
 dE = polyval(polyRes,EN)
 ```
-*Output*
-```
-dE =
-    1.6635
-```
- 
   
 ### Input Arguments
   

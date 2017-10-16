@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1777,25 +1732,7 @@ approximated to zero.</p>
 <span class="n">USb</span><span class="o">.</span><span class="n">genlattice</span><span class="p">(</span><span class="s1">'lat_const'</span><span class="p">,[</span><span class="mf">6.203</span> <span class="mf">6.203</span> <span class="mf">6.203</span><span class="p">],</span><span class="s1">'spgr'</span><span class="p">,</span><span class="s1">'F m -3 m'</span><span class="p">)</span>
 <span class="n">USb</span><span class="o">.</span><span class="n">addatom</span><span class="p">(</span><span class="s1">'r'</span><span class="p">,[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">],</span><span class="s1">'S'</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">FQ</span> <span class="o">=</span> <span class="nb">cat</span><span class="p">(</span><span class="mi">3</span><span class="p">,[</span><span class="mi">0</span><span class="p">;</span><span class="mi">0</span><span class="p">;</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="nb">i</span><span class="p">],[</span><span class="mi">0</span><span class="p">;</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="nb">i</span><span class="p">;</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="nb">i</span><span class="p">;</span><span class="mi">0</span><span class="p">;</span><span class="mi">0</span><span class="p">])</span>
-</code></pre>
-</div>
-<p><em>Output</em></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>FQ(:,:,1) =
-   0.0000 + 0.0000i
-   0.0000 + 0.0000i
-   1.0000 + 1.0000i
-FQ(:,:,2) =
-   0.0000 + 0.0000i
-   1.0000 + 1.0000i
-   0.0000 + 0.0000i
-FQ(:,:,3) =
-   1.0000 + 1.0000i
-   0.0000 + 0.0000i
-   0.0000 + 0.0000i
-</code></pre>
-</div>
-
-<div class="language-matlab highlighter-rouge"><pre class="highlight"><code><span class="n">k</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">;</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">;</span><span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">];</span>
+<span class="n">k</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">;</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span><span class="p">;</span><span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">];</span>
 <span class="n">USb</span><span class="o">.</span><span class="n">genmagstr</span><span class="p">(</span><span class="s1">'mode'</span><span class="p">,</span><span class="s1">'fourier'</span><span class="p">,</span><span class="s1">'S'</span><span class="p">,</span><span class="n">FQ</span><span class="p">,</span><span class="s1">'nExt'</span><span class="p">,[</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span><span class="p">],</span><span class="s1">'k'</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
 <span class="nb">plot</span><span class="p">(</span><span class="n">USb</span><span class="p">,</span><span class="s1">'range'</span><span class="p">,[</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span><span class="p">])</span>
 </code></pre>
@@ -1996,7 +1933,7 @@ if it is <code class="highlighter-rouge">false</code>, the first spin will have 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

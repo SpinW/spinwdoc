@@ -28,25 +28,9 @@ cryst = spinw
 cryst.genlattice('lat_const',[8 8 8],'sym',symOp,'label','FCC')
 cryst.addatom('r',[0 0 0],'label','Atom1')
 cryst.unit_cell.r
-```
-*Output*
-```
-     0
-     0
-     0
-```
- 
-```matlab
 cryst.nosym
 cryst.unit_cell.r
 ```
-*Output*
-```
-         0    0.5000    0.5000         0
-         0    0.5000         0    0.5000
-         0         0    0.5000    0.5000
-```
- 
   
 ### Input Arguments
   

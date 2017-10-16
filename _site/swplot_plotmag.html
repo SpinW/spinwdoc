@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1748,100 +1703,133 @@ $('#toc').on('click', 'a', function() {
 
 <p><code class="highlighter-rouge">swplot.plotmag(Name,Value)</code></p>
 
+<p><code class="highlighter-rouge">hFigure = swplot.plotmag(Name,Value)</code></p>
 <h3 id="description">Description</h3>
 
-<p>hFigure = SWPLOT.PLOTMAG(…)</p>
-
-<p>The function plots the magnetic structure of a SpinW object onto an
-swplot figure.</p>
-
-<h3 id="input-arguments">Input Arguments</h3>
+<p><code class="highlighter-rouge">swplot.plotmag(Name,Value)</code> plots the magnetic structure stored in a
+<a href="spinw">spinw</a> object onto an swplot figure. The magnetic structure is
+represented by arrows on the magnetic atoms.</p>
 
 <h3 id="name-value-pair-arguments">Name-Value Pair Arguments</h3>
 
 <dl>
-  <dt><code class="highlighter-rouge">'obj'</code></dt>
-  <dd>SpinW object.</dd>
-  <dt><code class="highlighter-rouge">'range'</code></dt>
-  <dd>Plotting range of the lattice parameters in lattice units,
-dimensions are [3 2]. For example to plot the first unit cell,
-use: [0 1;0 1;0 1]. Also the number unit cells can be given
-along the a, b and c directions: [2 1 2], that is equivalent to
-[0 2;0 1;0 2]. Default is the single unit cell.</dd>
-  <dt><code class="highlighter-rouge">'unit'</code></dt>
-  <dd>Unit in which the range is defined. It can be the following
-string:
-    ‘lu’        Lattice units (default).
-    ‘xyz’       Cartesian coordinate system in Å units.</dd>
   <dt><code class="highlighter-rouge">'mode'</code></dt>
-  <dd>String, defines the way the magnetic moments are plotted:
-    ‘all’       Plot both the rotation plane of incommensurate
-                magnetic structures and the moment directions.
-    ‘circle’    Plot only the rotation plane of incommensurate
-                magnetic structures.
-    ‘arrow’     Plots only the moment directions.
-    ‘none’      Don’t plot anything.</dd>
-  <dt><code class="highlighter-rouge">'figure'</code></dt>
-  <dd>Handle of the swplot figure. Default is the selected figure.</dd>
-  <dt><code class="highlighter-rouge">'legend'</code></dt>
-  <dd>Whether to add the plot to the legend, default value is true.</dd>
+  <dd>String that defines the way the magnetic moments are plotted:
+    <ul>
+      <li><code class="highlighter-rouge">'all'</code>       Plot both the rotation plane of single-k incommensurate
+              magnetic structures and the moment directions.</li>
+      <li><code class="highlighter-rouge">'circle'</code>    Plot only the rotation plane of incommensurate
+              magnetic structures.</li>
+      <li><code class="highlighter-rouge">'arrow'</code>     Plots only the moment directions.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'label'</code></dt>
-  <dd>Whether to plot labels for atoms, default value is true.</dd>
+  <dd>Whether to plot labels for magnetic atoms, default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'dText'</code></dt>
-  <dd>Distance between item and its text label, default value is 0.1
+  <dd>Distance between atom and its text label, default value is 0.1
 Å.</dd>
   <dt><code class="highlighter-rouge">'fontSize'</code></dt>
-  <dd>Font size of the atom labels in pt, default value is stored in
-swpref.getpref(‘fontsize’).</dd>
+  <dd>Font size of the text labels in pt, default value is stored in
+<code class="highlighter-rouge">swpref.getpref('fontsize')</code>.</dd>
   <dt><code class="highlighter-rouge">'color'</code></dt>
-  <dd>Color of the magnetic moments:
-    ‘auto’      All moments get the same color as the magnetic
-                atom.
-    ‘colorname’ All moments will have the same color.
-    [R G B]     RGB code of the color.</dd>
+  <dd>Color of the magnetic moment vectors, one of the following values:
+    <ul>
+      <li><code class="highlighter-rouge">'auto'</code>      all moments get the color of the magnetic atom,</li>
+      <li><code class="highlighter-rouge">'colorname'</code> all moments will have the same color defined by the
+              string, e.g. <code class="highlighter-rouge">'red'</code>,</li>
+      <li><code class="highlighter-rouge">[R G B]</code>     all moments will have the same color defined by the RGB
+              code.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'scale'</code></dt>
   <dd>Scaling factor for the lenght of the magnetic moments relative
-to the length of the shortest bond (if there are no bonds, 3A 
-is taken as bond length). Default is 0.4.</dd>
+to the length of the shortest bond (if there are no bonds, 3 Å 
+is taken as bond length). Default value is 0.4.</dd>
   <dt><code class="highlighter-rouge">'normalize'</code></dt>
-  <dd>If true, all moment length will be normalized to the scale
-factor, default value is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, all moment length will be normalized to the scale
+factor, default value is <code class="highlighter-rouge">false</code>.</dd>
   <dt><code class="highlighter-rouge">'radius0'</code></dt>
-  <dd>Radius value of arrow body, default value is 0.06.</dd>
+  <dd>Radius value of arrow body, default value is 0.06 Å.</dd>
   <dt><code class="highlighter-rouge">'ang'</code></dt>
-  <dd>Angle of the arrow head in ° units, default value is 30 °.</dd>
+  <dd>Angle of the arrow head in degree units, default value is 30 °.</dd>
   <dt><code class="highlighter-rouge">'lHead'</code></dt>
-  <dd>Length of the arrow head, default value is 0.5.</dd>
-  <dt><code class="highlighter-rouge">'α'</code></dt>
-  <dd>Transparency (α value) of the circle, representing the
-  rotation plane of the moments, default value is 0.07.</dd>
-  <dt><code class="highlighter-rouge">'centered'</code></dt>
-  <dd>If true, the moment vector is centered on the atom, if false
-the beggining of the spin vector is on the atom. Default is
-true.</dd>
-  <dt><code class="highlighter-rouge">'nPatch'</code></dt>
-  <dd>Number of points on the curve for the arrows, default
-value is stored in swpref.getpref(‘npatch’).</dd>
-  <dt><code class="highlighter-rouge">'tooltip'</code></dt>
-  <dd>If true, the tooltips will be shown when clicking on atoms.
-Default is true.</dd>
-  <dt><code class="highlighter-rouge">'shift'</code></dt>
-  <dd>Column vector with 3 elements, all vectors will be
-shifted by the given value. Default value is [0;0;0].</dd>
-  <dt><code class="highlighter-rouge">'replace'</code></dt>
-  <dd>Replace previous magnetic moment plot if true. Default is true.</dd>
-  <dt><code class="highlighter-rouge">'translate'</code></dt>
-  <dd>If true, all plot objects will be translated to the figure
-center. Default is false.</dd>
-  <dt><code class="highlighter-rouge">'zoom'</code></dt>
-  <dd>If true, figure will be automatically zoomed to the ideal size.
-Default is false.</dd>
-  <dt><code class="highlighter-rouge">'copy'</code></dt>
-  <dd>If true, a hardcopy of the spinw object will be sved in the
-figure data, otherwise just the handle of the spinw object, 
-thus the figure can be updated when the spin object changed.
-Default value is false.</dd>
+  <dd>Length of the arrow head, default value is 0.5 Å.</dd>
+  <dt><code class="highlighter-rouge">'alpha'</code></dt>
+  <dd>Transparency (alpha value) of the circle, representing the
+rotation plane of the moments, default value is 0.07.</dd>
 </dl>
+
+<h4 id="general-paraters">General paraters</h4>
+
+<p>These parameters have the same effect on any of the <code class="highlighter-rouge">swplot.plot...</code>
+functions.</p>
+
+<dl>
+  <dt><code class="highlighter-rouge">'obj'</code></dt>
+  <dd><a href="spinw">spinw</a> object.</dd>
+  <dt><code class="highlighter-rouge">'unit'</code></dt>
+  <dd>Unit in which the plotting range is defined. It can be one of the
+following strings:
+    <ul>
+      <li><code class="highlighter-rouge">'lu'</code>        plot range is defined in lattice units (default),</li>
+      <li><code class="highlighter-rouge">'xyz'</code>       plot range is defined in the <script type="math/tex">xyz</script> Cartesian coordinate
+              system in Å units.</li>
+    </ul>
+  </dd>
+  <dt><code class="highlighter-rouge">'range'</code></dt>
+  <dd>Defines the plotting range. Depending on the <code class="highlighter-rouge">unit</code> parameter, the
+given range can be in lattice units or in units of the <script type="math/tex">xyz</script> Cartesian
+coordinate system. It is either a matrix with dimensions of <script type="math/tex">[3\times
+2]</script> where the first and second columns define the lower and upper plot
+limits respectively. It can be alternatively a vector with three
+elements <code class="highlighter-rouge">[a,b,c]</code> which is equivalent to <code class="highlighter-rouge">[0 a;0 b;0 c]</code>. Default
+value is <code class="highlighter-rouge">[0 1;0 1;0 1]</code> to show a single cell.</dd>
+  <dt><code class="highlighter-rouge">'figure'</code></dt>
+  <dd>Handle of the swplot figure. Default value is the active figure handle.</dd>
+  <dt><code class="highlighter-rouge">'legend'</code></dt>
+  <dd>Whether to show the plot on the legend, default value is <code class="highlighter-rouge">true</code>.</dd>
+  <dt><code class="highlighter-rouge">'tooltip'</code></dt>
+  <dd>If <code class="highlighter-rouge">true</code>, the tooltips will be shown when clicking on the plot
+objects. Default value is <code class="highlighter-rouge">true</code>.</dd>
+  <dt><code class="highlighter-rouge">'shift'</code></dt>
+  <dd>Column vector with 3 elements, all object positions will be
+shifted by the given value in Å units. Default value is
+<code class="highlighter-rouge">[0;0;0]</code>.</dd>
+  <dt><code class="highlighter-rouge">'replace'</code></dt>
+  <dd>If <code class="highlighter-rouge">true</code> the plot will replace the previous plot of the same type.
+Default value is <code class="highlighter-rouge">true</code>.</dd>
+  <dt><code class="highlighter-rouge">'translate'</code></dt>
+  <dd>If <code class="highlighter-rouge">true</code>, the plot will be centered, independent of the range. Default
+value is <code class="highlighter-rouge">false</code>.</dd>
+  <dt><code class="highlighter-rouge">'zoom'</code></dt>
+  <dd>If <code class="highlighter-rouge">true</code>, the swplot figure will be zoomed to make the plot objects
+cover the full figure. Default is <code class="highlighter-rouge">true</code>.</dd>
+  <dt><code class="highlighter-rouge">'copy'</code></dt>
+  <dd>If <code class="highlighter-rouge">true</code>, a clone of the <a href="spinw">spinw</a> object will be saved in the
+swplot figure data which can be retwrived using
+<code class="highlighter-rouge">swplot.getdata('obj')</code>. If <code class="highlighter-rouge">false</code>, the handle of the original <a href="spinw">spinw</a>
+object is saved which is linked to the input <code class="highlighter-rouge">obj</code> and so it changes
+when <code class="highlighter-rouge">obj</code> is changed. Default value is <code class="highlighter-rouge">false</code>.</dd>
+  <dt><code class="highlighter-rouge">nMesh</code></dt>
+  <dd>Mesh of the ellipse surface, a triangulation class object or an
+integer that used to generate an icosahedron mesh with <script type="math/tex">n_{mesh}</script>
+number of additional subdivision into triangles. Default value is
+stored in <code class="highlighter-rouge">swpref.getpref('nmesh')</code>, see also <a href="swplot_icomesh">swplot.icomesh</a>.</dd>
+  <dt><code class="highlighter-rouge">nPatch</code></dt>
+  <dd>Number of vertices on any patch object that is not the icosahedron,
+default value is stored in <code class="highlighter-rouge">swpref.getpref('npatch')</code>.</dd>
+</dl>
+
+<h3 id="output-arguments">Output Arguments</h3>
+
+<dl>
+  <dt><code class="highlighter-rouge">hFigure</code></dt>
+  <dd>Handle of the swplot figure.</dd>
+</dl>
+
+<p>The name of the objects are <code class="highlighter-rouge">'mag'</code>.
+To find the handles and the corresponding data on these objects, use e.g.
+sObject = swplot.findobj(hFigure,’name’,’mag’)`.</p>
 
 
 
@@ -1884,7 +1872,7 @@ Default value is false.</dd>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

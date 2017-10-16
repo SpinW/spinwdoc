@@ -8,7 +8,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swfiles",
-"summary": "unstructured functions"
+"summary": "general functions"
 }
 ,
 
@@ -1677,7 +1677,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_legend",
-"summary": "draws legend to the swplot figure"
+"summary": "adds legend to the swplot figure"
 }
 ,
 
@@ -1688,7 +1688,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_line",
-"summary": "draws a 3D line using patch"
+"summary": "creates 3D line patch"
 }
 ,
 
@@ -1699,7 +1699,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_logo",
-"summary": "creates the logo of SpinW and saves to a .png file"
+"summary": "creates the SpinW logo"
 }
 ,
 
@@ -1754,7 +1754,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_plotbase",
-"summary": "plots the edges of unit cells on swplot figure"
+"summary": "plots basis vectors"
 }
 ,
 
@@ -1765,7 +1765,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_plotbond",
-"summary": "plots magnetic bonds"
+"summary": "plots bonds"
 }
 ,
 
@@ -1776,7 +1776,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_plotcell",
-"summary": "plots the edges of unit cells on swplot figure"
+"summary": "plots unit cell"
 }
 ,
 
@@ -1820,7 +1820,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_polyhedron",
-"summary": "draw convex polyhedra or polynom from vertex list"
+"summary": "creates convex polyhedra or polygon from vertex list"
 }
 ,
 
@@ -1842,7 +1842,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_setrangegui",
-"summary": "shows a window to change the plotting range of an swplot figure"
+"summary": "GUI to change the plotting range"
 }
 ,
 
@@ -1875,7 +1875,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_text",
-"summary": "draws a text at a point in 3D"
+"summary": "creates text at a 3D position"
 }
 ,
 
@@ -1886,7 +1886,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_tooltip",
-"summary": "creates tooltip axis on swplot figure"
+"summary": "creates tooltip"
 }
 ,
 
@@ -1897,7 +1897,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_tooltipcallback",
-"summary": "call tooltip on clicking an object on an swplot figure"
+"summary": "callback for displaying tooltip"
 }
 ,
 
@@ -1908,7 +1908,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_tooltipstring",
-"summary": "generate tooltip string from the data of a graphical object"
+"summary": "generates tooltip text"
 }
 ,
 
@@ -1919,7 +1919,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_transform",
-"summary": "transform objects on swplot figure"
+"summary": "transforms objects on swplot figure"
 }
 ,
 
@@ -1930,7 +1930,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_translate",
-"summary": "translate objects on swplot figure"
+"summary": "translates objects on swplot figure"
 }
 ,
 
@@ -1941,7 +1941,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_view",
-"summary": "control 3D view of swplot"
+"summary": "controls the 3D view direction"
 }
 ,
 
@@ -1952,7 +1952,7 @@
 "tags": "",
 "keywords": "sample",
 "url": "swplot_zoom",
-"summary": "zooming objects on swplot figure"
+"summary": "zooms to objects"
 }
 ,
 

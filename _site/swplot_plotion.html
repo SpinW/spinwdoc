@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1748,95 +1703,123 @@ $('#toc').on('click', 'a', function() {
 
 <p><code class="highlighter-rouge">swplot.plotion(Name,Value)</code></p>
 
+<p><code class="highlighter-rouge">hFigure = swplot.plotion(Name,Value)</code></p>
+
 <h3 id="description">Description</h3>
 
-<p>hFigure = SWPLOT.PLOTION(…)</p>
-
-<p>The function plots selected properties of magnetic ions stored in a SpinW
-object onto an swplot figure.</p>
-
-<h3 id="input-arguments">Input Arguments</h3>
+<p><code class="highlighter-rouge">swplot.plotion(Name,Value)</code> visualizes selected properties of magnetic
+ions stored in a <a href="spinw">spinw</a> object onto an swplot figure. The supported
+properties are the g-tensor and single ion anisotropy.</p>
 
 <h3 id="name-value-pair-arguments">Name-Value Pair Arguments</h3>
 
 <dl>
-  <dt><code class="highlighter-rouge">'obj'</code></dt>
-  <dd>SpinW object.</dd>
-  <dt><code class="highlighter-rouge">'range'</code></dt>
-  <dd>Plotting range of the lattice parameters in lattice units,
-dimensions are [3 2]. For example to plot the first unit cell,
-use: [0 1;0 1;0 1]. Also the number unit cells can be given
-along the a, b and c directions: [2 1 2], that is equivalent to
-[0 2;0 1;0 2]. Default is the single unit cell.</dd>
-  <dt><code class="highlighter-rouge">'unit'</code></dt>
-  <dd>Unit in which the range is defined. It can be the following
-string:
-    ‘lu’        Lattice units (default).
-    ‘xyz’       Cartesian coordinate system in Å units.</dd>
   <dt><code class="highlighter-rouge">'mode'</code></dt>
-  <dd>String, defines how the bond is plotted
-    ‘aniso’     Ellipsoid is plotted for single ion anisotropy.
-    ‘g’     	Ellipsoid is drawn for g-tensor.</dd>
+  <dd>String that defines the type of property that is visualized:
+    <ul>
+      <li><code class="highlighter-rouge">'aniso'</code>     ellipsoid is plotted to visualize single ion anisotropy,</li>
+      <li><code class="highlighter-rouge">'g'</code>     	ellipsoid is plotted to visualize g-tensor.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'scale'</code></dt>
   <dd>Scaling factor for the size of the ellipsoid relative to the 
 shortest bond length. Default value is 1/3.</dd>
-  <dt><code class="highlighter-rouge">'α'</code></dt>
-  <dd>Transparency (α value) of the ellipsoid, default value is 
-  0.3.</dd>
+  <dt><code class="highlighter-rouge">'alpha'</code></dt>
+  <dd>Transparency (alpha value) of the ellipsoid (1 for opaque, 0 for
+transparent), default value is 0.3.</dd>
   <dt><code class="highlighter-rouge">'radius1'</code></dt>
-  <dd>Minimum radius of the ellipsoid, default value is 0.08.</dd>
+  <dd>Minimum radius of the ellipsoid, default value is 0.08 Å.</dd>
   <dt><code class="highlighter-rouge">'lineWidth'</code></dt>
   <dd>Line width in pt of the main circles surrounding the ellipsoid, 
-if zero no circles are drawn. Default is 0.5.</dd>
-  <dt><code class="highlighter-rouge">'figure'</code></dt>
-  <dd>Handle of the swplot figure. Default is the selected figure.</dd>
-  <dt><code class="highlighter-rouge">'legend'</code></dt>
-  <dd>Whether to add the plot to the legend, default value is true.</dd>
+if zero no circles are drawn. Default is 0.5 pt.</dd>
   <dt><code class="highlighter-rouge">'color'</code></dt>
-  <dd>Color of the ellipsoid:
-    ‘auto’      All ellipsoid gets the color of the ion.
-    ‘colorname’ All ellipsoid will have the same given color.
-    [R G B]     RGB code of the color that fix the color of all
-                ellipsoid.</dd>
-  <dt><code class="highlighter-rouge">'color2'</code></dt>
-  <dd>Color of the main circles, default value is ‘auto’ when the ellipses
-will have the same color as the ellipsoids. Can be either a row
-vector of RGB code or string of a color name.</dd>
-  <dt><code class="highlighter-rouge">'nMesh'</code></dt>
-  <dd>Resolution of the ellipse surface mesh. Integer number that is
-used to generate an icosahedron mesh with #mesh number of
-additional triangulation, default value is stored in
-swpref.getpref(‘nmesh’)</dd>
-  <dt><code class="highlighter-rouge">'nPatch'</code></dt>
-  <dd>Number of points on the curve for the arrows, default
-value is stored in swpref.getpref(‘npatch’).</dd>
+  <dd>Color of the ellipsoid, one of the following values:
+    <ul>
+      <li><code class="highlighter-rouge">'auto'</code>      all ellipsoids get the color of the central atom,</li>
+      <li><code class="highlighter-rouge">'colorname'</code> all ellipsoids will have the same color defined by the
+              string, e.g. <code class="highlighter-rouge">'red'</code>,</li>
+      <li><code class="highlighter-rouge">[R G B]</code>     all ellipsoids will have the same color defined by the RGB
+              code.
+<code class="highlighter-rouge">'color2'</code></li>
+    </ul>
+  </dd>
+  <dd>Color of the lines of the main circles, default value is <code class="highlighter-rouge">'auto'</code> when
+the ellipses will have the same color as the ellipsoids. Can be either
+a row vector of RGB code or string of a color name, see the <code class="highlighter-rouge">color</code>
+parameter.</dd>
+</dl>
+
+<h4 id="general-paraters">General paraters</h4>
+
+<p>These parameters have the same effect on any of the <code class="highlighter-rouge">swplot.plot...</code>
+functions.</p>
+
+<dl>
+  <dt><code class="highlighter-rouge">'obj'</code></dt>
+  <dd><a href="spinw">spinw</a> object.</dd>
+  <dt><code class="highlighter-rouge">'unit'</code></dt>
+  <dd>Unit in which the plotting range is defined. It can be one of the
+following strings:
+    <ul>
+      <li><code class="highlighter-rouge">'lu'</code>        plot range is defined in lattice units (default),</li>
+      <li><code class="highlighter-rouge">'xyz'</code>       plot range is defined in the <script type="math/tex">xyz</script> Cartesian coordinate
+              system in Å units.</li>
+    </ul>
+  </dd>
+  <dt><code class="highlighter-rouge">'range'</code></dt>
+  <dd>Defines the plotting range. Depending on the <code class="highlighter-rouge">unit</code> parameter, the
+given range can be in lattice units or in units of the <script type="math/tex">xyz</script> Cartesian
+coordinate system. It is either a matrix with dimensions of <script type="math/tex">[3\times
+2]</script> where the first and second columns define the lower and upper plot
+limits respectively. It can be alternatively a vector with three
+elements <code class="highlighter-rouge">[a,b,c]</code> which is equivalent to <code class="highlighter-rouge">[0 a;0 b;0 c]</code>. Default
+value is <code class="highlighter-rouge">[0 1;0 1;0 1]</code> to show a single cell.</dd>
+  <dt><code class="highlighter-rouge">'figure'</code></dt>
+  <dd>Handle of the swplot figure. Default value is the active figure handle.</dd>
+  <dt><code class="highlighter-rouge">'legend'</code></dt>
+  <dd>Whether to show the plot on the legend, default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'tooltip'</code></dt>
-  <dd>If true, the tooltips will be shown when clicking on atoms.
-Default is true.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the tooltips will be shown when clicking on the plot
+objects. Default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'shift'</code></dt>
-  <dd>Column vector with 3 elements, all atomic positions will be
-shifted by the given value. Default value is [0;0;0].</dd>
+  <dd>Column vector with 3 elements, all object positions will be
+shifted by the given value in Å units. Default value is
+<code class="highlighter-rouge">[0;0;0]</code>.</dd>
   <dt><code class="highlighter-rouge">'replace'</code></dt>
-  <dd>Replace previous atom plot if true. Default is true.</dd>
+  <dd>If <code class="highlighter-rouge">true</code> the plot will replace the previous plot of the same type.
+Default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'translate'</code></dt>
-  <dd>If true, all plot objects will be translated to the figure
-center. Default is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the plot will be centered, independent of the range. Default
+value is <code class="highlighter-rouge">false</code>.</dd>
   <dt><code class="highlighter-rouge">'zoom'</code></dt>
-  <dd>If true, figure will be automatically zoomed to the ideal size.
-Default is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the swplot figure will be zoomed to make the plot objects
+cover the full figure. Default is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'copy'</code></dt>
-  <dd>If true, a hardcopy of the spinw object will be sved in the
-figure data, otherwise just the handle of the spinw object, 
-thus the figure can be updated when the spin object changed.
-Default value is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, a clone of the <a href="spinw">spinw</a> object will be saved in the
+swplot figure data which can be retwrived using
+<code class="highlighter-rouge">swplot.getdata('obj')</code>. If <code class="highlighter-rouge">false</code>, the handle of the original <a href="spinw">spinw</a>
+object is saved which is linked to the input <code class="highlighter-rouge">obj</code> and so it changes
+when <code class="highlighter-rouge">obj</code> is changed. Default value is <code class="highlighter-rouge">false</code>.</dd>
+  <dt><code class="highlighter-rouge">nMesh</code></dt>
+  <dd>Mesh of the ellipse surface, a triangulation class object or an
+integer that used to generate an icosahedron mesh with <script type="math/tex">n_{mesh}</script>
+number of additional subdivision into triangles. Default value is
+stored in <code class="highlighter-rouge">swpref.getpref('nmesh')</code>, see also <a href="swplot_icomesh">swplot.icomesh</a>.</dd>
+  <dt><code class="highlighter-rouge">nPatch</code></dt>
+  <dd>Number of vertices on any patch object that is not the icosahedron,
+default value is stored in <code class="highlighter-rouge">swpref.getpref('npatch')</code>.</dd>
 </dl>
 
 <h3 id="output-arguments">Output Arguments</h3>
 
-<p>hFigure           Handle of the swplot figure.
-The name of the objects that are created called ‘bond’. To find the
-handles and the stored data on these objects, use e.g.
-  sObject = swplot.findobj(hFigure,’name’,’bond’)</p>
+<dl>
+  <dt><code class="highlighter-rouge">hFigure</code></dt>
+  <dd>Handle of the swplot figure.</dd>
+</dl>
+
+<p>The name of the objects that are created are <code class="highlighter-rouge">'ion'</code> and <code class="highlighter-rouge">'ion_edge'</code>.
+To find the handles and the corresponding data on these objects, use e.g.
+sObject = swplot.findobj(hFigure,’name’,’ion’)`.</p>
 
 
 
@@ -1879,7 +1862,7 @@ handles and the stored data on these objects, use e.g.
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

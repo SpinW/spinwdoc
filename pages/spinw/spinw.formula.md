@@ -24,15 +24,6 @@ printed onto the Command Window.
 cryst = spinw('https://goo.gl/do6oTh')
 cryst.formula
 ```
-*Output*
-```
-     Chemical formula:  Cr1Li1O2
-     Formula mass:        90.936 g/mol
-     Formula in cell:          3 units
-     Cell volume:        105.178 Angstrom^3
-     Density:              4.307 g/cm^3
-```
- 
   
 ### Name-Value Pair Arguments
   

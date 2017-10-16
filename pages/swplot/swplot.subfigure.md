@@ -4,29 +4,35 @@
   folder: swplot, mathjax: 'true'}
 
 ---
-
+  
 ### Syntax
-
-`swplot.subfigure(m,n,p,{hfigure})`
-
+  
+`swplot.subfigure(m,n,p)`
+  
+`swplot.subfigure(m,n,p,hFigure)`
+ 
 ### Description
-
-Changes the position of the figure window on the screen, the position is
-determined similarly to the Matlab function subplot(). Here the screen is
-the canvas where the figure window is positioned.
+  
+`swplot.subfigure(m,n,p)` changes the position of the current figure
+window on the screen, the position is determined similarly to the Matlab
+function [subplot](https://www.mathworks.com/help/matlab/ref/subplot.html). Here the screen is the canvas where the figure
+window is positioned.
+   
+The function divides the display into an $$m$$-by-$$n$$ grid and moves the
+figure window in the position specified by $$p$$. It numbers the figures by
+row major, such that the first figure is the first column of the first
+row, the second figure is the second column of the first row, and so on.
  
-SUBFIGURE divides the display into an m-by-n grid and moves the figure
-window in the position specified by p. It numbers its figures by row,
-such that the first figure is the first column of the first row, the
-second figure is the second column of the first row, and so on.
- 
-
+`swplot.subfigure(m,n,p,hFigure)` repositions the figure related to
+`hFigure` handle.
+  
 ### Input Arguments
-
+  
 `m,n,p`
-: Integer numbers, defining figure window position.
-
+: Integer numbers that define the figure window position.
+  
 `hFigure`
-: Handle of the figure window, optional. Default is gcf.
+: Handle of the figure window, optional. Default value is [gcf](https://www.mathworks.com/help/matlab/ref/gcf.html).
+ 
 
 {% include links.html %}

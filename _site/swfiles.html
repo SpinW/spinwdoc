@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="unstructured functions">
+<meta name="description" content="general functions">
 <meta name="keywords" content=" sample">
 <title>Functions in swfiles | SpinW</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1713,7 +1668,7 @@
 <div class="post-content">
 
    
-    <div class="summary">unstructured functions</div>
+    <div class="summary">general functions</div>
    
 
     
@@ -1744,12 +1699,17 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>This folder contains all the files related to SpinW but not yet split out
-into separate libraries.</p>
+  <p>This folder contains all the spectral functions and general functions
+that are related to SpinW.</p>
 
 <h3 id="files">Files</h3>
 
 <h4 id="transforming-and-plotting-calculated-spin-wave-spectrum">Transforming and plotting calculated spin wave spectrum</h4>
+
+<p>These functions operate on the calculated spectra, which is the output of
+<a href="spinw_spinwave">spinw.spinwave</a> or <a href="spinw_powspec">spinw.powspec</a> commands. They enable to post process
+the calculated spin-spin correlation function, including instrumental
+resolution, cross section calculation, binning etc.</p>
 
 <ul>
   <li><a href="sw_econtract">sw_econtract</a> converts (Q,E) values to Q values for diffraction instrument</li>
@@ -1765,12 +1725,18 @@ into separate libraries.</p>
 
 <h4 id="generate-list-of-vectors-in-reciprocal-space">Generate list of vectors in reciprocal space</h4>
 
+<p>These two functions can generate a set of 3D points in reciprocal space
+defining either a path made out of straigh lines or a volume.</p>
+
 <ul>
   <li><a href="sw_qgrid">sw_qgrid</a> creates a Q grid</li>
   <li><a href="sw_qscan">sw_qscan</a> creates continuous line between coordinates</li>
 </ul>
 
 <h4 id="resolution-claculation-and-convolution">Resolution claculation and convolution</h4>
+
+<p>These functions can import Energy resolution function and convolute it
+with arbitrary multidimensional dataset</p>
 
 <ul>
   <li><a href="sw_res">sw_res</a> fits energy resolution with polynomial</li>
@@ -1789,6 +1755,8 @@ into separate libraries.</p>
 
 <h4 id="constraint-functions">Constraint functions</h4>
 
+<p>Contraint functions for <a href="spinw_optmagstr">spinw.optmagstr</a>.</p>
+
 <ul>
   <li><a href="gm_planar">gm_planar</a> planar magnetic structure constraint function</li>
   <li><a href="gm_planard">gm_planard</a> planar magnetic structure constraint function</li>
@@ -1797,12 +1765,19 @@ into separate libraries.</p>
 </ul>
 
 <h4 id="geometrical-calculations">Geometrical calculations</h4>
+
+<p>Basic geometrical calculators, functions to generatate rotation
+operators, generate Cartesian coordinate system from a set of vectors,
+calculate normal vector to a set of vector, etc.</p>
+
 <ul>
+  <li><a href="sw_basismat">sw_basismat</a> determines allowed tensor components in a given point group symmetry</li>
   <li><a href="sw_cartesian">sw_cartesian</a> creates a right handed Cartesian coordinate system</li>
   <li><a href="sw_fsub">sw_fsub</a> simple graph vertex coloring</li>
   <li><a href="sw_mattype">sw_mattype</a> classifies square matrices</li>
   <li><a href="sw_nvect">sw_nvect</a> determines the best normal vector for the set of vectors
 sw_quadell</li>
+  <li><a href="sw_mirror">sw_mirror</a> mirrors a 3D vector</li>
   <li><a href="sw_rot">sw_rot</a> rotates vectorsin 3D</li>
   <li><a href="sw_rotmat">sw_rotmat</a> generates 3D rotation matrix</li>
   <li><a href="sw_rotmatd">sw_rotmatd</a> generates 3D rotation matrix</li>
@@ -1818,6 +1793,9 @@ sw_quadell</li>
 
 <h4 id="acessing-the-spinw-database">Acessing the SpinW database</h4>
 
+<p>Functions to read the different data files that store information on
+atomic properties, such as magnetic form factor, charge, etc.</p>
+
 <ul>
   <li><a href="sw_atomdata">sw_atomdata</a> returns information on chemical elements</li>
   <li><a href="sw_cff">sw_cff</a> returns the atomic charge form factor values for X-ray scattering</li>
@@ -1825,14 +1803,10 @@ sw_quadell</li>
   <li><a href="sw_nb">sw_nb</a> returns the bound coherent neutron scattering length</li>
 </ul>
 
-<h4 id="symmetry-calculations">Symmetry calculations</h4>
+<h4 id="useful-physics-functions">Useful physics functions</h4>
 
-<ul>
-  <li><a href="sw_basismat">sw_basismat</a> determines allowed tensor components in a given point group symmetry</li>
-  <li><a href="sw_mirror">sw_mirror</a> mirrors a 3D vector</li>
-</ul>
-
-<h4 id="useful-functions-for-physics">Useful functions for physics</h4>
+<p>The two functions can calculate the Bose factor and convert
+energy/momentum units, both usefull for neutron and x-ray scattering.</p>
 
 <ul>
   <li><a href="sw_bose">sw_bose</a> coefficient for boson correlation functions</li>
@@ -1840,6 +1814,8 @@ sw_quadell</li>
 </ul>
 
 <h4 id="import-functions">Import functions</h4>
+
+<p>Functions to import tables in text format.</p>
 
 <ul>
   <li><a href="sw_import">sw_import</a> create SpinW object from .cif and FullProf Studio .fst files</li>
@@ -1849,8 +1825,8 @@ sw_quadell</li>
 
 <h4 id="miscellaneous">Miscellaneous</h4>
 
-<p>sw_docs</p>
 <ul>
+  <li><a href="swdoc">swdoc</a> opens the SpinW help</li>
   <li><a href="sw_freemem">sw_freemem</a> calculates the available memory</li>
   <li><a href="sw_readparam">sw_readparam</a> parse input arguments</li>
   <li><a href="sw_rootdir">sw_rootdir</a> path to the SpinW folder</li>
@@ -1901,7 +1877,7 @@ sw_quadell</li>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

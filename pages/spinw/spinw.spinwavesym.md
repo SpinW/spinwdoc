@@ -42,24 +42,6 @@ tri.symbolic(true)
 tri.genmagstr('mode','direct','k',[1/3 1/3 0],'S',[1 0 0])
 symSpec = tri.spinwave
 pretty(symSpec.omega)
-```
-*Output*
-```
-/ -#1 \
-|     |
-\  #1 /
-where
-   #1 == (sqrt(2) J_1 exp(-4 pi #2) sqrt(exp(2 pi #2) + #6 + #5
-      + exp(4 pi #2) 3 + #4 + #3 + exp(6 pi #2)) sqrt(- exp(2 pi #2) - #6 - #5
-      + exp(4 pi #2) 6 - #4 - #3 - exp(6 pi #2)))/2
-   #2 == h 1i + k 1i
-   #3 == exp(2 pi (h 3i + k 2i))
-   #4 == exp(2 pi (h 2i + k 3i))
-   #5 == exp(2 pi (h 2i + k 1i))
-   #6 == exp(2 pi (h 1i + k 2i))
-```
- 
-```matlab
 J_1 = 1
 h = linspace(0,1,500)
 k = h

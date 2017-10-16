@@ -1,70 +1,102 @@
 ---
-{title: swplot.plotbase, link: swplot.plotbase, summary: plots the edges of unit cells
-    on swplot figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_plotbase,
-  folder: swplot, mathjax: 'true'}
+{title: swplot.plotbase, link: swplot.plotbase, summary: plots basis vectors, keywords: sample,
+  sidebar: sw_sidebar, permalink: swplot_plotbase, folder: swplot, mathjax: 'true'}
 
 ---
-
+  
 ### Syntax
-
+  
 `swplot.plotbase(Name,Value)`
-
-### Description
-
-hFigure = SWPLOT.PLOTBASE('Option1',Value1,...)
+  
+`hFigure = swplot.plotbase(Name,Value)`
  
-
+### Description
+  
+`swplot.plotbase(Name,Value)` plots the three basis vectors that define
+the coordinate system of the plot, either the $$abc$$ lattice vectors,
+$$xyz$$ Descartes coodinate system or the $$hkl$$ reciprocal lattice vectors.
+  
 ### Name-Value Pair Arguments
-
+  
 `'mode'`
-: String that determines the type base to plot. Possible values
-  are:
-      abc     Plots the lattice vectors, default.
-      xyz     Plots the lattice Descartes coordinate system.
-      hkl     Plots the reciprocal lattice vectors.
-
+: String that determines the type of basis vectors to plot. Possible
+  values are:
+  * `abc`     plots the lattice vectors (default),
+  * `hkl`     plots the reciprocal lattice vectors,
+  * `xyz`     plots the $$xyz$$ Descartes coordinate system.
+  
 `'length'`
-: Determines the length of the a, b and c arrows. If 0, the
-  length will be equal to the corresponding lattice parameters,
-  while if non-zero, the number determines the length in
-  Å. Default is 2 Å.
-
+: Determines the length of the 3 basis vectors. If 0, the
+  length won't be rescaled. If non-zero, the `length` parameter
+  determines the length of the plotted vectors in Å. Default value is
+  2 Å.
+  
 `'label'`
-: Logical variable, plots abc labels if true. Default is true.
-
-`'figure'`
-: Handle of the swplot figure. Default is the selected figure.
-
+: Logical variable, plots the vector labels if `true`. Default value is 
+  `true`.
+  
 `'color'`
-: Color of the arrows, default value is red-green-blue for abc, stored
-  in the columns of a 3x3 matrix.
-
+: Color of the arrows, either a cell of three color name strings or a
+  matrix with dimensions of $${3\times 3]$$ where each column defines the
+  RGB values of a color. Default value is `{'red' 'green' 'blue'}`.
+  
 `'R'`
-: Radius value of arrow body, default value is 0.06.
-
-`'α'`
-:   Head angle of the arrow in ° units, default value is 30 °.
-
+: Radius of the arrow body, default value is 0.06 Å.
+  
+`'alpha'`
+: Head angle of the arrow in degree units, default value is 30°.
+  
 `'lHead'`
-: Length of the arrow head, default value is 0.5.
-
+: Length of the arrow head, default value is 0.5 Å.
+  
 `'d'`
-: Distance from origin in xyz units.
-
-`'dtext'`
-: Distance from arrow and in xyz units.
-
+: Distance from origin in $$xyz$$ units, default value is `[1 1 1]`.
+  
+`'dtext'` : Distance of the label from the arrow in xyz units, default
+  value is 0.5 Å.
+  
+#### General paraters
+ 
+These parameters have the same effect on any of the `swplot.plot...`
+functions.
+ 
+`'obj'`
+: [spinw](spinw) object.
+  
+`'figure'`
+: Handle of the swplot figure. Default value is the active figure handle.
+  
+`'tooltip'`
+: If `true`, the tooltips will be shown when clicking on the plot
+  objects. Default value is `true`.
+  
 `'shift'`
-: Column vector with 3 elements, the basis vectors will be
-  shifted by the given values in Å unit. Default value is
-  [0;0;0].
-
+: Column vector with 3 elements, all object positions will be
+  shifted by the given value in Å units. Default value is
+  `[0;0;0]`.
+  
+`'replace'`
+: If `true` the plot will replace the previous plot of the same type.
+  Default value is `true`.
+  
 `'translate'`
-: If true, all plot objects will be translated to the figure
-  center. Default is false.
-
+: If `true`, the plot will be centered, independent of the range. Default
+  value is `false`.
+  
 `'zoom'`
-: If true, figure will be automatically zoomed to the ideal size.
-  Default is false.
+: If `true`, the swplot figure will be zoomed to make the plot objects
+  cover the full figure. Default is `true`.
+  
+`'copy'`
+: If `true`, a clone of the [spinw](spinw) object will be saved in the
+  swplot figure data which can be retwrived using
+  `swplot.getdata('obj')`. If `false`, the handle of the original [spinw](spinw)
+  object is saved which is linked to the input `obj` and so it changes
+  when `obj` is changed. Default value is `false`.
+ 
+`nPatch`
+: Number of vertices on any patch object that is not the icosahedron,
+  default value is stored in `swpref.getpref('npatch')`.
+ 
 
 {% include links.html %}

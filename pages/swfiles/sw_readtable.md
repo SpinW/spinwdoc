@@ -47,33 +47,8 @@ The command to import the data:
 ```matlab
 dat = sw_readtable('test.dat')
 dat(1)
-```
-*Output*
-```
-  struct with fields:
-      tag: '# [Mxx] [1 0 0]'
-        Q: [0 1 2.9992]
-    ENlim: [0 15]
-        I: [1 1]
-       EN: [3.7128 8.6778]
-        s: [1 1]
-```
- 
-```matlab
 Q = reshape([dat(:).Q],3,[])'
 ```
-*Output*
-```
-Q =
-         0    1.0000    2.9992
-         0    1.0000    2.8993
-         0    1.0000    2.7993
-         0    1.0000    2.6994
-         0    1.0000    2.0000
-         0    1.1000    2.0000
-         0    1.2000    2.0000
-```
- 
  
 Here the imported `dat` variable will contain the fields `tag`, `Q`,
 `ENlim`, `I`, `EN` and `s` and it will have 7 entry. The `tag` variable

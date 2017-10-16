@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="control 3D view of swplot">
+<meta name="description" content="controls the 3D view direction">
 <meta name="keywords" content=" sample">
 <title>swplot.view | SpinW</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1713,7 +1668,7 @@
 <div class="post-content">
 
    
-    <div class="summary">control 3D view of swplot</div>
+    <div class="summary">controls the 3D view direction</div>
    
 
     
@@ -1746,20 +1701,30 @@ $('#toc').on('click', 'a', function() {
 
   <h3 id="syntax">Syntax</h3>
 
-<p><code class="highlighter-rouge">swplot.view(ax,{hfigure})</code></p>
+<p><code class="highlighter-rouge">swplot.view(ax)</code></p>
+
+<p><code class="highlighter-rouge">swplot.view(ax, hFigure)</code></p>
 
 <h3 id="description">Description</h3>
+
+<p><code class="highlighter-rouge">swplot.view(ax)</code> controls the plane that the camera sees. The
+preconfigured options are pairs of <script type="math/tex">abc</script> axes or <script type="math/tex">hkl</script> reciprocal lattice
+axes.</p>
 
 <h3 id="input-arguments">Input Arguments</h3>
 
 <dl>
   <dt><code class="highlighter-rouge">ax</code></dt>
-  <dd>String to change view of the 3D plot. Possible options:
-    ‘ab’,’bc’,’ac’  the two axes define the view plane,
-    ‘hk’,’kl’,’hl’  the two reciprocal lattice vectors define
-                    the view plane.</dd>
+  <dd>String that controls the view plane, recognised values are:
+    <ul>
+      <li><code class="highlighter-rouge">'ab'</code>|<code class="highlighter-rouge">'bc'</code>|<code class="highlighter-rouge">'ac'</code>  the two axes define the view plane,</li>
+      <li><code class="highlighter-rouge">'hk'</code>|<code class="highlighter-rouge">'kl'</code>|<code class="highlighter-rouge">'hl'</code>  the two reciprocal lattice vectors define
+                        the view plane.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">hFigure</code></dt>
-  <dd>Handle of the swplot figure window, optional.</dd>
+  <dd>Handle of the swplot figure window, default value is the active swplot
+figure.</dd>
 </dl>
 
 
@@ -1803,7 +1768,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

@@ -25,11 +25,6 @@ specSq  = sq.spinwave({[0 0 0] [1 1 0] 21})
 specTri = tri.spinwave({[0 0 0] [1 0 0] 21})
 sw_filelist
 ```
-*Output*
-```
-No SpinW variables have been found in the Matlab base workspace.
-```
- 
  
 ### Name-Value Pair Arguments
   

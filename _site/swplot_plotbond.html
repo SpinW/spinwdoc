@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="plots magnetic bonds">
+<meta name="description" content="plots bonds">
 <meta name="keywords" content=" sample">
 <title>swplot.plotbond | SpinW</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -202,7 +202,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">SpinW R1442</li>
+  <li class="sidebarTitle">SpinW R1447</li>
   
   
   
@@ -216,7 +216,7 @@
       
   
   <li>
-      <a href="#">spinw ✔</a>
+      <a href="#">spinw</a>
       <ul>
           
           
@@ -762,7 +762,7 @@
       
   
   <li>
-      <a href="#">swfiles ✔</a>
+      <a href="#">swfiles</a>
       <ul>
           
           
@@ -956,6 +956,12 @@
                   
                   
                   
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
                   <li><a href="sw_cartesian">sw_cartesian</a></li>
                   
                   
@@ -969,6 +975,12 @@
                   
                   
                   <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
                   
                   
                   
@@ -1062,28 +1074,7 @@
           
           
           <li class="subfolders">
-              <a href="#">Symmetry calculations</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a href="sw_basismat">sw_basismat</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="sw_mirror">sw_mirror</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
-          
-          
-          
-          <li class="subfolders">
-              <a href="#">Useful functions for physics</a>
+              <a href="#">Useful physics functions</a>
               <ul>
                   
                   
@@ -1322,12 +1313,6 @@
                   
                   
                   
-                  <li><a href="swplot_ishg">swplot.ishg</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_legend">swplot.legend</a></li>
                   
                   
@@ -1454,24 +1439,6 @@
                   
                   
                   
-                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
-                  
-                  
-                  
-                  
-                  
                   <li><a href="swplot_subfigure">swplot.subfigure</a></li>
                   
                   
@@ -1479,18 +1446,6 @@
                   
                   
                   <li><a href="swplot_subplot">swplot.subplot</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
                   
                   
                   
@@ -1506,7 +1461,7 @@
       
   
   <li>
-      <a href="#">swpref ✔</a>
+      <a href="#">swpref</a>
       <ul>
           
           
@@ -1545,7 +1500,7 @@
       
   
   <li>
-      <a href="#">swsym ✔</a>
+      <a href="#">swsym</a>
       <ul>
           
           
@@ -1632,7 +1587,7 @@
       
   
   <li>
-      <a href="#">swfunc ✔</a>
+      <a href="#">swfunc</a>
       <ul>
           
           
@@ -1713,7 +1668,7 @@
 <div class="post-content">
 
    
-    <div class="summary">plots magnetic bonds</div>
+    <div class="summary">plots bonds</div>
    
 
     
@@ -1748,170 +1703,220 @@ $('#toc').on('click', 'a', function() {
 
 <p><code class="highlighter-rouge">swplot.plotbond(Name,Value)</code></p>
 
+<p><code class="highlighter-rouge">hFigure = swplot.plotbond(Name,Value)</code></p>
+
 <h3 id="description">Description</h3>
 
-<p>hFigure = SWPLOT.PLOTBOND(…)</p>
-
-<p>The function plots the magnetic bonds stored in a SpinW object onto an
-swplot figure.</p>
-
-<h3 id="input-arguments">Input Arguments</h3>
+<p><code class="highlighter-rouge">swplot.plotbond(Name,Value)</code> plots the magnetic bonds stored in
+<a href="spinw_coupling">spinw.coupling</a>. It can plot bonds using different styles, such as
+arrows, lines or cylinders and allows controlling the the line style,
+cylinder radius, color, etc. The command can also plot cylinders with
+radii that are dependent on the strength of the exchange interaction
+assigned to the particular bond.</p>
 
 <h3 id="name-value-pair-arguments">Name-Value Pair Arguments</h3>
 
 <dl>
-  <dt><code class="highlighter-rouge">'obj'</code></dt>
-  <dd>SpinW object.</dd>
-  <dt><code class="highlighter-rouge">'range'</code></dt>
-  <dd>Plotting range of the lattice parameters in lattice units,
-dimensions are [3 2]. For example to plot the first unit cell,
-use: [0 1;0 1;0 1]. Also the number unit cells can be given
-along the a, b and c directions: [2 1 2], that is equivalent to
-[0 2;0 1;0 2]. Default is the single unit cell.</dd>
-  <dt><code class="highlighter-rouge">'unit'</code></dt>
-  <dd>Unit in which the range is defined. It can be the following
-string:
-    ‘lu’        Lattice units (default).
-    ‘xyz’       Cartesian coordinate system in Å units.</dd>
   <dt><code class="highlighter-rouge">'mode'</code></dt>
-  <dd>String, defines how the bond is plotted
-    ‘cylinder’  Bonds are plotted as cylinders (default).
-    ‘arrow’     Bonds are plotted as arrows (default if DM
-                interactions are non-zero).
-    ‘line’      Bonds are plotted as lines.
-    ‘empty’     No bonds are plotted.</dd>
+  <dd>String that defines the style of the bond:
+    <ul>
+      <li><code class="highlighter-rouge">'cylinder'</code>   bonds are plotted as cylinders connecting the two atoms
+              (default),</li>
+      <li><code class="highlighter-rouge">'arrow'</code>      bonds are plotted as arrows (default if <abbr title="Dzyaloshinskii-Moriya">DM</abbr>
+              interactions are present),</li>
+      <li><code class="highlighter-rouge">'line'</code>       bonds are plotted as lines,</li>
+      <li><code class="highlighter-rouge">'empty'</code>      no bonds are plotted.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'mode2'</code></dt>
-  <dd>String, defines what is plotted on the bond:
-    ‘none’      Don’t plot anything on the bond (default).
-    ‘antisym’   Plot the antisymmetric part (DM vector) of the 
-                exchange at the middle point of the bond
-                (default if DM vectors are non-zero).
-    ‘sym’       Plot the symmetric exchange at the middle
-                of the bond as an ellipsoid.</dd>
+  <dd>String that defines what object is plotted on the middle of the bond:
+    <ul>
+      <li><code class="highlighter-rouge">'none'</code>      don’t plot anything on the bond (default),</li>
+      <li><code class="highlighter-rouge">'antisym'</code>   plot the antisymmetric part (<abbr title="Dzyaloshinskii-Moriya">DM</abbr> vector) of the 
+              exchange on the middle point of the bond
+              (default if <abbr title="Dzyaloshinskii-Moriya">DM</abbr> vectors are non-zero),</li>
+      <li><code class="highlighter-rouge">'sym'</code>       plot an ellipsoid (corresponding to the symmetric
+              exchange) on the middle of the bond.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'sign'</code></dt>
-  <dd>String, defines how the ellipsoids are generated for exchange
+  <dd>String that defines how the ellipsoids are generated for exchange
 matrices that contain both negative and positive eigenvalues.
 Possible values are:
-    ‘abs’       The absolute value of the eigenvalues is used.
-                This works nicely except that AFM and FM values
-                will have the same radius. Default value.
-    ‘min’       If there is a negative eigenvalue, it is
-                shifted to zero with all other egeinvalues
-                equally. This works nicely to emphasize AFM
-                type values in the exchange matrix. Problem is
-                that 0 exchange values can be assigned non-zero
-                radius.
-    ‘max’       Same as min, just positive eigenvalues are
-                shifted to zero. This works nicely to emphasize
-                FM type exchange values, has the same problem
-                as the ‘min’ option.</dd>
+    <ul>
+      <li><code class="highlighter-rouge">'abs'</code>       The absolute value of the eigenvalues is used,
+              this works nicely except that <abbr title="AntiFerromagnet">AFM</abbr> and <abbr title="FerroMagnet">FM</abbr> values
+              will have the same radius (default).</li>
+      <li><code class="highlighter-rouge">'min'</code>       If there is a negative eigenvalue, it is
+              shifted to zero with all other egeinvalues
+              equally. This works nicely to emphasize <abbr title="AntiFerromagnet">AFM</abbr>
+              type values in the exchange matrix. Problem is
+              that 0 exchange values can be assigned non-zero
+              radius.</li>
+      <li><code class="highlighter-rouge">'max'</code>       Same as <code class="highlighter-rouge">'min'</code>, except the positive eigenvalues are
+              shifted to zero. This works nicely to emphasize
+              <abbr title="FerroMagnet">FM</abbr> type exchange values, has the same problem
+              as the <code class="highlighter-rouge">'min'</code> option.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'linewidth'</code></dt>
-  <dd>Defines the bond radius if it is drawn by a line:
-    ‘fix’       All line will have a width given by linewidth0.
-                Default value.
-    ‘lin’       Lines will have a width that is depending 
-                linearly on the exchange matrix on the bond:
-                        Width ~ sum(abs(J)), 
-                where the largest line width on
-                the strongest bond is given by linewidth0.
-    ‘pow’       Same as ‘auto’, but the line width is a
-                power function of J: W~(sum(abs(J))).^widthpow</dd>
+  <dd>Defines the bond radius if <code class="highlighter-rouge">mode</code> is set to <code class="highlighter-rouge">line</code>, one of the folling
+strings:
+    <ul>
+      <li><code class="highlighter-rouge">'fix'</code>       All lines will have a width defined by the <code class="highlighter-rouge">linewidth0</code>
+              parameter (default).</li>
+      <li><code class="highlighter-rouge">'lin'</code>       Lines will have a width that is depending 
+              linearly on the exchange matrix on the bond:
+                     <code class="highlighter-rouge">~Width ~ sum(abs(J))</code>, 
+              where the largest line width on
+              the strongest bond is given by <code class="highlighter-rouge">linewidth0</code>.</li>
+      <li><code class="highlighter-rouge">'pow'</code>       Same as <code class="highlighter-rouge">'auto'</code>, but the line width is a
+              power function of the exchange value:
+              <code class="highlighter-rouge">W~(sum(abs(J))).^widthpow</code>.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'widthpow'</code></dt>
-  <dd>Defines the power that determines the linewidth if ‘linewidth’
-option is ‘pow’.</dd>
-</dl>
-
-<p><code class="highlighter-rouge">'linewidth0'</code>
-:0 Line width in pt used to draw the bond if ‘mode’ is ‘line’. 
-  Default value is 0.5.</p>
-
-<dl>
+  <dd>Defines the power that determines the linewidth if <code class="highlighter-rouge">linewidth</code>
+parameter is set to <code class="highlighter-rouge">'pow'</code>.</dd>
+  <dt><code class="highlighter-rouge">'linewidth0'</code></dt>
+  <dd>Line width in pt used to draw the bond if <code class="highlighter-rouge">mode</code> parameter is <code class="highlighter-rouge">'line'</code>. 
+Default value is 0.5.</dd>
   <dt><code class="highlighter-rouge">'lineStyle'</code></dt>
-  <dd>Determines the line style when bonds plotted as lines. Possible
-values:
-    ‘auto’      Bonds are plotted as continuous/dashed lines
-                depending on the label of the corresponding
-                matrix (dashed line is used if the matrix
-                label ends with ‘-‘, otherwise continuous).
-                Default value.
-    ‘–’        Bonds are plotted as dashed lines.
-    ‘-‘         Bonds are plotted as lines.</dd>
+  <dd>Determines the line style when <code class="highlighter-rouge">mode</code> parameter is <code class="highlighter-rouge">'line'</code>. Possible
+values are:
+    <ul>
+      <li><code class="highlighter-rouge">'auto'</code>      Bonds are plotted as continuous/dashed lines
+              depending on the label of the corresponding
+              matrix (dashed line is used if the matrix
+              label ends with <code class="highlighter-rouge">'-'</code>, otherwise continuous) (default).</li>
+      <li><code class="highlighter-rouge">'--'</code>        Bonds are plotted as dashed lines.</li>
+      <li><code class="highlighter-rouge">'-'</code>         Bonds are plotted as lines.</li>
+      <li><code class="highlighter-rouge">':'</code>         Bonds are plotted using dotted lines.</li>
+      <li><code class="highlighter-rouge">'-.'</code>        Bonds are plotted using dash-dotted lines.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'zero'</code></dt>
-  <dd>If true, bonds with zero exchange matrix will be plotted as
-well. Default is true.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, bonds with zero exchange matrix will be plotted as
+well. Default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'radius0'</code></dt>
-  <dd>Radius of the cylinder, default value is 0.05.</dd>
+  <dd>Radius of the cylinder when <code class="highlighter-rouge">mode</code> parameter is set to <code class="highlighter-rouge">'cylinder'</code>.
+Default value is 0.05 Å.</dd>
   <dt><code class="highlighter-rouge">'radius1'</code></dt>
-  <dd>Radius of the DM vector and the minimum radius of the 
-ellipsoid, default value is 0.08.</dd>
+  <dd>Radius of the <abbr title="Dzyaloshinskii-Moriya">DM</abbr> vector and the minimum radius of the 
+ellipsoid, default value is 0.08 Å.</dd>
   <dt><code class="highlighter-rouge">'radius2'</code></dt>
   <dd>Constant atom radius, default value is 0.3 Å.</dd>
   <dt><code class="highlighter-rouge">'radius'</code></dt>
   <dd>Defines the atom radius (important for arrow bonds, to avoid
-overlap with the spheres of the atoms):
-    ‘fix’       Sets the radius of all atoms to the value
-                given by radius2.
-    ‘auto’      use radius data from database based on the atom
-                label multiplied by radius2 value.</dd>
+overlap with the spheres of the atoms), see <a href="swplot_plotatom">swplot.plotatom</a>:
+    <ul>
+      <li><code class="highlighter-rouge">'fix'</code>       Sets the radius of all atoms to the value
+              given by the <code class="highlighter-rouge">radius2</code> parameter.</li>
+      <li><code class="highlighter-rouge">'auto'</code>      use radius data from database based on the atom
+              label multiplied by the <code class="highlighter-rouge">radius2</code> option value.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'ang'</code></dt>
-  <dd>Angle of the arrow head in ° units, default value is 30 °.</dd>
+  <dd>Angle of the arrow head in degree units, default value is 30°.</dd>
   <dt><code class="highlighter-rouge">'lHead'</code></dt>
-  <dd>Length of the arrow head, default value is 0.3.</dd>
+  <dd>Length of the arrow head, default value is 0.3 Å.</dd>
   <dt><code class="highlighter-rouge">'scale'</code></dt>
-  <dd>Scaling factor for the length of the DM vector or the size of
+  <dd>Scaling factor for the length of the <abbr title="Dzyaloshinskii-Moriya">DM</abbr> vector or the size of
 the ellipsoid relative to the shortest bond length. Default 
 value is 1/3.</dd>
-  <dt><code class="highlighter-rouge">'figure'</code></dt>
-  <dd>Handle of the swplot figure. Default is the selected figure.</dd>
-  <dt><code class="highlighter-rouge">'legend'</code></dt>
-  <dd>Whether to add the plot to the legend, default value is true.</dd>
   <dt><code class="highlighter-rouge">'color'</code></dt>
-  <dd>Color of the bonds:
-    ‘auto’      All bonds get the stored color.
-    ‘colorname’ All bonds will have the same given color.
-    [R G B]     RGB code of the color that fix the color of all
-                bonds.</dd>
+  <dd>Color of the bonds, one of the following values:
+    <ul>
+      <li><code class="highlighter-rouge">'auto'</code>      all bonds gets the color stored in <a href="spinw_matrix">spinw.matrix</a>,</li>
+      <li><code class="highlighter-rouge">'colorname'</code> all bonds will have the same color defined by the
+              string, e.g. <code class="highlighter-rouge">'red'</code>,</li>
+      <li><code class="highlighter-rouge">[R G B]</code>     all bonds will have the same color defined by the given
+              RGB code.</li>
+    </ul>
+  </dd>
   <dt><code class="highlighter-rouge">'color2'</code></dt>
-  <dd>Color of the ellipse or DM vector on the bond:
-    ‘auto’      All object get the color of the bond.
-    ‘colorname’ All object will have the same given color.
-    [R G B]     RGB code of the color that fix the color of all
-                object.</dd>
-  <dt><code class="highlighter-rouge">'nMesh'</code></dt>
-  <dd>Resolution of the ellipse surface mesh. Integer number that is
-used to generate an icosahedron mesh with #mesh number of
-additional triangulation, default value is stored in
-swpref.getpref(‘nmesh’)</dd>
-  <dt><code class="highlighter-rouge">'nPatch'</code></dt>
-  <dd>Number of points on the curve for the arrows, default
-value is stored in swpref.getpref(‘npatch’).</dd>
+  <dd>Color of the ellipse or <abbr title="Dzyaloshinskii-Moriya">DM</abbr> vector on the bond:
+    <ul>
+      <li><code class="highlighter-rouge">'auto'</code>      all object get the color of the bond,</li>
+      <li><code class="highlighter-rouge">'colorname'</code> all object will have the same color defined by the
+              string, e.g. <code class="highlighter-rouge">'red'</code>,</li>
+      <li><code class="highlighter-rouge">[R G B]</code>     all objects will have the same color defined by the
+              given RGB code.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="general-paraters">General paraters</h4>
+
+<p>These parameters have the same effect on any of the <code class="highlighter-rouge">swplot.plot...</code>
+functions.</p>
+
+<dl>
+  <dt><code class="highlighter-rouge">'obj'</code></dt>
+  <dd><a href="spinw">spinw</a> object.</dd>
+  <dt><code class="highlighter-rouge">'unit'</code></dt>
+  <dd>Unit in which the plotting range is defined. It can be one of the
+following strings:
+    <ul>
+      <li><code class="highlighter-rouge">'lu'</code>        plot range is defined in lattice units (default),</li>
+      <li><code class="highlighter-rouge">'xyz'</code>       plot range is defined in the <script type="math/tex">xyz</script> Cartesian coordinate
+              system in Å units.</li>
+    </ul>
+  </dd>
+  <dt><code class="highlighter-rouge">'range'</code></dt>
+  <dd>Defines the plotting range. Depending on the <code class="highlighter-rouge">unit</code> parameter, the
+given range can be in lattice units or in units of the <script type="math/tex">xyz</script> Cartesian
+coordinate system. It is either a matrix with dimensions of <script type="math/tex">[3\times
+2]</script> where the first and second columns define the lower and upper plot
+limits respectively. It can be alternatively a vector with three
+elements <code class="highlighter-rouge">[a,b,c]</code> which is equivalent to <code class="highlighter-rouge">[0 a;0 b;0 c]</code>. Default
+value is <code class="highlighter-rouge">[0 1;0 1;0 1]</code> to show a single cell.</dd>
+  <dt><code class="highlighter-rouge">'figure'</code></dt>
+  <dd>Handle of the swplot figure. Default value is the active figure handle.</dd>
+  <dt><code class="highlighter-rouge">'legend'</code></dt>
+  <dd>Whether to show the plot on the legend, default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'tooltip'</code></dt>
-  <dd>If true, the tooltips will be shown when clicking on atoms.
-Default is true.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the tooltips will be shown when clicking on the plot
+objects. Default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'shift'</code></dt>
-  <dd>Column vector with 3 elements, all atomic positions will be
-shifted by the given value. Default value is [0;0;0].</dd>
+  <dd>Column vector with 3 elements, all object positions will be
+shifted by the given value in Å units. Default value is
+<code class="highlighter-rouge">[0;0;0]</code>.</dd>
   <dt><code class="highlighter-rouge">'replace'</code></dt>
-  <dd>Replace previous atom plot if true. Default is true.</dd>
+  <dd>If <code class="highlighter-rouge">true</code> the plot will replace the previous plot of the same type.
+Default value is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'translate'</code></dt>
-  <dd>If true, all plot objects will be translated to the figure
-center. Default is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the plot will be centered, independent of the range. Default
+value is <code class="highlighter-rouge">false</code>.</dd>
   <dt><code class="highlighter-rouge">'zoom'</code></dt>
-  <dd>If true, figure will be automatically zoomed to the ideal size.
-Default is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, the swplot figure will be zoomed to make the plot objects
+cover the full figure. Default is <code class="highlighter-rouge">true</code>.</dd>
   <dt><code class="highlighter-rouge">'copy'</code></dt>
-  <dd>If true, a hardcopy of the spinw object will be sved in the
-figure data, otherwise just the handle of the spinw object, 
-thus the figure can be updated when the spin object changed.
-Default value is false.</dd>
+  <dd>If <code class="highlighter-rouge">true</code>, a clone of the <a href="spinw">spinw</a> object will be saved in the
+swplot figure data which can be retwrived using
+<code class="highlighter-rouge">swplot.getdata('obj')</code>. If <code class="highlighter-rouge">false</code>, the handle of the original <a href="spinw">spinw</a>
+object is saved which is linked to the input <code class="highlighter-rouge">obj</code> and so it changes
+when <code class="highlighter-rouge">obj</code> is changed. Default value is <code class="highlighter-rouge">false</code>.</dd>
+  <dt><code class="highlighter-rouge">nMesh</code></dt>
+  <dd>Mesh of the ellipse surface, a triangulation class object or an
+integer that used to generate an icosahedron mesh with <script type="math/tex">n_{mesh}</script>
+number of additional subdivision into triangles. Default value is
+stored in <code class="highlighter-rouge">swpref.getpref('nmesh')</code>, see also <a href="swplot_icomesh">swplot.icomesh</a>.</dd>
+  <dt><code class="highlighter-rouge">nPatch</code></dt>
+  <dd>Number of vertices on any patch object that is not the icosahedron,
+default value is stored in <code class="highlighter-rouge">swpref.getpref('npatch')</code>.</dd>
 </dl>
 
 <h3 id="output-arguments">Output Arguments</h3>
 
-<p>hFigure           Handle of the swplot figure.
-The name of the objects that are created called ‘bond’. To find the
-handles and the stored data on these objects, use e.g.
-  sObject = swplot.findobj(hFigure,’name’,’bond’)</p>
+<dl>
+  <dt><code class="highlighter-rouge">hFigure</code></dt>
+  <dd>Handle of the swplot figure.</dd>
+</dl>
+
+<p>The name of the objects that are created are <code class="highlighter-rouge">'bond'</code>.
+To find the handles and the corresponding data on these objects, use e.g.
+sObject = swplot.findobj(hFigure,’name’,’bond’)`.</p>
 
 
 
@@ -1954,7 +1959,7 @@ handles and the stored data on these objects, use e.g.
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Sándor Tóth. <br />
- Site last generated: Oct 13, 2017 <br />
+ Site last generated: Oct 16, 2017 <br />
 <p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
                 </div>
             </div>

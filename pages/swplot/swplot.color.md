@@ -28,14 +28,6 @@ Read the RGB code corresponding to light gray:
 ```matlab
 RGB = swplot.color('LightGray')
 ```
-*Output*
-```
-RGB =
-   211
-   211
-   211
-```
- 
   
 ### Input Arguments
   

@@ -1,39 +1,44 @@
 ---
-{title: swplot.text, link: swplot.text, summary: draws a text at a point in 3D, keywords: sample,
+{title: swplot.text, link: swplot.text, summary: creates text at a 3D position, keywords: sample,
   sidebar: sw_sidebar, permalink: swplot_text, folder: swplot, mathjax: 'true'}
 
 ---
-
+  
 ### Syntax
-
-`htext = swplot.text(r, string, {fontsize})`
-
+  
+`hText = swplot.text(r, string)`
+  
+`hText = swplot.text(r, string, fontSize)`
+ 
+`hText = swplot.text(handle, ...)`
+ 
 ### Description
-
-hText = SWPLOT.TEXT(handle,...)
- 
-Handle of an axes object that selects an axis to plot.
- 
-
+  
+`hText = swplot.text(r, string)` creates single or multiple text in 3D
+space.
+   
+`hPatch = swplot.text(handle, ...)` adds the generated text object to a
+given axis referenced by `handle`.
+   
 ### Input Arguments
-
+  
 `handle`
-: Handle of an axis object.
-
+: Handle of an axis object, default value is [gca](https://www.mathworks.com/help/matlab/ref/gca.html).
+  
 `r`
 : Coordinate of the center of the text for a single text or
-  matrix with dimensions [3 nText] for multiple text.
-
+  matrix with dimensions $$[3\times n_{obj}]$$ for multiple text.
+  
 `string`
-: String contains the text or cell of strings to plot multiple
-  text.
-
+: String that contains the text or cell of strings when multiple
+  text is drawn.
+  
 `fontSize`
-: Font size in pt, default value is stored in
-  swpref.getpref('fontsize')
-
+: Font size in pt, default value is stored in `swpref.getpref('fontsize')`.
+  
 ### See Also
-
-[text]
+  
+[text](https://www.mathworks.com/help/matlab/ref/text.html)
+ 
 
 {% include links.html %}
