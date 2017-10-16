@@ -1,2 +1,0 @@
-# spinwdoc
-Documentation for SpinW

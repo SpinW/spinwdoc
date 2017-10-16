@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="generates a string equivalent of symmetry operators">
+<meta name="keywords" content=" sample">
+<title>swsym.str | SpinW</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+<!-- old favicon -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5b60d5">
+<link rel="shortcut icon" href="images/favicon.ico">
+<meta name="msapplication-config" content="images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="spinw" href="http://localhost:4002/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> SpinW</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">Documentation</a></li>
+                
+                
+                
+                <li><a href="https://github.com/tsdev/spinw" target="_blank">GitHub</a></li>
+                
+                
+                
+                <li><a href="https://groups.google.com/forum/#!categories/spinwforum" target="_blank">Forum</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:spinw4@gmail.com?subject=SpinW Question feedback&body=I have some feedback about the swsym.str page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="swsym.str">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">SpinW R1442</li>
+  
+  
+  
+  <li>
+      <a href="#">Documentation</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">spinw ✔</a>
+      <ul>
+          
+          
+          
+          <li><a href="spinw">Description</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Properties</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_lattice">spinw.lattice</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_unit_cell">spinw.unit_cell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_twin">spinw.twin</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_matrix">spinw.matrix</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_single_ion">spinw.single_ion</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_coupling">spinw.coupling</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_mag_str">spinw.mag_str</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_unit">spinw.unit</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_cache">spinw.cache</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Lattice operations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_abc">spinw.abc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_addatom">spinw.addatom</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_atom">spinw.atom</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_basisvector">spinw.basisvector</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_disp">spinw.disp</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_formula">spinw.formula</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_genlattice">spinw.genlattice</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_matom">spinw.matom</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_natom">spinw.natom</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_newcell">spinw.newcell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_nosym">spinw.nosym</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_rl">spinw.rl</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_symmetry">spinw.symmetry</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_unitcell">spinw.unitcell</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Plotting</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_plot">spinw.plot</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Crystallographic twin operations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_addtwin">spinw.addtwin</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_notwin">spinw.notwin</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_twinq">spinw.twinq</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Magnetic structure operations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_anneal">spinw.anneal</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_annealloop">spinw.annealloop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_genmagstr">spinw.genmagstr</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_magstr">spinw.magstr</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_magtable">spinw.magtable</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_nmagext">spinw.nmagext</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_optmagk">spinw.optmagk</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_optmagsteep">spinw.optmagsteep</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_optmagstr">spinw.optmagstr</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_structfact">spinw.structfact</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Matrix operations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_addmatrix">spinw.addmatrix</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_getmatrix">spinw.getmatrix</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_setmatrix">spinw.setmatrix</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Spin Hamiltonian generations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_addaniso">spinw.addaniso</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_addcoupling">spinw.addcoupling</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_addg">spinw.addg</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_field">spinw.field</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_gencoupling">spinw.gencoupling</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_intmatrix">spinw.intmatrix</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_quickham">spinw.quickham</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_setunit">spinw.setunit</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_symop">spinw.symop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_temperature">spinw.temperature</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Solvers</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_energy">spinw.energy</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_fourier">spinw.fourier</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_fouriersym">spinw.fouriersym</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_moment">spinw.moment</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_powspec">spinw.powspec</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_spinwave">spinw.spinwave</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_spinwavesym">spinw.spinwavesym</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_symbolic">spinw.symbolic</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Fitting spin wave spectrum</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_fitspec">spinw.fitspec</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_horace">spinw.horace</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_matparser">spinw.matparser</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Miscellaneous</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="spinw_clearcache">spinw.clearcache</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_copy">spinw.copy</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_delete">spinw.delete</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_export">spinw.export</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_fileid">spinw.fileid</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_isvalid">spinw.isvalid</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_listener">spinw.listener</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_spinw">spinw.spinw</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_struct">spinw.struct</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_table">spinw.table</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_validate">spinw.validate</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="spinw_version">spinw.version</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">swfiles ✔</a>
+      <ul>
+          
+          
+          
+          <li><a href="swfiles">Description</a></li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Transforming and plotting calculated spin wave spectrum</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_econtract">sw_econtract</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_egrid">sw_egrid</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_filelist">sw_filelist</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_instrument">sw_instrument</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_magdomain">sw_magdomain</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_neutron">sw_neutron</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_omegasum">sw_omegasum</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_plotspec">sw_plotspec</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_xray">sw_xray</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Generate list of vectors in reciprocal space</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_qgrid">sw_qgrid</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_qscan">sw_qscan</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Resolution claculation and convolution</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_res">sw_res</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_resconv">sw_resconv</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_tofres">sw_tofres</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">SpinW model related functions</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_bonddim">sw_bonddim</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_extendlattice">sw_extendlattice</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_fstat">sw_fstat</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_model">sw_model</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Constraint functions</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="gm_planar">gm_planar</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="gm_planard">gm_planard</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="gm_spherical3d">gm_spherical3d</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="gm_spherical3dd">gm_spherical3dd</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Geometrical calculations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_cartesian">sw_cartesian</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_fsub">sw_fsub</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mattype">sw_mattype</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_nvect">sw_nvect</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_rot">sw_rot</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_rotmat">sw_rotmat</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_rotmatd">sw_rotmatd</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Text and graphical input/output for different high level commands</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_multicolor">sw_multicolor</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_parstr">sw_parstr</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_timeit">sw_timeit</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Acessing the SpinW database</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_atomdata">sw_atomdata</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_cff">sw_cff</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mff">sw_mff</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_nb">sw_nb</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Symmetry calculations</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_basismat">sw_basismat</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mirror">sw_mirror</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Useful functions for physics</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_bose">sw_bose</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_converter">sw_converter</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Import functions</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_import">sw_import</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_readspec">sw_readspec</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_readtable">sw_readtable</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Miscellaneous</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="sw_freemem">sw_freemem</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_mex">sw_mex</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_readparam">sw_readparam</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_rootdir">sw_rootdir</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_uniquetol">sw_uniquetol</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_update">sw_update</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sw_version">sw_version</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swdoc">swdoc</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">swplot</a>
+      <ul>
+          
+          
+          
+          <li><a href="swplot">Description</a></li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Basic 3D objects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swplot_arrow">swplot.arrow</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_circle">swplot.circle</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_cylinder">swplot.cylinder</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_ellipsoid">swplot.ellipsoid</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_line">swplot.line</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_polyhedron">swplot.polyhedron</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_text">swplot.text</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Creating and modifying swplot figure</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swplot_activefigure">swplot.activefigure</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_add">swplot.add</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_base">swplot.base</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_clear">swplot.clear</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_close">swplot.close</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_delete">swplot.delete</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_export">swplot.export</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_figure">swplot.figure</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_findobj">swplot.findobj</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_getdata">swplot.getdata</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_ishg">swplot.ishg</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_legend">swplot.legend</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_mouse">swplot.mouse</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plot">swplot.plot</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_tooltip">swplot.tooltip</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_transform">swplot.transform</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_translate">swplot.translate</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_view">swplot.view</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_zoom">swplot.zoom</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Plotting SpinW object on swplot figure</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swplot_plotatom">swplot.plotatom</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotbase">swplot.plotbase</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotbond">swplot.plotbond</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotcell">swplot.plotcell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotchem">swplot.plotchem</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotion">swplot.plotion</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_plotmag">swplot.plotmag</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Related functions</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swplot_color">swplot.color</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_icomesh">swplot.icomesh</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_logo">swplot.logo</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_patchfacefcn">swplot.patchfacefcn</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_raytriangle">swplot.raytriangle</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_setrangegui">swplot.setrangegui</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_subfigure">swplot.subfigure</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_subplot">swplot.subplot</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_tooltipcallback">swplot.tooltipcallback</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swplot_tooltipstring">swplot.tooltipstring</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">swpref ✔</a>
+      <ul>
+          
+          
+          
+          <li><a href="swpref">Description</a></li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Files</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swpref_getpref">swpref.getpref</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swpref_setpref">swpref.setpref</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">swsym ✔</a>
+      <ul>
+          
+          
+          
+          <li><a href="swsym">Description</a></li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Files</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swsym_add">swsym.add</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_bond">swsym.bond</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_generator">swsym.generator</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_genreduce">swsym.genreduce</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_isop">swsym.isop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_operator">swsym.operator</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_oporder">swsym.oporder</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_point">swsym.point</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swsym_position">swsym.position</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="active"><a href="swsym_str">swsym.str</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">swfunc ✔</a>
+      <ul>
+          
+          
+          
+          <li><a href="swfunc">Description</a></li>
+          
+          
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Files</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="swfunc_gauss">swfunc.gauss</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swfunc_gaussfwhm">swfunc.gaussfwhm</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swfunc_lorfwhm">swfunc.lorfwhm</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swfunc_pvoigt">swfunc.pvoigt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="swfunc_voigtfwhm">swfunc.voigtfwhm</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">swsym.str</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">generates a string equivalent of symmetry operators</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+  <h3 id="syntax">Syntax</h3>
+
+<p><code class="highlighter-rouge">symstr = swsym.str(symop)</code></p>
+
+<h3 id="description">Description</h3>
+
+<p><code class="highlighter-rouge">symStr = swsym.str(symOp)</code> generates a string equivalent of the given
+symmetry operator matrix. The string contains the operators separated by
+<code class="highlighter-rouge">;</code> and the <script type="math/tex">xyz</script> axis transformations are separated by <code class="highlighter-rouge">,</code>. For example
+a valid symmetry operator is <code class="highlighter-rouge">'x,y+1/2,z+1/2'</code>. Translations are given as
+fractions and the <code class="highlighter-rouge">'xyz'</code> letters correspond to the 3 crystal axes.</p>
+
+<h3 id="input-arguments">Input Arguments</h3>
+
+<dl>
+  <dt><code class="highlighter-rouge">symOp</code></dt>
+  <dd>Symmetry operators in a matrix with dimensions of <script type="math/tex">[3\times 4\times
+n_{op}]</script>, where rotations matrices are stored in <code class="highlighter-rouge">symOp(:,1:3,:)</code> and
+and translation vectors in <code class="highlighter-rouge">symOp(:,4,:)</code>.</dd>
+</dl>
+
+<h3 id="output-arguments">Output Arguments</h3>
+
+<dl>
+  <dt><code class="highlighter-rouge">strSym</code></dt>
+  <dd>String that contains the symmetry operations.</dd>
+</dl>
+
+<h3 id="see-also">See Also</h3>
+
+<p><a href="swsym_add">swsym.add</a> | <a href="swsym_generator">swsym.generator</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4002/swsym_str";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "swsym_str"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://spinw-1.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Sándor Tóth. <br />
+ Site last generated: Oct 13, 2017 <br />
+<p><img src="images/logo_small.png" alt="SpinW3" width="50"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-30000935-4','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

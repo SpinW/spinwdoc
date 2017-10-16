@@ -1,0 +1,2188 @@
+[
+
+
+
+
+{
+"title": "Functions in swfiles",
+"tags": "",
+"keywords": "sample",
+"url": "swfiles",
+"summary": "unstructured functions"
+}
+,
+
+
+
+
+
+{
+"title": "gm_planar",
+"tags": "",
+"keywords": "sample",
+"url": "gm_planar",
+"summary": "planar magnetic structure constraint function"
+}
+,
+
+
+
+{
+"title": "gm_planard",
+"tags": "",
+"keywords": "sample",
+"url": "gm_planard",
+"summary": "planar magnetic structure constraint function"
+}
+,
+
+
+
+{
+"title": "gm_spherical3d",
+"tags": "",
+"keywords": "sample",
+"url": "gm_spherical3d",
+"summary": "magnetic structure constraint function with spherical parameterisation"
+}
+,
+
+
+
+{
+"title": "gm_spherical3dd",
+"tags": "",
+"keywords": "sample",
+"url": "gm_spherical3dd",
+"summary": "magnetic structure constraint function with spherical parameterisation"
+}
+,
+
+
+
+{
+"title": "Documentation for SpinW",
+"tags": "getting_started",
+"keywords": "homepage",
+"url": "index.html",
+"summary": ""
+}
+,
+
+
+
+
+
+
+
+
+
+{
+"title": "spinw.abc method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_abc",
+"summary": "returns lattice parameters and angles"
+}
+,
+
+
+
+{
+"title": "spinw.addaniso method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addaniso",
+"summary": "assigns anisotropy to magnetic sites"
+}
+,
+
+
+
+{
+"title": "spinw.addatom method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addatom",
+"summary": "adds new atom"
+}
+,
+
+
+
+{
+"title": "spinw.addcoupling method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addcoupling",
+"summary": "assigns an exchange matrix to a bond"
+}
+,
+
+
+
+{
+"title": "spinw.addg method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addg",
+"summary": "assigns g-tensor to magnetic atoms"
+}
+,
+
+
+
+{
+"title": "spinw.addmatrix method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addmatrix",
+"summary": "adds new [3x3] matrix"
+}
+,
+
+
+
+{
+"title": "spinw.addtwin method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_addtwin",
+"summary": "adds crystallographic twins"
+}
+,
+
+
+
+{
+"title": "spinw.anneal method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_anneal",
+"summary": "performs simulated annealing of spins"
+}
+,
+
+
+
+{
+"title": "spinw.annealloop method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_annealloop",
+"summary": "parameter sweep for simulated annealing"
+}
+,
+
+
+
+{
+"title": "spinw.atom method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_atom",
+"summary": "generates symmetry equivalent atomic positions"
+}
+,
+
+
+
+{
+"title": "spinw.basisvector method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_basisvector",
+"summary": "generates lattice vectors"
+}
+,
+
+
+
+{
+"title": "spinw.cache property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_cache",
+"summary": "stores temporary values"
+}
+,
+
+
+
+{
+"title": "spinw.clearcache method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_clearcache",
+"summary": "clears the cache"
+}
+,
+
+
+
+{
+"title": "spinw.copy method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_copy",
+"summary": "clones spinw object"
+}
+,
+
+
+
+{
+"title": "spinw.coupling property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_coupling",
+"summary": "stores the list of bonds"
+}
+,
+
+
+
+{
+"title": "spinw.delete method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_delete",
+"summary": "DELETE   Delete a handle object."
+}
+,
+
+
+
+{
+"title": "spinw.disp method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_disp",
+"summary": "prints information"
+}
+,
+
+
+
+{
+"title": "spinw.energy method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_energy",
+"summary": "calculates the ground state energy"
+}
+,
+
+
+
+{
+"title": "spinw.export method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_export",
+"summary": "export data into file"
+}
+,
+
+
+
+{
+"title": "spinw.field method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_field",
+"summary": "get/set magnetic field value"
+}
+,
+
+
+
+{
+"title": "spinw.fileid method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_fileid",
+"summary": "determines file object for text output"
+}
+,
+
+
+
+{
+"title": "spinw.fitspec method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_fitspec",
+"summary": "fits experimental spin wave data"
+}
+,
+
+
+
+{
+"title": "spinw.formula method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_formula",
+"summary": "returns basic physical properties"
+}
+,
+
+
+
+{
+"title": "spinw.fourier method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_fourier",
+"summary": "calculates the Fourier transformation of the Hamiltonian"
+}
+,
+
+
+
+{
+"title": "spinw.fouriersym method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_fouriersym",
+"summary": "calculates the Fourier transformation of the symbolic Hamiltonian"
+}
+,
+
+
+
+{
+"title": "spinw.gencoupling method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_gencoupling",
+"summary": "generates bond list"
+}
+,
+
+
+
+{
+"title": "spinw.genlattice method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_genlattice",
+"summary": "generates crystal lattice"
+}
+,
+
+
+
+{
+"title": "spinw.genmagstr method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_genmagstr",
+"summary": "generates magnetic structure"
+}
+,
+
+
+
+{
+"title": "spinw.getmatrix method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_getmatrix",
+"summary": "determines the symmetry allowed tensor elements"
+}
+,
+
+
+
+{
+"title": "spinw.horace method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_horace",
+"summary": "spin wave calculator with interface to Horace"
+}
+,
+
+
+
+{
+"title": "spinw.intmatrix method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_intmatrix",
+"summary": "generates interaction matrix"
+}
+,
+
+
+
+{
+"title": "spinw.isvalid method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_isvalid",
+"summary": "ISVALID   Test handle validity."
+}
+,
+
+
+
+{
+"title": "spinw.lattice property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_lattice",
+"summary": "stores the unit cell parameters"
+}
+,
+
+
+
+{
+"title": "spinw.listener method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_listener",
+"summary": "LISTENER  Add listener for event without binding the listener to the source object."
+}
+,
+
+
+
+{
+"title": "spinw.mag_str property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_mag_str",
+"summary": "stores the magnetic structure"
+}
+,
+
+
+
+{
+"title": "spinw.magstr method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_magstr",
+"summary": "returns single-k magnetic structure representation"
+}
+,
+
+
+
+{
+"title": "spinw.magtable method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_magtable",
+"summary": "creates tabulated list of all magnetic moments stored in obj"
+}
+,
+
+
+
+{
+"title": "spinw.matom method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_matom",
+"summary": "generates magnetic lattice"
+}
+,
+
+
+
+{
+"title": "spinw.matparser method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_matparser",
+"summary": "parses parameter vector into matrices"
+}
+,
+
+
+
+{
+"title": "spinw.matrix property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_matrix",
+"summary": "stores 3x3 matrices for using them in the Hailtonian"
+}
+,
+
+
+
+{
+"title": "spinw class",
+"tags": "",
+"keywords": "sample",
+"url": "spinw",
+"summary": "class to store and solve magnetic Hamiltonians"
+}
+,
+
+
+
+{
+"title": "spinw.moment method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_moment",
+"summary": "calculates quantum correction on ordered moment"
+}
+,
+
+
+
+{
+"title": "spinw.natom method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_natom",
+"summary": "number of symmetry unrelated atoms"
+}
+,
+
+
+
+{
+"title": "spinw.newcell method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_newcell",
+"summary": "transforms lattice"
+}
+,
+
+
+
+{
+"title": "spinw.nmagext method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_nmagext",
+"summary": "number of magnetic sites"
+}
+,
+
+
+
+{
+"title": "spinw.nosym method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_nosym",
+"summary": "reduces symmetry to P0"
+}
+,
+
+
+
+{
+"title": "spinw.notwin method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_notwin",
+"summary": "removes all twins"
+}
+,
+
+
+
+{
+"title": "spinw.optmagk method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_optmagk",
+"summary": "determines the magnetic propagation vector"
+}
+,
+
+
+
+{
+"title": "spinw.optmagsteep method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_optmagsteep",
+"summary": "quench optimization of magnetic structure"
+}
+,
+
+
+
+{
+"title": "spinw.optmagstr method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_optmagstr",
+"summary": "general magnetic structure optimizer"
+}
+,
+
+
+
+{
+"title": "spinw.plot method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_plot",
+"summary": "plots 3D model"
+}
+,
+
+
+
+{
+"title": "spinw.powspec method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_powspec",
+"summary": "calculates powder averaged spin wave spectra"
+}
+,
+
+
+
+{
+"title": "spinw.quickham method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_quickham",
+"summary": "quickly generate magnetic Hamiltonian"
+}
+,
+
+
+
+{
+"title": "spinw.rl method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_rl",
+"summary": "generates reciprocal lattice vectors"
+}
+,
+
+
+
+{
+"title": "spinw.setmatrix method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_setmatrix",
+"summary": "sets exchange tensor values"
+}
+,
+
+
+
+{
+"title": "spinw.setunit method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_setunit",
+"summary": "sets the physical units"
+}
+,
+
+
+
+{
+"title": "spinw.single_ion property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_single_ion",
+"summary": "stores single ion terms of the Hamiltonian"
+}
+,
+
+
+
+{
+"title": "spinw.spinw method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_spinw",
+"summary": "spinw constructor"
+}
+,
+
+
+
+{
+"title": "spinw.spinwave method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_spinwave",
+"summary": "calculates spin correlation function using linear spin wave theory"
+}
+,
+
+
+
+{
+"title": "spinw.spinwavesym method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_spinwavesym",
+"summary": "calculates symbolic spin wave dispersion"
+}
+,
+
+
+
+{
+"title": "spinw.struct method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_struct",
+"summary": "converts properties into struct"
+}
+,
+
+
+
+{
+"title": "spinw.structfact method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_structfact",
+"summary": "calculates magnetic and nuclear structure factor"
+}
+,
+
+
+
+{
+"title": "spinw.symbolic method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_symbolic",
+"summary": "switches between symbolic/numeric mode"
+}
+,
+
+
+
+{
+"title": "spinw.symmetry method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_symmetry",
+"summary": "returns whether symmetry is defined"
+}
+,
+
+
+
+{
+"title": "spinw.symop method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_symop",
+"summary": "generates the bond symmetry operators"
+}
+,
+
+
+
+{
+"title": "spinw.table method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_table",
+"summary": "outputs easy to read tables of internal data"
+}
+,
+
+
+
+{
+"title": "spinw.temperature method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_temperature",
+"summary": "get/set temperature"
+}
+,
+
+
+
+{
+"title": "spinw.twin property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_twin",
+"summary": "stores the crystal twin parameters"
+}
+,
+
+
+
+{
+"title": "spinw.twinq method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_twinq",
+"summary": "calculates equivalent Q point in twins"
+}
+,
+
+
+
+{
+"title": "spinw.unit property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_unit",
+"summary": "stores the physical units for the Hamiltonian"
+}
+,
+
+
+
+{
+"title": "spinw.unit_cell property",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_unit_cell",
+"summary": "stores the atoms in the crystallographic unit cell"
+}
+,
+
+
+
+{
+"title": "spinw.unitcell method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_unitcell",
+"summary": "returns unit cell data"
+}
+,
+
+
+
+{
+"title": "spinw.validate method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_validate",
+"summary": "validates spinw object properties"
+}
+,
+
+
+
+{
+"title": "spinw.version method",
+"tags": "",
+"keywords": "sample",
+"url": "spinw_version",
+"summary": "returns the version of SpinW"
+}
+,
+
+
+
+{
+"title": "sw_atomdata",
+"tags": "",
+"keywords": "sample",
+"url": "sw_atomdata",
+"summary": "returns information on chemical elements"
+}
+,
+
+
+
+{
+"title": "sw_basismat",
+"tags": "",
+"keywords": "sample",
+"url": "sw_basismat",
+"summary": "determines allowed tensor components in a given point group symmetry"
+}
+,
+
+
+
+{
+"title": "sw_bonddim",
+"tags": "",
+"keywords": "sample",
+"url": "sw_bonddim",
+"summary": "find dimensionality of a periodic bond network"
+}
+,
+
+
+
+{
+"title": "sw_bose",
+"tags": "",
+"keywords": "sample",
+"url": "sw_bose",
+"summary": "coefficient for boson correlation functions"
+}
+,
+
+
+
+{
+"title": "sw_cartesian",
+"tags": "",
+"keywords": "sample",
+"url": "sw_cartesian",
+"summary": "creates a right handed Cartesian coordinate system"
+}
+,
+
+
+
+{
+"title": "sw_cff",
+"tags": "",
+"keywords": "sample",
+"url": "sw_cff",
+"summary": "returns the atomic charge form factor values for X-ray scattering"
+}
+,
+
+
+
+{
+"title": "sw_converter",
+"tags": "",
+"keywords": "sample",
+"url": "sw_converter",
+"summary": "converts energy and momentum units for a given particle"
+}
+,
+
+
+
+{
+"title": "sw_econtract",
+"tags": "",
+"keywords": "sample",
+"url": "sw_econtract",
+"summary": "converts (Q,E) values to Q values for diffraction instrument"
+}
+,
+
+
+
+{
+"title": "sw_egrid",
+"tags": "",
+"keywords": "sample",
+"url": "sw_egrid",
+"summary": "calculates energy bins of a spectrum"
+}
+,
+
+
+
+{
+"title": "sw_extendlattice",
+"tags": "",
+"keywords": "sample",
+"url": "sw_extendlattice",
+"summary": "creates superlattice"
+}
+,
+
+
+
+{
+"title": "sw_filelist",
+"tags": "",
+"keywords": "sample",
+"url": "sw_filelist",
+"summary": "lists spinw objects in the Matlab workspace or in a .mat file"
+}
+,
+
+
+
+{
+"title": "sw_freemem",
+"tags": "",
+"keywords": "sample",
+"url": "sw_freemem",
+"summary": "calculates the available memory"
+}
+,
+
+
+
+{
+"title": "sw_fstat",
+"tags": "",
+"keywords": "sample",
+"url": "sw_fstat",
+"summary": "calculates thermodynamical averages"
+}
+,
+
+
+
+{
+"title": "sw_fsub",
+"tags": "",
+"keywords": "sample",
+"url": "sw_fsub",
+"summary": "simple graph vertex coloring"
+}
+,
+
+
+
+{
+"title": "sw_import",
+"tags": "",
+"keywords": "sample",
+"url": "sw_import",
+"summary": "create SpinW object from .cif and FullProf Studio .fst files"
+}
+,
+
+
+
+{
+"title": "sw_instrument",
+"tags": "",
+"keywords": "sample",
+"url": "sw_instrument",
+"summary": "convolutes spectrum with resolution function"
+}
+,
+
+
+
+{
+"title": "sw_magdomain",
+"tags": "",
+"keywords": "sample",
+"url": "sw_magdomain",
+"summary": "calculates the spin-spin correlation function for magnetic domains"
+}
+,
+
+
+
+{
+"title": "sw_mattype",
+"tags": "",
+"keywords": "sample",
+"url": "sw_mattype",
+"summary": "classifies square matrices"
+}
+,
+
+
+
+{
+"title": "sw_mex",
+"tags": "",
+"keywords": "sample",
+"url": "sw_mex",
+"summary": "compiles and tests the mex files"
+}
+,
+
+
+
+{
+"title": "sw_mff",
+"tags": "",
+"keywords": "sample",
+"url": "sw_mff",
+"summary": "returns the magnetic form factor values and coefficients"
+}
+,
+
+
+
+{
+"title": "sw_mirror",
+"tags": "",
+"keywords": "sample",
+"url": "sw_mirror",
+"summary": "mirrors a 3D vector"
+}
+,
+
+
+
+{
+"title": "sw_model",
+"tags": "",
+"keywords": "sample",
+"url": "sw_model",
+"summary": "creates predefined spin models"
+}
+,
+
+
+
+{
+"title": "sw_multicolor",
+"tags": "",
+"keywords": "sample",
+"url": "sw_multicolor",
+"summary": "overlays monochrome maps into a single RGB map"
+}
+,
+
+
+
+{
+"title": "sw_nb",
+"tags": "",
+"keywords": "sample",
+"url": "sw_nb",
+"summary": "returns the bound coherent neutron scattering length"
+}
+,
+
+
+
+{
+"title": "sw_neutron",
+"tags": "",
+"keywords": "sample",
+"url": "sw_neutron",
+"summary": "calculates neutron scattering cross section"
+}
+,
+
+
+
+{
+"title": "sw_nvect",
+"tags": "",
+"keywords": "sample",
+"url": "sw_nvect",
+"summary": "determines the best normal vector for the set of vectors"
+}
+,
+
+
+
+{
+"title": "sw_omegasum",
+"tags": "",
+"keywords": "sample",
+"url": "sw_omegasum",
+"summary": "removes degenerate and ghost magnon modes from spectrum"
+}
+,
+
+
+
+{
+"title": "sw_parstr",
+"tags": "",
+"keywords": "sample",
+"url": "sw_parstr",
+"summary": "parses input string"
+}
+,
+
+
+
+{
+"title": "sw_plotspec",
+"tags": "",
+"keywords": "sample",
+"url": "sw_plotspec",
+"summary": "plots spectrum"
+}
+,
+
+
+
+{
+"title": "sw_qgrid",
+"tags": "",
+"keywords": "sample",
+"url": "sw_qgrid",
+"summary": "creates a Q grid"
+}
+,
+
+
+
+{
+"title": "sw_qscan",
+"tags": "",
+"keywords": "sample",
+"url": "sw_qscan",
+"summary": "creates continuous line between coordinates"
+}
+,
+
+
+
+{
+"title": "sw_readparam",
+"tags": "",
+"keywords": "sample",
+"url": "sw_readparam",
+"summary": "parse input arguments"
+}
+,
+
+
+
+{
+"title": "sw_readspec",
+"tags": "",
+"keywords": "sample",
+"url": "sw_readspec",
+"summary": "read spin wave dispersion data from file"
+}
+,
+
+
+
+{
+"title": "sw_readtable",
+"tags": "",
+"keywords": "sample",
+"url": "sw_readtable",
+"summary": "reads tabular data from text"
+}
+,
+
+
+
+{
+"title": "sw_res",
+"tags": "",
+"keywords": "sample",
+"url": "sw_res",
+"summary": "fits energy resolution with polynomial"
+}
+,
+
+
+
+{
+"title": "sw_resconv",
+"tags": "",
+"keywords": "sample",
+"url": "sw_resconv",
+"summary": "convolution of a matrix and a Gaussian"
+}
+,
+
+
+
+{
+"title": "sw_rootdir",
+"tags": "",
+"keywords": "sample",
+"url": "sw_rootdir",
+"summary": "path to the SpinW folder"
+}
+,
+
+
+
+{
+"title": "sw_rot",
+"tags": "",
+"keywords": "sample",
+"url": "sw_rot",
+"summary": "rotates vectorsin 3D"
+}
+,
+
+
+
+{
+"title": "sw_rotmat",
+"tags": "",
+"keywords": "sample",
+"url": "sw_rotmat",
+"summary": "generates 3D rotation matrix"
+}
+,
+
+
+
+{
+"title": "sw_rotmatd",
+"tags": "",
+"keywords": "sample",
+"url": "sw_rotmatd",
+"summary": "generates 3D rotation matrix"
+}
+,
+
+
+
+{
+"title": "sw_timeit",
+"tags": "",
+"keywords": "sample",
+"url": "sw_timeit",
+"summary": "timer and remaining time estimator"
+}
+,
+
+
+
+{
+"title": "sw_tofres",
+"tags": "",
+"keywords": "sample",
+"url": "sw_tofres",
+"summary": "convolutes the spectrum with a Q bin"
+}
+,
+
+
+
+{
+"title": "sw_uniquetol",
+"tags": "",
+"keywords": "sample",
+"url": "sw_uniquetol",
+"summary": "returns the unique column vectors within tolerance"
+}
+,
+
+
+
+{
+"title": "sw_update",
+"tags": "",
+"keywords": "sample",
+"url": "sw_update",
+"summary": "updates the SpinW installation from the internet"
+}
+,
+
+
+
+{
+"title": "sw_version",
+"tags": "",
+"keywords": "sample",
+"url": "sw_version",
+"summary": "returns the installed version of SpinW"
+}
+,
+
+
+
+{
+"title": "sw_xray",
+"tags": "",
+"keywords": "sample",
+"url": "sw_xray",
+"summary": "calculates x-ray scattering cross section"
+}
+,
+
+
+
+{
+"title": "swdoc",
+"tags": "",
+"keywords": "sample",
+"url": "swdoc",
+"summary": "opens the SpinW help"
+}
+,
+
+
+
+{
+"title": "swfunc package",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc",
+"summary": "package of mathematical functions"
+}
+,
+
+
+
+{
+"title": "swfunc.gauss",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc_gauss",
+"summary": "normalized Gaussian function"
+}
+,
+
+
+
+{
+"title": "swfunc.gaussfwhm",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc_gaussfwhm",
+"summary": "normalized Gaussian function"
+}
+,
+
+
+
+{
+"title": "swfunc.lorfwhm",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc_lorfwhm",
+"summary": "normalized Lorentzian function"
+}
+,
+
+
+
+{
+"title": "swfunc.pvoigt",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc_pvoigt",
+"summary": "pseudovoigt function"
+}
+,
+
+
+
+{
+"title": "swfunc.voigtfwhm",
+"tags": "",
+"keywords": "sample",
+"url": "swfunc_voigtfwhm",
+"summary": "normalized voigt function"
+}
+,
+
+
+
+{
+"title": "swplot package",
+"tags": "",
+"keywords": "sample",
+"url": "swplot",
+"summary": "package for 3D plotting"
+}
+,
+
+
+
+{
+"title": "swplot.activefigure",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_activefigure",
+"summary": "returns the handle of the active swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.add",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_add",
+"summary": "adds a graphical object to an swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.arrow",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_arrow",
+"summary": "creates a 3D arrow patch"
+}
+,
+
+
+
+{
+"title": "swplot.base",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_base",
+"summary": "sets the basis vectors of an swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.circle",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_circle",
+"summary": "creates a 3D circle surface patch"
+}
+,
+
+
+
+{
+"title": "swplot.clear",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_clear",
+"summary": "clears swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.close",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_close",
+"summary": "closes swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.color",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_color",
+"summary": "generates RGB code from color name"
+}
+,
+
+
+
+{
+"title": "swplot.cylinder",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_cylinder",
+"summary": "creates a closed/open 3D cylinder patch"
+}
+,
+
+
+
+{
+"title": "swplot.delete",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_delete",
+"summary": "deletes objects and corresponding data from swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.ellipsoid",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_ellipsoid",
+"summary": "creates a 3D ellipsoid patch"
+}
+,
+
+
+
+{
+"title": "swplot.export",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_export",
+"summary": "exports swplot figure into raster/vector image"
+}
+,
+
+
+
+{
+"title": "swplot.figure",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_figure",
+"summary": "creates swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.findobj",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_findobj",
+"summary": "finds object data on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.getdata",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_getdata",
+"summary": "gets the data stored in an swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.icomesh",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_icomesh",
+"summary": "creates mesh by subdividing icosahedron faces"
+}
+,
+
+
+
+{
+"title": "swplot.ishg",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_ishg",
+"summary": "does the swplot figure uses hgtransform"
+}
+,
+
+
+
+{
+"title": "swplot.legend",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_legend",
+"summary": "draws legend to the swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.line",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_line",
+"summary": "draws a 3D line using patch"
+}
+,
+
+
+
+{
+"title": "swplot.logo",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_logo",
+"summary": "creates the logo of SpinW and saves to a .png file"
+}
+,
+
+
+
+{
+"title": "swplot.mouse",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_mouse",
+"summary": "adds mouse callbacks to swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.patchfacefcn",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_patchfacefcn",
+"summary": "callback function for patch face selection"
+}
+,
+
+
+
+{
+"title": "swplot.plot",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plot",
+"summary": "plots objects to swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.plotatom",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotatom",
+"summary": "plots crystal structure"
+}
+,
+
+
+
+{
+"title": "swplot.plotbase",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotbase",
+"summary": "plots the edges of unit cells on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.plotbond",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotbond",
+"summary": "plots magnetic bonds"
+}
+,
+
+
+
+{
+"title": "swplot.plotcell",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotcell",
+"summary": "plots the edges of unit cells on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.plotchem",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotchem",
+"summary": "plots polyhedra or chemical bonds"
+}
+,
+
+
+
+{
+"title": "swplot.plotion",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotion",
+"summary": "plots magnetic ion properties"
+}
+,
+
+
+
+{
+"title": "swplot.plotmag",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_plotmag",
+"summary": "plots magnetic structure"
+}
+,
+
+
+
+{
+"title": "swplot.polyhedron",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_polyhedron",
+"summary": "draw convex polyhedra or polynom from vertex list"
+}
+,
+
+
+
+{
+"title": "swplot.raytriangle",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_raytriangle",
+"summary": "finds if a ray crosses a triangle"
+}
+,
+
+
+
+{
+"title": "swplot.setrangegui",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_setrangegui",
+"summary": "shows a window to change the plotting range of an swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.subfigure",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_subfigure",
+"summary": "changes position of figure window on the screen"
+}
+,
+
+
+
+{
+"title": "swplot.subplot",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_subplot",
+"summary": "create subplots with variable gaps between axes"
+}
+,
+
+
+
+{
+"title": "swplot.text",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_text",
+"summary": "draws a text at a point in 3D"
+}
+,
+
+
+
+{
+"title": "swplot.tooltip",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_tooltip",
+"summary": "creates tooltip axis on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.tooltipcallback",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_tooltipcallback",
+"summary": "call tooltip on clicking an object on an swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.tooltipstring",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_tooltipstring",
+"summary": "generate tooltip string from the data of a graphical object"
+}
+,
+
+
+
+{
+"title": "swplot.transform",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_transform",
+"summary": "transform objects on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.translate",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_translate",
+"summary": "translate objects on swplot figure"
+}
+,
+
+
+
+{
+"title": "swplot.view",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_view",
+"summary": "control 3D view of swplot"
+}
+,
+
+
+
+{
+"title": "swplot.zoom",
+"tags": "",
+"keywords": "sample",
+"url": "swplot_zoom",
+"summary": "zooming objects on swplot figure"
+}
+,
+
+
+
+{
+"title": "swpref package",
+"tags": "",
+"keywords": "sample",
+"url": "swpref",
+"summary": "package to handle persistent settings"
+}
+,
+
+
+
+{
+"title": "swpref.getpref",
+"tags": "",
+"keywords": "sample",
+"url": "swpref_getpref",
+"summary": "returns SpinW global preferences"
+}
+,
+
+
+
+{
+"title": "swpref.pref",
+"tags": "",
+"keywords": "sample",
+"url": "swpref_pref",
+"summary": "internal helper for SpinW preferences"
+}
+,
+
+
+
+{
+"title": "swpref.setpref",
+"tags": "",
+"keywords": "sample",
+"url": "swpref_setpref",
+"summary": "sets SpinW global preferences"
+}
+,
+
+
+
+{
+"title": "swsym package",
+"tags": "",
+"keywords": "sample",
+"url": "swsym",
+"summary": "package to handle symmetry operations"
+}
+,
+
+
+
+{
+"title": "swsym.add",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_add",
+"summary": "saves user defined symmetry operators"
+}
+,
+
+
+
+{
+"title": "swsym.bond",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_bond",
+"summary": "generates all symmetry equivalent bonds"
+}
+,
+
+
+
+{
+"title": "swsym.generator",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_generator",
+"summary": "returns symmetry operators of a given space group"
+}
+,
+
+
+
+{
+"title": "swsym.genreduce",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_genreduce",
+"summary": "reduces symmetry operators to the generators"
+}
+,
+
+
+
+{
+"title": "swsym.isop",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_isop",
+"summary": "determines if a matrix is symmetry operator"
+}
+,
+
+
+
+{
+"title": "swsym.operator",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_operator",
+"summary": "generates all symmetry elements from given space group"
+}
+,
+
+
+
+{
+"title": "swsym.oporder",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_oporder",
+"summary": "determine the order of the symmetry operator"
+}
+,
+
+
+
+{
+"title": "swsym.point",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_point",
+"summary": "determines local point group symmetry in a space group"
+}
+,
+
+
+
+{
+"title": "swsym.position",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_position",
+"summary": "generates symmetry equivalent positions"
+}
+,
+
+
+
+{
+"title": "swsym.str",
+"tags": "",
+"keywords": "sample",
+"url": "swsym_str",
+"summary": "generates a string equivalent of symmetry operators"
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "Sample post",
+"tags": "newsgetting_started",
+"keywords": "",
+"url": "samplepost.html",
+"summary": "This is some summary frontmatter for my sample post."
+}
+,
+
+
+{
+"title": "Welcome to Jekyll!",
+"tags": "news",
+"keywords": "",
+"url": "myupdate.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "Test post from last year",
+"tags": "news",
+"keywords": "",
+"url": "test-post-from-last-year.html",
+"summary": ""
+}
+
+
+
+]
