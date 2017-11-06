@@ -36,13 +36,6 @@ cryst.getmatrix('mat','A')
 ```
 *Output*
 ```
-The symmetry analysis of the anisotropy matrix of atom 1 ('MCu2'):
- position (in lattice units): [0.000,0.000,0.000]
- label of the assigned matrix: 'A'
- allowed elements in the symmetric matrix:
-  S = | A| 0| 0|
-      | 0| A| 0|
-      | 0| 0| B|
 ```
  
   
@@ -103,6 +96,14 @@ Optional inputs:
   atoms! For single-ion anisotropy and g-tensor antisymmetric matrices
   are forbidden in any symmetry." %}
   
+`'fid'`
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
+  * `0`   No text output is generated.
+  * `1`   Text output in the MATLAB Command Window.
+  * `fid` File ID provided by the `fopen` command, the output is written
+          into the opened file stream.
+ 
 ### Output Arguments
   
 `aMat`

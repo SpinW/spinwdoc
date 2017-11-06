@@ -1,7 +1,7 @@
 entries:
 - title: Sidebar
   product: SpinW
-  version: R1453
+  version: R1457
   folders:
   - title: Documentation
     output: web, pdf
@@ -124,7 +124,6 @@ entries:
         - {title: spinw.copy, url: /spinw_copy, output: 'web, pdf'}
         - {title: spinw.delete, url: /spinw_delete, output: 'web, pdf'}
         - {title: spinw.export, url: /spinw_export, output: 'web, pdf'}
-        - {title: spinw.fileid, url: /spinw_fileid, output: 'web, pdf'}
         - {title: spinw.isvalid, url: /spinw_isvalid, output: 'web, pdf'}
         - {title: spinw.listener, url: /spinw_listener, output: 'web, pdf'}
         - {title: spinw.spinw, url: /spinw_spinw, output: 'web, pdf'}

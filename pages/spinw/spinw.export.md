@@ -6,11 +6,16 @@
   
 ### Syntax
   
-`out = export(obj,Name,Value)`
+`export(obj,Name,Value)`
   
+`outStr = export(obj,Name,Value)`
+ 
 ### Description
   
-`out = export(obj,Name,Value)` exports different types of spinw object data.
+`export(obj,Name,Value)` exports different types of spinw object data.
+ 
+`outStr = export(obj,Name,Value)` returns a string instead of writing the
+data into a file.
  
 ### Examples
   
@@ -42,10 +47,10 @@ cryst.export('format','pcr','path','test.pcr');
 : Path to a file into which the data will be exported, `out` will
   be `true` if the file succesfully saved, otherwise `false`.
  
-`'fid'`
+`'fileid'`
 : File identifier that is already opened in Matlab using the
-  `fid = fopen(...)` command. `out` will be the input `fid`. Don't
-  forget to close the file afterwards.
+  `fileid = fopen(...)` command. Don't forget to close the file
+  afterwards.
    
 #### File format dependent options:
    
@@ -59,8 +64,8 @@ cryst.export('format','pcr','path','test.pcr');
   * `'per'`   Periodic, interactions between extended unit cells are
     retained.
    
-{% include note.html content=" If neither `path` nor `fid` is given, the `out` will be a cell containing
-strings for each line of the text output." %}
+{% include note.html content=" If neither `path` nor `fileid` is given, the `outStr` will be a
+cell containing strings for each line of the text output." %}
    
 
 {% include links.html %}

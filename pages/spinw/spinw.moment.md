@@ -37,7 +37,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.2608
+    0.2617
 ```
  
  
@@ -57,7 +57,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.1967    0.1967    0.1967    0.1967
+    0.1965    0.1965    0.1965    0.1965
 ```
  
  
@@ -85,6 +85,14 @@ dS =
 `'omega_tol'`
 : Tolerance on the energy difference of degenerate modes when
   diagonalising the quadratic form, default value is $$10^{-5}$$.
+ 
+`'fid'`
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
+  * `0`   No text output is generated.
+  * `1`   Text output in the MATLAB Command Window.
+  * `fid` File ID provided by the `fopen` command, the output is written
+          into the opened file stream.
   
 ### Output Arguments
   

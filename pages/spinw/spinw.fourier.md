@@ -68,12 +68,12 @@ system size). The single ion anisotropy is not included in the sum.
               matrices to reduce memory consumption.
   
 `'fid'`
-: Defines whether to provide text output. Default is defined
-  by the `swpref.getpref('fid')` command. The possible values:
-  * `0`       No text output is generated.
-  * `1`       Text output in the MATLAB Command Window.
-  * `fid`     File ID provided by the [fopen](https://www.mathworks.com/help/matlab/ref/fopen.html) command, the
-              output is written into the opened file stream.
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
+  * `0`   No text output is generated.
+  * `1`   Text output in the MATLAB Command Window.
+  * `fid` File ID provided by the `fopen` command, the output is written
+          into the opened file stream.
   
 ### Output Arguments
   

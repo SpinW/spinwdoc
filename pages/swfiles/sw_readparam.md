@@ -3,13 +3,13 @@
   sidebar: sw_sidebar, permalink: sw_readparam, folder: swfiles, mathjax: 'true'}
 
 ---
-  
+ 
 ### Syntax
-  
+ 
 `parsed = sw_readparam(format,Name,Value)`
-  
+ 
 ### Description
-  
+ 
 `parsed = sw_readparam(format,Name,Vale)` parses name-value pair
 arguments. The parsing is controlled by the given `format` input. The
 name-value pairs are converted into the parsed struct which has field
@@ -18,9 +18,9 @@ taken from the input. `format` can also define required dimensionality of
 a given value and default values for select parameters.
  
 `sw_readparam` is used in most of the method functions of [spinw](spinw).
-  
+ 
 ### Input Arguments
-  
+ 
 `format`
 : A struct with the following fields:
   * `fname` Field names, $$n_{param}$$ strings in cell.

@@ -94,6 +94,14 @@ plot(cut(d3dobj,[],[],[4 5]))
   fun(obj)
   ```
   
+`'fid'`
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
+  * `0`   No text output is generated.
+  * `1`   Text output in the MATLAB Command Window.
+  * `fid` File ID provided by the `fopen` command, the output is written
+          into the opened file stream.
+ 
 ### Output Arguments
   
 `w`

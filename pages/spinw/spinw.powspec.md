@@ -149,6 +149,14 @@ most important parameters are:
   case is wrong, however by examining the eigenvalues it can give a hint
   where the problem is." %}
  
+`'fid'`
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
+  * `0`   No text output is generated.
+  * `1`   Text output in the MATLAB Command Window.
+  * `fid` File ID provided by the `fopen` command, the output is written
+          into the opened file stream.
+ 
 `'tid'`
 : Determines if the elapsed and required time for the calculation is
   displayed. The default value is determined by the `tid` preference

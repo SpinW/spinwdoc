@@ -12,16 +12,13 @@
 	"folders":
 	[
 		{
-			"path": "~/spinwdoc_git"
+			"path": "."
 		},
 		{
-			"path": "~/spinwdoc_git/pages"
+			"path": "/Users/sandortoth/spinw_git/swfiles"
 		},
 		{
-			"path": "~/spinw_git/docs"
-		},
-		{
-			"path": "~/spinw_git/swfiles"
+			"path": "/Users/sandortoth/spinw_git/docs"
 		}
 	]
 }

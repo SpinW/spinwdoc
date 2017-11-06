@@ -17,7 +17,7 @@ quantum number, form factor, etc.
 ### Examples
   
 To add a magnetic atom with $$S=1$$ at position $$r=(0,0,0)$$ and a
-non-magnetic one at $$r=(1/2 0 0)$$ with red and blue color respectively
+non-magnetic one at $$r=(1/2,0,0)$$ with red and blue color respectively
 use the following command
  
 ```matlab
@@ -102,8 +102,8 @@ crystal.plot
   the structure factor as $$exp(-2W(d))$$.
   
 `update`
-: If true, existing atom with the same label and position as a
-  new one will be updated. Default is true.
+: If `true`, existing atom with the same label and position as a
+  new one will be updated. Default is `true`.
   
 ### Output Arguments
   

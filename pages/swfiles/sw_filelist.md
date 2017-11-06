@@ -27,7 +27,10 @@ sw_filelist
 ```
 *Output*
 ```
-No SpinW variables have been found in the Matlab base workspace.
+SpinW variables in the Matlab base workspace:
+        VarName                                         Title             Creation Date           Completion Date
+           spec                          Powder LSWT spectrum                         -                         -
+          spec1                       Numerical LSWT spectrum      03-Nov-2017 09:20:19      03-Nov-2017 09:20:19
 ```
  
  

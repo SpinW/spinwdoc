@@ -154,7 +154,6 @@ of public methods is below.
  
 * [spinw.copy](spinw_copy) clones spinw object
 * [spinw.export](spinw_export) export data into file
-* [spinw.fileid](spinw_fileid) determines file object for text output
 * [spinw.table](spinw_table) outputs easy to read tables of internal data
 * [spinw.validate](spinw_validate) validates spinw object properties
 * [spinw.version](spinw_version) returns the version of SpinW

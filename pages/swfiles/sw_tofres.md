@@ -43,8 +43,8 @@ data due to low signal to noise ratio of the measurement.
   the number of random $$Q$$ points.
  
 `'fid'`
-: Defines whether to provide text output. Default value is defined in
-  `obj.fid`. The possible values are: 
+: Defines whether to provide text output. The default value is determined
+  by the `fid` preference stored in [swpref]. The possible values are:
   * `0`   No text output is generated.
   * `1`   Text output in the MATLAB Command Window.
   * `fid` File ID provided by the `fopen` command, the output is written
