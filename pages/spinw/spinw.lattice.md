@@ -1,7 +1,7 @@
 ---
 {title: spinw.lattice property, link: spinw.lattice, summary: stores the unit cell
     parameters, keywords: sample, sidebar: sw_sidebar, permalink: spinw_lattice, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

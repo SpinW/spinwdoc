@@ -1,6 +1,6 @@
 ---
 {title: spinw.matom method, link: spinw.matom, summary: generates magnetic lattice,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_matom, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_matom, folder: spinw, mathjax: true}
 
 ---
   

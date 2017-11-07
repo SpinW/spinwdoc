@@ -1,6 +1,6 @@
 ---
 {title: spinw.newcell method, link: spinw.newcell, summary: transforms lattice, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_newcell, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_newcell, folder: spinw, mathjax: true}
 
 ---
   

@@ -1,6 +1,6 @@
 ---
 {title: swplot.clear, link: swplot.clear, summary: clears swplot figure, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_clear, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_clear, folder: swplot, mathjax: true}
 
 ---
   

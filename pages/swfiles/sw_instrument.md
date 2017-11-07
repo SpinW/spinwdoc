@@ -1,7 +1,7 @@
 ---
 {title: sw_instrument, link: sw_instrument, summary: convolutes spectrum with resolution
     function, keywords: sample, sidebar: sw_sidebar, permalink: sw_instrument, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: spinw.basisvector method, link: spinw.basisvector, summary: generates lattice
     vectors, keywords: sample, sidebar: sw_sidebar, permalink: spinw_basisvector,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

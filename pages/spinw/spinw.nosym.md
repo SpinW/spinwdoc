@@ -1,6 +1,6 @@
 ---
 {title: spinw.nosym method, link: spinw.nosym, summary: reduces symmetry to P0, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_nosym, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_nosym, folder: spinw, mathjax: true}
 
 ---
   

@@ -1,6 +1,6 @@
 ---
 {title: sw_fstat, link: sw_fstat, summary: calculates thermodynamical averages, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_fstat, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_fstat, folder: swfiles, mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: spinw.genmagstr method, link: spinw.genmagstr, summary: generates magnetic
     structure, keywords: sample, sidebar: sw_sidebar, permalink: spinw_genmagstr,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

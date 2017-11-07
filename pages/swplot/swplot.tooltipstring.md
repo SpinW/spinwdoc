@@ -1,7 +1,7 @@
 ---
 {title: swplot.tooltipstring, link: swplot.tooltipstring, summary: generates tooltip
     text, keywords: sample, sidebar: sw_sidebar, permalink: swplot_tooltipstring,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

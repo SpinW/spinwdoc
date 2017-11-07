@@ -1,6 +1,6 @@
 ---
 {title: spinw.rl method, link: spinw.rl, summary: generates reciprocal lattice vectors,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_rl, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_rl, folder: spinw, mathjax: true}
 
 ---
   

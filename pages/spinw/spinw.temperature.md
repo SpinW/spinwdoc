@@ -1,7 +1,7 @@
 ---
 {title: spinw.temperature method, link: spinw.temperature, summary: get/set temperature,
   keywords: sample, sidebar: sw_sidebar, permalink: spinw_temperature, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

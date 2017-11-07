@@ -1,6 +1,6 @@
 ---
 {title: swplot.logo, link: swplot.logo, summary: creates the SpinW logo, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_logo, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_logo, folder: swplot, mathjax: true}
 
 ---
   

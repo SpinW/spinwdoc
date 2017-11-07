@@ -1,6 +1,6 @@
 ---
 {title: spinw.plot method, link: spinw.plot, summary: plots 3D model, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_plot, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_plot, folder: spinw, mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: swplot.add, link: swplot.add, summary: adds a graphical object to an swplot
     figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_add, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

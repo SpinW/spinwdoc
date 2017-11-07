@@ -1,6 +1,6 @@
 ---
 {title: sw_bose, link: sw_bose, summary: coefficient for boson correlation functions,
-  keywords: sample, sidebar: sw_sidebar, permalink: sw_bose, folder: swfiles, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: sw_bose, folder: swfiles, mathjax: true}
 
 ---
   

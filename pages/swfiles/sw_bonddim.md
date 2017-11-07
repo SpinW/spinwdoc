@@ -1,7 +1,7 @@
 ---
 {title: sw_bonddim, link: sw_bonddim, summary: find dimensionality of a periodic bond
     network, keywords: sample, sidebar: sw_sidebar, permalink: sw_bonddim, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

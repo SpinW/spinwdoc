@@ -1,7 +1,7 @@
 ---
 {title: spinw.atom method, link: spinw.atom, summary: generates symmetry equivalent
     atomic positions, keywords: sample, sidebar: sw_sidebar, permalink: spinw_atom,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

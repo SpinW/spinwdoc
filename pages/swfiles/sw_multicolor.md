@@ -1,7 +1,7 @@
 ---
 {title: sw_multicolor, link: sw_multicolor, summary: overlays monochrome maps into
     a single RGB map, keywords: sample, sidebar: sw_sidebar, permalink: sw_multicolor,
-  folder: swfiles, mathjax: 'true'}
+  folder: swfiles, mathjax: true}
 
 ---
   

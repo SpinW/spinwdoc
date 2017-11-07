@@ -1,6 +1,6 @@
 ---
 {title: spinw.twin property, link: spinw.twin, summary: stores the crystal twin parameters,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_twin, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_twin, folder: spinw, mathjax: true}
 
 ---
  

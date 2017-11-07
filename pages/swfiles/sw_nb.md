@@ -1,7 +1,7 @@
 ---
 {title: sw_nb, link: sw_nb, summary: returns the bound coherent neutron scattering
     length, keywords: sample, sidebar: sw_sidebar, permalink: sw_nb, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

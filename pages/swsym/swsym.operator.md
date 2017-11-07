@@ -1,7 +1,7 @@
 ---
 {title: swsym.operator, link: swsym.operator, summary: generates all symmetry elements
     from given space group, keywords: sample, sidebar: sw_sidebar, permalink: swsym_operator,
-  folder: swsym, mathjax: 'true'}
+  folder: swsym, mathjax: true}
 
 ---
   

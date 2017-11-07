@@ -1,7 +1,7 @@
 ---
 {title: spinw.addcoupling method, link: spinw.addcoupling, summary: assigns an exchange
     matrix to a bond, keywords: sample, sidebar: sw_sidebar, permalink: spinw_addcoupling,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

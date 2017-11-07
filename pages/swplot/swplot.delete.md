@@ -1,7 +1,7 @@
 ---
 {title: swplot.delete, link: swplot.delete, summary: deletes objects and corresponding
     data from swplot figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_delete,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

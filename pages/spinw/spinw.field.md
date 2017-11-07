@@ -1,6 +1,6 @@
 ---
 {title: spinw.field method, link: spinw.field, summary: get/set magnetic field value,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_field, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_field, folder: spinw, mathjax: true}
 
 ---
   

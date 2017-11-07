@@ -1,6 +1,6 @@
 ---
 {title: spinw.disp method, link: spinw.disp, summary: prints information, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_disp, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_disp, folder: spinw, mathjax: true}
 
 ---
  

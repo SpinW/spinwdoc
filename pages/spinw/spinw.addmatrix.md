@@ -1,7 +1,7 @@
 ---
 {title: spinw.addmatrix method, link: spinw.addmatrix, summary: 'adds new [3x3] matrix',
   keywords: sample, sidebar: sw_sidebar, permalink: spinw_addmatrix, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

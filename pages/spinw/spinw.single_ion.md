@@ -1,7 +1,7 @@
 ---
 {title: spinw.single_ion property, link: spinw.single_ion, summary: stores single
     ion terms of the Hamiltonian, keywords: sample, sidebar: sw_sidebar, permalink: spinw_single_ion,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
  

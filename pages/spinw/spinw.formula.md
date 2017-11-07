@@ -1,7 +1,7 @@
 ---
 {title: spinw.formula method, link: spinw.formula, summary: returns basic physical
     properties, keywords: sample, sidebar: sw_sidebar, permalink: spinw_formula, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

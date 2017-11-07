@@ -1,7 +1,7 @@
 ---
 {title: spinw.quickham method, link: spinw.quickham, summary: quickly generate magnetic
     Hamiltonian, keywords: sample, sidebar: sw_sidebar, permalink: spinw_quickham,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

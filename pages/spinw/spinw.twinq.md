@@ -1,7 +1,7 @@
 ---
 {title: spinw.twinq method, link: spinw.twinq, summary: calculates equivalent Q point
     in twins, keywords: sample, sidebar: sw_sidebar, permalink: spinw_twinq, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

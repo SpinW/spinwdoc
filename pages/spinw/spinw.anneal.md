@@ -1,7 +1,7 @@
 ---
 {title: spinw.anneal method, link: spinw.anneal, summary: performs simulated annealing
     of spins, keywords: sample, sidebar: sw_sidebar, permalink: spinw_anneal, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

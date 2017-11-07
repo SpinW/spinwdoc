@@ -1,7 +1,7 @@
 ---
 {title: spinw.getmatrix method, link: spinw.getmatrix, summary: determines the symmetry
     allowed tensor elements, keywords: sample, sidebar: sw_sidebar, permalink: spinw_getmatrix,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

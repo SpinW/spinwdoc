@@ -1,6 +1,6 @@
 ---
 {title: swplot.arrow, link: swplot.arrow, summary: creates a 3D arrow patch, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_arrow, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_arrow, folder: swplot, mathjax: true}
 
 ---
   

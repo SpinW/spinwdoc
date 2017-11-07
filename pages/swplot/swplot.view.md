@@ -1,6 +1,6 @@
 ---
 {title: swplot.view, link: swplot.view, summary: controls the 3D view direction, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_view, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_view, folder: swplot, mathjax: true}
 
 ---
   

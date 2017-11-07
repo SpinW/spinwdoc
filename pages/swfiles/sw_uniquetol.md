@@ -1,7 +1,7 @@
 ---
 {title: sw_uniquetol, link: sw_uniquetol, summary: returns the unique column vectors
     within tolerance, keywords: sample, sidebar: sw_sidebar, permalink: sw_uniquetol,
-  folder: swfiles, mathjax: 'true'}
+  folder: swfiles, mathjax: true}
 
 ---
   

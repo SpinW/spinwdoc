@@ -1,7 +1,7 @@
 ---
 {title: spinw.natom method, link: spinw.natom, summary: number of symmetry unrelated
     atoms, keywords: sample, sidebar: sw_sidebar, permalink: spinw_natom, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

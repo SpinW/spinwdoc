@@ -1,6 +1,6 @@
 ---
 {title: sw_res, link: sw_res, summary: fits energy resolution with polynomial, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_res, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_res, folder: swfiles, mathjax: true}
 
 ---
   

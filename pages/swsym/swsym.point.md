@@ -1,7 +1,7 @@
 ---
 {title: swsym.point, link: swsym.point, summary: determines local point group symmetry
     in a space group, keywords: sample, sidebar: sw_sidebar, permalink: swsym_point,
-  folder: swsym, mathjax: 'true'}
+  folder: swsym, mathjax: true}
 
 ---
   

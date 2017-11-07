@@ -1,7 +1,7 @@
 ---
 {title: spinw.optmagk method, link: spinw.optmagk, summary: determines the magnetic
     propagation vector, keywords: sample, sidebar: sw_sidebar, permalink: spinw_optmagk,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

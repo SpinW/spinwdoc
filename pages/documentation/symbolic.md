@@ -1,6 +1,6 @@
 ---
 {title: Symbolic calculation, keywords: docs, sidebar: sw_sidebar, permalink: symbolic,
-  summary: Symbolic spin wave calculation mode, folder: documentation, mathjax: 'true'}
+  summary: Symbolic spin wave calculation mode, folder: documentation, mathjax: true}
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 {title: swpref package, link: swpref package, summary: package to handle persistent
     settings, keywords: sample, sidebar: sw_sidebar, permalink: swpref, folder: swpref,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

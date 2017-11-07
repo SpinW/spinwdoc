@@ -5,7 +5,7 @@ sidebar: sw_sidebar
 permalink: contribute
 summary: []
 folder: documentation
-mathjax: 'true'
+mathjax: true
 
 ---
 

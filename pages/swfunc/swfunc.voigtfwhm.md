@@ -1,7 +1,7 @@
 ---
 {title: swfunc.voigtfwhm, link: swfunc.voigtfwhm, summary: normalized voigt function,
   keywords: sample, sidebar: sw_sidebar, permalink: swfunc_voigtfwhm, folder: swfunc,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

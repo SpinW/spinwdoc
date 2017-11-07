@@ -1,7 +1,7 @@
 ---
 {title: spinw.struct method, link: spinw.struct, summary: converts properties into
     struct, keywords: sample, sidebar: sw_sidebar, permalink: spinw_struct, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

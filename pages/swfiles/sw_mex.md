@@ -1,6 +1,6 @@
 ---
 {title: sw_mex, link: sw_mex, summary: compiles and tests the mex files, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_mex, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_mex, folder: swfiles, mathjax: true}
 
 ---
   

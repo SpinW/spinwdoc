@@ -1,7 +1,7 @@
 ---
 {title: swplot.transform, link: swplot.transform, summary: transforms objects on swplot
     figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_transform, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

@@ -1,6 +1,6 @@
 ---
 {title: swplot.zoom, link: swplot.zoom, summary: zooms to objects, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_zoom, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_zoom, folder: swplot, mathjax: true}
 
 ---
   

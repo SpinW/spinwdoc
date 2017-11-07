@@ -1,6 +1,6 @@
 ---
 {title: Functions in swfiles, link: Functions in swfiles, summary: general functions,
-  keywords: sample, sidebar: sw_sidebar, permalink: swfiles, folder: swfiles, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: swfiles, folder: swfiles, mathjax: true}
 
 ---
  

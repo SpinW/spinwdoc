@@ -1,7 +1,7 @@
 ---
 {title: spinw.annealloop method, link: spinw.annealloop, summary: parameter sweep
     for simulated annealing, keywords: sample, sidebar: sw_sidebar, permalink: spinw_annealloop,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

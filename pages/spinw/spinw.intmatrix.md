@@ -1,7 +1,7 @@
 ---
 {title: spinw.intmatrix method, link: spinw.intmatrix, summary: generates interaction
     matrix, keywords: sample, sidebar: sw_sidebar, permalink: spinw_intmatrix, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

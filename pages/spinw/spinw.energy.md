@@ -1,7 +1,7 @@
 ---
 {title: spinw.energy method, link: spinw.energy, summary: calculates the ground state
     energy, keywords: sample, sidebar: sw_sidebar, permalink: spinw_energy, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: spinw.addg method, link: spinw.addg, summary: assigns g-tensor to magnetic
     atoms, keywords: sample, sidebar: sw_sidebar, permalink: spinw_addg, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

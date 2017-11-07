@@ -1,7 +1,7 @@
 ---
 {title: spinw.listener method, link: spinw.listener, summary: LISTENER  Add listener
     for event without binding the listener to the source object., keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_listener, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_listener, folder: spinw, mathjax: true}
 
 ---
     el = LISTENER(hSource, 'Eventname', callbackFcn) creates a listener

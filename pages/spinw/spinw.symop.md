@@ -1,7 +1,7 @@
 ---
 {title: spinw.symop method, link: spinw.symop, summary: generates the bond symmetry
     operators, keywords: sample, sidebar: sw_sidebar, permalink: spinw_symop, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

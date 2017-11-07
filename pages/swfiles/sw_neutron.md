@@ -1,7 +1,7 @@
 ---
 {title: sw_neutron, link: sw_neutron, summary: calculates neutron scattering cross
     section, keywords: sample, sidebar: sw_sidebar, permalink: sw_neutron, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

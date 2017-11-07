@@ -1,7 +1,7 @@
 ---
 {title: swplot.icomesh, link: swplot.icomesh, summary: creates mesh by subdividing
     icosahedron faces, keywords: sample, sidebar: sw_sidebar, permalink: swplot_icomesh,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

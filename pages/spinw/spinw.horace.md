@@ -1,7 +1,7 @@
 ---
 {title: spinw.horace method, link: spinw.horace, summary: spin wave calculator with
     interface to Horace, keywords: sample, sidebar: sw_sidebar, permalink: spinw_horace,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

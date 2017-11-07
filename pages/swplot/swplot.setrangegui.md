@@ -1,7 +1,7 @@
 ---
 {title: swplot.setrangegui, link: swplot.setrangegui, summary: GUI to change the plotting
     range, keywords: sample, sidebar: sw_sidebar, permalink: swplot_setrangegui, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

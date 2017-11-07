@@ -1,6 +1,6 @@
 ---
 {title: sw_mattype, link: sw_mattype, summary: classifies square matrices, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_mattype, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_mattype, folder: swfiles, mathjax: true}
 
 ---
   

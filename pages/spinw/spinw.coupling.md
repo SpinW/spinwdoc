@@ -1,7 +1,7 @@
 ---
 {title: spinw.coupling property, link: spinw.coupling, summary: stores the list of
     bonds, keywords: sample, sidebar: sw_sidebar, permalink: spinw_coupling, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

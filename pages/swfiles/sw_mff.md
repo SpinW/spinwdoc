@@ -1,7 +1,7 @@
 ---
 {title: sw_mff, link: sw_mff, summary: returns the magnetic form factor values and
     coefficients, keywords: sample, sidebar: sw_sidebar, permalink: sw_mff, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

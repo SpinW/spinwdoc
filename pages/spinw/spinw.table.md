@@ -1,7 +1,7 @@
 ---
 {title: spinw.table method, link: spinw.table, summary: outputs easy to read tables
     of internal data, keywords: sample, sidebar: sw_sidebar, permalink: spinw_table,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

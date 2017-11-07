@@ -1,7 +1,7 @@
 ---
 {title: spinw.isvalid method, link: spinw.isvalid, summary: ISVALID   Test handle
     validity., keywords: sample, sidebar: sw_sidebar, permalink: spinw_isvalid, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
     TF = ISVALID(H) performs an element-wise check for validity on the 

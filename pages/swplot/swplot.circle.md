@@ -1,7 +1,7 @@
 ---
 {title: swplot.circle, link: swplot.circle, summary: creates a 3D circle surface patch,
   keywords: sample, sidebar: sw_sidebar, permalink: swplot_circle, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

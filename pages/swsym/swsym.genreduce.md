@@ -1,7 +1,7 @@
 ---
 {title: swsym.genreduce, link: swsym.genreduce, summary: reduces symmetry operators
     to the generators, keywords: sample, sidebar: sw_sidebar, permalink: swsym_genreduce,
-  folder: swsym, mathjax: 'true'}
+  folder: swsym, mathjax: true}
 
 ---
   

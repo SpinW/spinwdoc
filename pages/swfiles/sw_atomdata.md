@@ -1,7 +1,7 @@
 ---
 {title: sw_atomdata, link: sw_atomdata, summary: returns information on chemical elements,
   keywords: sample, sidebar: sw_sidebar, permalink: sw_atomdata, folder: swfiles,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

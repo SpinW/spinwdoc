@@ -1,7 +1,7 @@
 ---
 {title: spinw.optmagstr method, link: spinw.optmagstr, summary: general magnetic structure
     optimizer, keywords: sample, sidebar: sw_sidebar, permalink: spinw_optmagstr,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

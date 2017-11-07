@@ -1,6 +1,6 @@
 ---
 {title: sw_timeit, link: sw_timeit, summary: timer and remaining time estimator, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_timeit, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_timeit, folder: swfiles, mathjax: true}
 
 ---
   

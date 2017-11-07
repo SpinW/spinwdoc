@@ -1,7 +1,7 @@
 ---
 {title: spinw.gencoupling method, link: spinw.gencoupling, summary: generates bond
     list, keywords: sample, sidebar: sw_sidebar, permalink: spinw_gencoupling, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

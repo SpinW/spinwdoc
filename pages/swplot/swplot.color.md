@@ -1,7 +1,7 @@
 ---
 {title: swplot.color, link: swplot.color, summary: generates RGB code from color name,
   keywords: sample, sidebar: sw_sidebar, permalink: swplot_color, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

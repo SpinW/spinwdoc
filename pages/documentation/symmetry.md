@@ -1,7 +1,7 @@
 ---
 {title: Symmetry and coordinate systems, keywords: docs, sidebar: sw_sidebar, permalink: symmetry,
   summary: Representation of space groups and coordinate systems, folder: documentation,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 {title: swsym.isop, link: swsym.isop, summary: determines if a matrix is symmetry
     operator, keywords: sample, sidebar: sw_sidebar, permalink: swsym_isop, folder: swsym,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

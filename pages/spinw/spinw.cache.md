@@ -1,6 +1,6 @@
 ---
 {title: spinw.cache property, link: spinw.cache, summary: stores temporary values,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_cache, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_cache, folder: spinw, mathjax: true}
 
 ---
  

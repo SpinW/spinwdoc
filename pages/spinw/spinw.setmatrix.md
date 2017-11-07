@@ -1,7 +1,7 @@
 ---
 {title: spinw.setmatrix method, link: spinw.setmatrix, summary: sets exchange tensor
     values, keywords: sample, sidebar: sw_sidebar, permalink: spinw_setmatrix, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

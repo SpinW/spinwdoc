@@ -1,7 +1,7 @@
 ---
 {title: spinw.abc method, link: spinw.abc, summary: returns lattice parameters and
     angles, keywords: sample, sidebar: sw_sidebar, permalink: spinw_abc, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

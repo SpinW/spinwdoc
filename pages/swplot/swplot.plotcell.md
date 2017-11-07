@@ -1,6 +1,6 @@
 ---
 {title: swplot.plotcell, link: swplot.plotcell, summary: plots unit cell, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_plotcell, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_plotcell, folder: swplot, mathjax: true}
 
 ---
   

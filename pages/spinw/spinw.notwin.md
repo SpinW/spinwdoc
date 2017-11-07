@@ -1,6 +1,6 @@
 ---
 {title: spinw.notwin method, link: spinw.notwin, summary: removes all twins, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_notwin, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_notwin, folder: spinw, mathjax: true}
 
 ---
   

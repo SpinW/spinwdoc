@@ -1,7 +1,7 @@
 ---
 {title: spinw.moment method, link: spinw.moment, summary: calculates quantum correction
     on ordered moment, keywords: sample, sidebar: sw_sidebar, permalink: spinw_moment,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   
@@ -37,7 +37,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.2617
+    0.2616
 ```
  
  
@@ -57,7 +57,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.1965    0.1965    0.1965    0.1965
+    0.1967    0.1967    0.1967    0.1967
 ```
  
  

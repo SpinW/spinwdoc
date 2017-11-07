@@ -1,7 +1,7 @@
 ---
 {title: spinw.addaniso method, link: spinw.addaniso, summary: assigns anisotropy to
     magnetic sites, keywords: sample, sidebar: sw_sidebar, permalink: spinw_addaniso,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

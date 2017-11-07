@@ -1,7 +1,7 @@
 ---
 {title: Magnetic structure, keywords: docs, sidebar: sw_sidebar, permalink: magstr,
   summary: Representation of magnetic structures and optimization, folder: documentation,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
 

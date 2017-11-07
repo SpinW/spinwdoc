@@ -1,6 +1,6 @@
 ---
 {title: swfunc package, link: swfunc package, summary: package of mathematical functions,
-  keywords: sample, sidebar: sw_sidebar, permalink: swfunc, folder: swfunc, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: swfunc, folder: swfunc, mathjax: true}
 
 ---
  

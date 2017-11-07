@@ -1,7 +1,7 @@
 ---
 {title: spinw.symmetry method, link: spinw.symmetry, summary: returns whether symmetry
     is defined, keywords: sample, sidebar: sw_sidebar, permalink: spinw_symmetry,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

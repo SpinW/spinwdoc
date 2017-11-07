@@ -1,7 +1,7 @@
 ---
 {title: spinw.fouriersym method, link: spinw.fouriersym, summary: calculates the Fourier
     transformation of the symbolic Hamiltonian, keywords: sample, sidebar: sw_sidebar,
-  permalink: spinw_fouriersym, folder: spinw, mathjax: 'true'}
+  permalink: spinw_fouriersym, folder: spinw, mathjax: true}
 
 ---
   

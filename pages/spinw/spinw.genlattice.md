@@ -1,7 +1,7 @@
 ---
 {title: spinw.genlattice method, link: spinw.genlattice, summary: generates crystal
     lattice, keywords: sample, sidebar: sw_sidebar, permalink: spinw_genlattice, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

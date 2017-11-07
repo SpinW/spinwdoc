@@ -1,6 +1,6 @@
 ---
 {title: swdoc, link: swdoc, summary: opens the SpinW help, keywords: sample, sidebar: sw_sidebar,
-  permalink: swdoc, folder: swfiles, mathjax: 'true'}
+  permalink: swdoc, folder: swfiles, mathjax: true}
 
 ---
  

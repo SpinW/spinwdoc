@@ -1,7 +1,7 @@
 ---
 {title: spinw.unitcell method, link: spinw.unitcell, summary: returns unit cell data,
   keywords: sample, sidebar: sw_sidebar, permalink: spinw_unitcell, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

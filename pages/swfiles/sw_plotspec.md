@@ -1,6 +1,6 @@
 ---
 {title: sw_plotspec, link: sw_plotspec, summary: plots spectrum, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_plotspec, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_plotspec, folder: swfiles, mathjax: true}
 
 ---
   

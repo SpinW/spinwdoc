@@ -1,7 +1,7 @@
 ---
 {title: swplot.legend, link: swplot.legend, summary: adds legend to the swplot figure,
   keywords: sample, sidebar: sw_sidebar, permalink: swplot_legend, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

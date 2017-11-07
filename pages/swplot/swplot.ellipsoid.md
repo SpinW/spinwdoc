@@ -1,7 +1,7 @@
 ---
 {title: swplot.ellipsoid, link: swplot.ellipsoid, summary: creates a 3D ellipsoid
     patch, keywords: sample, sidebar: sw_sidebar, permalink: swplot_ellipsoid, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

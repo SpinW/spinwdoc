@@ -1,7 +1,7 @@
 ---
 {title: spinw.unit property, link: spinw.unit, summary: stores the physical units
     for the Hamiltonian, keywords: sample, sidebar: sw_sidebar, permalink: spinw_unit,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
  

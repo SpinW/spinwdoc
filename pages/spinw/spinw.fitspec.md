@@ -1,7 +1,7 @@
 ---
 {title: spinw.fitspec method, link: spinw.fitspec, summary: fits experimental spin
     wave data, keywords: sample, sidebar: sw_sidebar, permalink: spinw_fitspec, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

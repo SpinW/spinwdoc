@@ -1,6 +1,6 @@
 ---
 {title: sw_resconv, link: sw_resconv, summary: convolution of a matrix and a Gaussian,
-  keywords: sample, sidebar: sw_sidebar, permalink: sw_resconv, folder: swfiles, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: sw_resconv, folder: swfiles, mathjax: true}
 
 ---
   

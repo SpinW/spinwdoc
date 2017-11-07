@@ -1,7 +1,7 @@
 ---
 {title: sw_econtract, link: sw_econtract, summary: 'converts (Q,E) values to Q values
     for diffraction instrument', keywords: sample, sidebar: sw_sidebar, permalink: sw_econtract,
-  folder: swfiles, mathjax: 'true'}
+  folder: swfiles, mathjax: true}
 
 ---
   

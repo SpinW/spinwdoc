@@ -1,6 +1,6 @@
 ---
 {title: swplot.plotbase, link: swplot.plotbase, summary: plots basis vectors, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_plotbase, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_plotbase, folder: swplot, mathjax: true}
 
 ---
   

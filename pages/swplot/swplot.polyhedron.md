@@ -1,7 +1,7 @@
 ---
 {title: swplot.polyhedron, link: swplot.polyhedron, summary: creates convex polyhedra
     or polygon from vertex list, keywords: sample, sidebar: sw_sidebar, permalink: swplot_polyhedron,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

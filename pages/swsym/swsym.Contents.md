@@ -1,6 +1,6 @@
 ---
 {title: swsym package, link: swsym package, summary: package to handle symmetry operations,
-  keywords: sample, sidebar: sw_sidebar, permalink: swsym, folder: swsym, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: swsym, folder: swsym, mathjax: true}
 
 ---
  

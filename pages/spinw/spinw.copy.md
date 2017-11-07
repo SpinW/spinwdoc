@@ -1,6 +1,6 @@
 ---
 {title: spinw.copy method, link: spinw.copy, summary: clones spinw object, keywords: sample,
-  sidebar: sw_sidebar, permalink: spinw_copy, folder: spinw, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: spinw_copy, folder: spinw, mathjax: true}
 
 ---
   

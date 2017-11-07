@@ -1,7 +1,7 @@
 ---
 {title: swplot.activefigure, link: swplot.activefigure, summary: returns the handle
     of the active swplot figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_activefigure,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

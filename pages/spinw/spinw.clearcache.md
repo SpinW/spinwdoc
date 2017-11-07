@@ -1,7 +1,7 @@
 ---
 {title: spinw.clearcache method, link: spinw.clearcache, summary: clears the cache,
   keywords: sample, sidebar: sw_sidebar, permalink: spinw_clearcache, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

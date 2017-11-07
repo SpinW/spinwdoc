@@ -1,6 +1,6 @@
 ---
 {title: swpref.pref, link: swpref.pref, summary: internal helper for SpinW preferences,
-  keywords: sample, sidebar: sw_sidebar, permalink: swpref_pref, folder: swpref, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: swpref_pref, folder: swpref, mathjax: true}
 
 ---
   

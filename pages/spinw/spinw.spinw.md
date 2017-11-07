@@ -1,6 +1,6 @@
 ---
 {title: spinw.spinw method, link: spinw.spinw, summary: Operators and special characters.,
-  keywords: sample, sidebar: sw_sidebar, permalink: spinw_spinw, folder: spinw, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: spinw_spinw, folder: spinw, mathjax: true}
 
 ---
  

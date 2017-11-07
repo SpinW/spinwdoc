@@ -1,7 +1,7 @@
 ---
 {title: swplot.translate, link: swplot.translate, summary: translates objects on swplot
     figure, keywords: sample, sidebar: sw_sidebar, permalink: swplot_translate, folder: swplot,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

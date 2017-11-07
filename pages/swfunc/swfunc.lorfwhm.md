@@ -1,7 +1,7 @@
 ---
 {title: swfunc.lorfwhm, link: swfunc.lorfwhm, summary: normalized Lorentzian function,
   keywords: sample, sidebar: sw_sidebar, permalink: swfunc_lorfwhm, folder: swfunc,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: spinw.mag_str property, link: spinw.mag_str, summary: stores the magnetic
     structure, keywords: sample, sidebar: sw_sidebar, permalink: spinw_mag_str, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

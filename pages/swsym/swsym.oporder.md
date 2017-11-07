@@ -1,7 +1,7 @@
 ---
 {title: swsym.oporder, link: swsym.oporder, summary: determine the order of the symmetry
     operator, keywords: sample, sidebar: sw_sidebar, permalink: swsym_oporder, folder: swsym,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

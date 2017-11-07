@@ -1,7 +1,7 @@
 ---
 {title: spinw.nmagext method, link: spinw.nmagext, summary: number of magnetic sites,
   keywords: sample, sidebar: sw_sidebar, permalink: spinw_nmagext, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
  

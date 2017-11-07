@@ -1,7 +1,7 @@
 ---
 {title: swplot.tooltipcallback, link: swplot.tooltipcallback, summary: callback for
     displaying tooltip, keywords: sample, sidebar: sw_sidebar, permalink: swplot_tooltipcallback,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

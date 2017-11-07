@@ -1,6 +1,6 @@
 ---
 {title: sw_tofres, link: sw_tofres, summary: convolutes the spectrum with a Q bin,
-  keywords: sample, sidebar: sw_sidebar, permalink: sw_tofres, folder: swfiles, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: sw_tofres, folder: swfiles, mathjax: true}
 
 ---
   

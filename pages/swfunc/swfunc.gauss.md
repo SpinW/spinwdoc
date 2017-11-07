@@ -1,6 +1,6 @@
 ---
 {title: swfunc.gauss, link: swfunc.gauss, summary: normalized Gaussian function, keywords: sample,
-  sidebar: sw_sidebar, permalink: swfunc_gauss, folder: swfunc, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swfunc_gauss, folder: swfunc, mathjax: true}
 
 ---
   

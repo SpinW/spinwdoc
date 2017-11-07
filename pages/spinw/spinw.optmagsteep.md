@@ -1,7 +1,7 @@
 ---
 {title: spinw.optmagsteep method, link: spinw.optmagsteep, summary: quench optimization
     of magnetic structure, keywords: sample, sidebar: sw_sidebar, permalink: spinw_optmagsteep,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

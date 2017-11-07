@@ -1,7 +1,7 @@
 ---
 {title: sw_cff, link: sw_cff, summary: returns the atomic charge form factor values
     for X-ray scattering, keywords: sample, sidebar: sw_sidebar, permalink: sw_cff,
-  folder: swfiles, mathjax: 'true'}
+  folder: swfiles, mathjax: true}
 
 ---
   

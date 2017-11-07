@@ -1,7 +1,7 @@
 ---
 {title: swplot.cylinder, link: swplot.cylinder, summary: creates a closed/open 3D
     cylinder patch, keywords: sample, sidebar: sw_sidebar, permalink: swplot_cylinder,
-  folder: swplot, mathjax: 'true'}
+  folder: swplot, mathjax: true}
 
 ---
   

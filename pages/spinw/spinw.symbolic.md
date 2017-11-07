@@ -1,7 +1,7 @@
 ---
 {title: spinw.symbolic method, link: spinw.symbolic, summary: switches between symbolic/numeric
     mode, keywords: sample, sidebar: sw_sidebar, permalink: spinw_symbolic, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

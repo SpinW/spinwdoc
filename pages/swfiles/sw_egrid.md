@@ -1,6 +1,6 @@
 ---
 {title: sw_egrid, link: sw_egrid, summary: calculates energy bins of a spectrum, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_egrid, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_egrid, folder: swfiles, mathjax: true}
 
 ---
   

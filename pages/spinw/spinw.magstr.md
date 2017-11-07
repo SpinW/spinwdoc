@@ -1,7 +1,7 @@
 ---
 {title: spinw.magstr method, link: spinw.magstr, summary: returns single-k magnetic
     structure representation, keywords: sample, sidebar: sw_sidebar, permalink: spinw_magstr,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   

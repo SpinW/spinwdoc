@@ -1,6 +1,6 @@
 ---
 {title: swplot.text, link: swplot.text, summary: creates text at a 3D position, keywords: sample,
-  sidebar: sw_sidebar, permalink: swplot_text, folder: swplot, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: swplot_text, folder: swplot, mathjax: true}
 
 ---
   

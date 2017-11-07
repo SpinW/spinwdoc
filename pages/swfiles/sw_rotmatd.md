@@ -1,6 +1,6 @@
 ---
 {title: sw_rotmatd, link: sw_rotmatd, summary: generates 3D rotation matrix, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_rotmatd, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_rotmatd, folder: swfiles, mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: sw_filelist, link: sw_filelist, summary: lists spinw objects in the Matlab
     workspace or in a .mat file, keywords: sample, sidebar: sw_sidebar, permalink: sw_filelist,
-  folder: swfiles, mathjax: 'true'}
+  folder: swfiles, mathjax: true}
 
 ---
   
@@ -29,8 +29,9 @@ sw_filelist
 ```
 SpinW variables in the Matlab base workspace:
         VarName                                         Title             Creation Date           Completion Date
-           spec                          Powder LSWT spectrum                         -                         -
+         fitStr                                             -                         -                         -
           spec1                       Numerical LSWT spectrum      03-Nov-2017 09:20:19      03-Nov-2017 09:20:19
+           spec                       Numerical LSWT spectrum      07-Nov-2017 13:42:00      07-Nov-2017 13:42:00
 ```
  
  

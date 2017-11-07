@@ -1,7 +1,7 @@
 ---
 {title: spinw.addtwin method, link: spinw.addtwin, summary: adds crystallographic
     twins, keywords: sample, sidebar: sw_sidebar, permalink: spinw_addtwin, folder: spinw,
-  mathjax: 'true'}
+  mathjax: true}
 
 ---
   

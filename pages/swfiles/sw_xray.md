@@ -1,6 +1,6 @@
 ---
 {title: sw_xray, link: sw_xray, summary: calculates x-ray scattering cross section,
-  keywords: sample, sidebar: sw_sidebar, permalink: sw_xray, folder: swfiles, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: sw_xray, folder: swfiles, mathjax: true}
 
 ---
   

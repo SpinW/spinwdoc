@@ -1,6 +1,6 @@
 ---
 {title: Spin Hamiltonian, keywords: docs, sidebar: sw_sidebar, permalink: hamiltonian,
-  summary: Definition of the complete spin Hamiltonian, folder: documentation, mathjax: 'true'}
+  summary: Definition of the complete spin Hamiltonian, folder: documentation, mathjax: true}
 
 ---
 

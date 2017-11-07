@@ -1,6 +1,6 @@
 ---
 {title: sw_rot, link: sw_rot, summary: rotates vectorsin 3D, keywords: sample, sidebar: sw_sidebar,
-  permalink: sw_rot, folder: swfiles, mathjax: 'true'}
+  permalink: sw_rot, folder: swfiles, mathjax: true}
 
 ---
   

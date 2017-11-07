@@ -1,6 +1,6 @@
 ---
 {title: sw_readparam, link: sw_readparam, summary: parse input arguments, keywords: sample,
-  sidebar: sw_sidebar, permalink: sw_readparam, folder: swfiles, mathjax: 'true'}
+  sidebar: sw_sidebar, permalink: sw_readparam, folder: swfiles, mathjax: true}
 
 ---
  

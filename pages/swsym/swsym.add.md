@@ -1,6 +1,6 @@
 ---
 {title: swsym.add, link: swsym.add, summary: saves user defined symmetry operators,
-  keywords: sample, sidebar: sw_sidebar, permalink: swsym_add, folder: swsym, mathjax: 'true'}
+  keywords: sample, sidebar: sw_sidebar, permalink: swsym_add, folder: swsym, mathjax: true}
 
 ---
   

@@ -1,7 +1,7 @@
 ---
 {title: spinw.unit_cell property, link: spinw.unit_cell, summary: stores the atoms
     in the crystallographic unit cell, keywords: sample, sidebar: sw_sidebar, permalink: spinw_unit_cell,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
  

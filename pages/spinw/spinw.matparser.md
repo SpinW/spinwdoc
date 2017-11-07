@@ -1,7 +1,7 @@
 ---
 {title: spinw.matparser method, link: spinw.matparser, summary: parses parameter vector
     into matrices, keywords: sample, sidebar: sw_sidebar, permalink: spinw_matparser,
-  folder: spinw, mathjax: 'true'}
+  folder: spinw, mathjax: true}
 
 ---
   
