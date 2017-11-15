@@ -69,7 +69,7 @@ global minimum.
   
 `'optimizer'`
 : String that determines the type of optimizer to use, possible values:
-  * `'pso'`       Particle-swarm optimizer, see [ndbase.pso],
+  * `'pso'`       Particle-swarm optimizer, see [ndbase.pso](ndbase_pso),
                   default.
   * `'simplex'`   Matlab built-in simplex optimizer, see [fminsearch](www.mathworks.ch/help/matlab/ref/fminsearch.html).
   
@@ -132,13 +132,32 @@ Output `fitsp` is struct type with the following fields:
 * `obj`   Copy of the input `obj`, with the best fitted
           Hamiltonian parameters.
 * `x`     Final values of the fitted parameters, dimensions are
-          $$[n_{run}\times n_{par}]$$. The rows of `x` are sorted according to increasing R
-          values.
-* `R`     R-value, goodness of the fit, dimensions are $$[n_{run}\times 1]$$, sorted
-          in increasing order.
+          $$[n_{run}\times n_{par}]$$. The rows of `x` are sorted according 
+          to increasing R values.
+* `redX2` Reduced $$\chi^2_\eta$$ value, goodness of the fit stored in a column 
+          vector with $$n_{run}$$ number of elements, sorted in increasing 
+          order. $$\chi^2_\eta$$ is defined as:
+ 
+  $$\begin{align}
+                  \chi^2_\eta &= \frac{\chi^2}{\eta},\\
+                  \eta        &= n-m+1,
+  \end{align}$$
+  where η is the degree of freedom, $$n$$ number of
+  observations and $$m$$ is the number of fitted parameters.
+ 
 * `exitflag`  Exit flag of the `fminsearch` command.
 * `output`    Output of the `fminsearch` command.
   
+{% include note.html content=" As a rule of thumb when the variance of the measurement error is
+known a priori, χ$$^2_\eta$$≫ 1 indicates a poor model fit. A
+χ$$^2_\eta$$≫ 1 indicates that the fit has not fully captured the
+data (or that the error variance has been underestimated). In principle,
+a value of χ$$^2_\eta$$= 1 indicates that the extent of the match
+between observations and estimates is in accord with the error variance.
+A χ$$^2_\eta$$ < 1 indicates that the model is 'over-fitting' the data:
+either the model is improperly fitting noise, or the error variance has
+been overestimated." %}
+ 
 Any other option used by [spinw.spinwave](spinw_spinwave) function are also accepted.
   
 ### See Also

@@ -13,8 +13,8 @@
 ### Description
   
 `sym = swsym.add(symStr)` saves the symmetry generators in `symStr` into
-the `symmetry.dat` file and returns the line number of the space group in
-the `symmetry.dat` file.
+the [symmetry.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'symmetry.dat'])) file and returns the line number of the space group in
+the [symmetry.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'symmetry.dat'])) file.
    
 `sym = swsym.add(symStr,symName)` also assigns a label `symName` to the
 new symmetry operators (space group).

@@ -1,7 +1,7 @@
 entries:
 - title: Sidebar
   product: SpinW
-  version: R1457
+  version: R1463
   folders:
   - title: Documentation
     output: web, pdf
@@ -225,6 +225,7 @@ entries:
         - {title: sw_update, url: /sw_update, output: 'web, pdf'}
         - {title: sw_version, url: /sw_version, output: 'web, pdf'}
         - {title: swdoc, url: /swdoc, output: 'web, pdf'}
+        - {title: swhelp, url: /swhelp, output: 'web, pdf'}
   - title: swplot
     output: web, pdf
     folderitems:
@@ -340,4 +341,22 @@ entries:
         - {title: swfunc.lorfwhm, url: /swfunc_lorfwhm, output: 'web, pdf'}
         - {title: swfunc.pvoigt, url: /swfunc_pvoigt, output: 'web, pdf'}
         - {title: swfunc.voigtfwhm, url: /swfunc_voigtfwhm, output: 'web, pdf'}
+  - title: ndbase
+    output: web, pdf
+    folderitems:
+    - title: Description
+      url: /ndbase
+      output: web, pdf
+      subfolders:
+      - title: []
+        output: []
+        subfolderitems: []
+      - title: Files
+        output: web, pdf
+        subfolderitems:
+        - {title: ndbase.histn, url: /ndbase_histn, output: 'web, pdf'}
+        - {title: ndbase.lm, url: /ndbase_lm, output: 'web, pdf'}
+        - {title: ndbase.pso, url: /ndbase_pso, output: 'web, pdf'}
+        - {title: ndbase.simplex, url: /ndbase_simplex, output: 'web, pdf'}
+        - {title: ndbase.source, url: /ndbase_source, output: 'web, pdf'}
 

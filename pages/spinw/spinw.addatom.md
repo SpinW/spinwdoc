@@ -40,7 +40,7 @@ crystal.plot
   
 `label`
 : Names of the atoms in a cell for plotting and form factor
-  calculations (see `magion.dat`), e.g. `label={'atom1' 'atom2'
+  calculations (see [magion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'magion.dat']))), e.g. `label={'atom1' 'atom2'
   'atom3'}`.
   Default value is `atomi`, where `i` is the atom index.
   
@@ -50,15 +50,15 @@ crystal.plot
   number is guessed from the given label of the atom. For example if
   `label` is `MCr3+` or `Cr3+` then the $$S=3/2$$ high spin state is
   assumed for Cr$$^{3+}$$. The spin values for every ion is stored in the
-  `magion.dat` file. If the atom type is unknown $$S=0$$ is assumed.
+  [magion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'magion.dat'])) file. If the atom type is unknown $$S=0$$ is assumed.
   
 `color`
 : RGB color of the atoms for plotting stored in a matrix with dimensions
   of $$[3\times n_{atom}]$$, where each column describes an RGB color. Each
   value is between 0 and 255. Default value is the color stored in the
-  `atom.dat` file. Alternatively a name of the color can be given as a
+  [atom.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'atom.dat'])) file. Alternatively a name of the color can be given as a
   string, for example `'White'`, for multiple atoms package it into a
-  cell. For the list of colors, see [swplot.color](swplot_color) or the `color.dat`
+  cell. For the list of colors, see [swplot.color](swplot_color) or the [color.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'color.dat']))
   file.
   
 `ox`
@@ -71,14 +71,14 @@ crystal.plot
 `formfact`
 : Neutron scattering form factor, given as a row vector with 9 numbers,
   for details see [sw_mff](sw_mff). Also string labels can be used from the
-  `magion.dat` file.
+  [magion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'magion.dat'])) file.
   
 `formfactn`
 : Same as the `formfact` option.
   
 `formfactx`
 : X-ray scattering form factor, given as 9 numbers, for details
-  see [sw_cff](sw_cff), also labels can be used from the `xrayion.dat` file.
+  see [sw_cff](sw_cff), also labels can be used from the [xrayion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'xrayion.dat'])) file.
   
 `Z`
 : Atomic number, given as integer or determined from the atom label

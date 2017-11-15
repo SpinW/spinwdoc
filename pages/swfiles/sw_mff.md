@@ -15,7 +15,7 @@
   
 `[~, coeff, s] = sw_mff(atomname)` returns the magnetic form
 factor coefficients for the magnetic atom identified by a string, e.g.
-`'MCR3'`. The function reads the `magion.dat` file for the stored form
+`'MCR3'`. The function reads the [magion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'magion.dat'])) file for the stored form
 factor coefficients.
  
 `[formfactval, coeff, s] = sw_mff(atomname,Q)` also calculates the form
@@ -52,7 +52,7 @@ The source of the form factor data are:
   The $$D$$ and $$d$$ coefficients can be zero.
   
 `S`
-: Value of the spin quantum number (read from the spin column in `magion.dat`).
+: Value of the spin quantum number (read from the spin column in [magion.dat](matlab:edit([sw_rootdir,'dat_files',filesep,'magion.dat']))).
  
 
 {% include links.html %}

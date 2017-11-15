@@ -30,8 +30,8 @@ sw_filelist
 SpinW variables in the Matlab base workspace:
         VarName                                         Title             Creation Date           Completion Date
          fitStr                                             -                         -                         -
-          spec1                       Numerical LSWT spectrum      03-Nov-2017 09:20:19      03-Nov-2017 09:20:19
-           spec                       Numerical LSWT spectrum      07-Nov-2017 13:42:00      07-Nov-2017 13:42:00
+        fitStr2                                             -                         -                         -
+           spec                       Numerical LSWT spectrum      15-Nov-2017 14:28:40      15-Nov-2017 14:28:40
 ```
  
  

@@ -110,7 +110,7 @@ Functions to import tables in text format.
  
 #### Miscellaneous
  
-* [swdoc](swdoc) opens the SpinW help
+* [swdoc](swdoc) opens the SpinW documentation
 * [sw_freemem](sw_freemem) calculates the available memory
 * [sw_readparam](sw_readparam) parse input arguments
 * [sw_rootdir](sw_rootdir) path to the SpinW folder

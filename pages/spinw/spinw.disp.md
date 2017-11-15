@@ -26,7 +26,7 @@ swFields = disp(crystal)
 *Output*
 ```
 swFields =
-    'spinw object (symbolic: off, symmetry: off, textoutput: none)
+    'spinw object (symbolic: off, symmetry: off, textoutput: "stdout")
      lattice
               angle: [1x3 double]
           lat_const: [1x3 double]

@@ -45,7 +45,7 @@ sw_plotspec(spec);
  
 {% include image.html file="generated/spinw_spi_1.png" alt="sw_plotspec(spec);" %}
   
-### Input arguments
+### Input Arguments
  
 `obj`
 : [spinw](spinw) object.
@@ -222,7 +222,7 @@ sw_plotspec(spec);
               incommensurate or not.
   * `obj`     The copy (clone) of the input `obj`, see [spinw.copy](spinw_copy).
  
-The number of magnetic modes (labelled by `nMode`) for commensurate
+The number of magnetic modes (labeled by `nMode`) for commensurate
 structures is double the number of magnetic atoms in the magnetic cell.
 For incommensurate structures this number is tripled due to the
 appearance of the $$(Q\pm k_m)$$ Fourier components in the correlation
@@ -234,7 +234,7 @@ a cell, that contains $$n_{twin}$$ number of matrices.
  
 ### See also
  
-[spinw](spinw) \| [spinw.spinwavesym](spinw_spinwavesym) \| [sw_mex](sw_mex) \| [spinw.powspec](spinw_powspec)
+[spinw](spinw) \| [spinw.spinwavesym](spinw_spinwavesym) \| [sw_mex](sw_mex) \| [spinw.powspec](spinw_powspec) \| [sortmode]
  
 
 {% include links.html %}

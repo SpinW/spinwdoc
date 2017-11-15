@@ -37,7 +37,7 @@ Particle-Swarm optimizer.
      matrix with dimensions $$[3\times n_{base}]$$, where $$n_{base}\leq 3$$. The basis
      vectors have to be linearly independent.
   
-The function also accepts all options of [ndbase.pso].
+The function also accepts all options of [ndbase.pso](ndbase_pso).
   
 ### Output Arguments
   
@@ -49,11 +49,11 @@ The function also accepts all options of [ndbase.pso].
                       rotating coordinate system.
   * `E`       The most negative eigenvalue at the given propagation
                       vector.
-  * `stat`    Full output of the [ndbase.pso] optimizer.
+  * `stat`    Full output of the [ndbase.pso](ndbase_pso) optimizer.
   
 ### See Also
   
-[ndbase.pso]
+[ndbase.pso](ndbase_pso)
  
 
 {% include links.html %}
