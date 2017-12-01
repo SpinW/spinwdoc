@@ -151,7 +151,7 @@ most important parameters are:
  
 `'fid'`
 : Defines whether to provide text output. The default value is determined
-  by the `fid` preference stored in [swpref]. The possible values are:
+  by the `fid` preference stored in [swpref](swpref). The possible values are:
   * `0`   No text output is generated.
   * `1`   Text output in the MATLAB Command Window.
   * `fid` File ID provided by the `fopen` command, the output is written
@@ -160,7 +160,7 @@ most important parameters are:
 `'tid'`
 : Determines if the elapsed and required time for the calculation is
   displayed. The default value is determined by the `tid` preference
-  stored in [swpref]. The following values are allowed (for more details
+  stored in [swpref](swpref). The following values are allowed (for more details
   see [sw_timeit](sw_timeit)):
   * `0` No timing is executed.
   * `1` Display the timing in the Command Window.

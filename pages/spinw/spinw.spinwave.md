@@ -38,12 +38,12 @@ direction in reciprocal space we create the built in triangular lattice
 model using `sw_model`.
  
 ```matlab
-tri = sw_model('triAF',1);
-spec = tri.spinwave({[0 0 0] [1 1 0]});
-sw_plotspec(spec);
+tri = sw_model('triAF',1)
+spec = tri.spinwave({[0 0 0] [1 1 0]})
+sw_plotspec(spec)
 ```
  
-{% include image.html file="generated/spinw_spi_1.png" alt="sw_plotspec(spec);" %}
+{% include image.html file="generated/spinw_spi_1.png" alt="sw_plotspec(spec)" %}
   
 ### Input Arguments
  
@@ -169,7 +169,7 @@ sw_plotspec(spec);
  
 `'fid'`
 : Defines whether to provide text output. The default value is determined
-  by the `fid` preference stored in [swpref]. The possible values are:
+  by the `fid` preference stored in [swpref](swpref). The possible values are:
   * `0`   No text output is generated.
   * `1`   Text output in the MATLAB Command Window.
   * `fid` File ID provided by the `fopen` command, the output is written
@@ -178,7 +178,7 @@ sw_plotspec(spec);
 `'tid'`
 : Determines if the elapsed and required time for the calculation is
   displayed. The default value is determined by the `tid` preference
-  stored in [swpref]. The following values are allowed (for more details
+  stored in [swpref](swpref). The following values are allowed (for more details
   see [sw_timeit](sw_timeit)):
   * `0` No timing is executed.
   * `1` Display the timing in the Command Window.
@@ -232,7 +232,7 @@ $$(Q-k_m,Q,Q+k_m)$$.
 If several twins exist in the sample, `omega` and `Sab` are packaged into
 a cell, that contains $$n_{twin}$$ number of matrices.
  
-### See also
+### See Also
  
 [spinw](spinw) \| [spinw.spinwavesym](spinw_spinwavesym) \| [sw_mex](sw_mex) \| [spinw.powspec](spinw_powspec) \| [sortmode]
  

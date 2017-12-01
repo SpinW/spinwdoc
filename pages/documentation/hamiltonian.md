@@ -5,10 +5,11 @@
 ---
 
  
-* general spin Hamiltonian
-* bonds
-* general matrices
-* single ion properties
-* tensor symmetry analysis
+## General spin Hamiltonian
+## Bonds
+## General matrices
+## Single ion properties
+## Tensors
+## Classical ground state
 
 {% include links.html %}

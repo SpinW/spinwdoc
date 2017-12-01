@@ -106,7 +106,7 @@ plot(tri)
 `'tid'`
 : Determines if the elapsed and required time for the calculation is
   displayed. The default value is determined by the `tid` preference
-  stored in [swpref]. The following values are allowed (for more details
+  stored in [swpref](swpref). The following values are allowed (for more details
   see [sw_timeit](sw_timeit)):
   * `0` No timing is executed.
   * `1` Display the timing in the Command Window.

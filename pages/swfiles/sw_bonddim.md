@@ -14,6 +14,43 @@
 `l = sw_bonddim(c, {natom})` splits the given periodic bond network into
 disjunct subsystems and determines the dimensionality of each subsystem.
   
+### Examples
+ 
+Check the bond dimensionality of the triangular lattice:
+ 
+```matlab
+tri = sw_model('triAF')
+```
+*Output*
+```
+Preparing 'triAF' model ...
+Creating the bond list (maxDistance = 10 Å, nCell = 7x5x2)...
+...25 bonds are retained out of 440 generated!
+... ready!
+tri = 
+     SpinW object, spinw class:
+     Chemical formula: A1
+     Space group:      P 0
+     Lattice:
+       a= 3.0000 Å, b= 3.0000 Å, c= 9.0000 Å
+       α= 90.00°,   β= 90.00°,   γ=120.00°
+     Magnetic atoms in the unit cell: 1
+     Mode:
+       symbolic: off, symmetry: off, textoutput: "stdout"
+```
+ 
+```matlab
+sw_bonddim(tri.intmatrix.all)
+```
+*Output*
+```
+  0×0 empty struct array with fields:
+    D
+    base
+    site
+```
+ 
+ 
 ### Input Arguments
   
 `C`

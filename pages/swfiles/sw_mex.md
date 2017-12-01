@@ -28,7 +28,7 @@ switch on using mex files in [spinw.spinwave](spinw_spinwave).
   
 ### See Also
   
-[swpref]
+[swpref](swpref)
  
 
 {% include links.html %}

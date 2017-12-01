@@ -29,7 +29,7 @@ the status both in the Command Window and in a pup up window using
 `tid`
 : Determines if the elapsed and required time for the calculation is
   displayed. The default value is determined by the `tid` preference
-  stored in [swpref]. The following values are allowed:
+  stored in [swpref](swpref). The following values are allowed:
   * `0` No timing is displayed.
   * `1` Display the timing in the Command Window.
   * `2` Show the timing in a separat pup-up window.

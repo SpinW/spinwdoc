@@ -1,7 +1,7 @@
 entries:
 - title: Sidebar
   product: SpinW
-  version: R1463
+  version: R1471
   folders:
   - title: Documentation
     output: web, pdf
@@ -9,9 +9,9 @@ entries:
     - {title: Features of SpinW, url: /features, output: 'web, pdf'}
     - {title: Introduction, url: /introduction, output: 'web, pdf'}
     - {title: Crystal structure, url: /crystal, output: 'web, pdf'}
-    - {title: Symmetry and coordinate systems, url: /symmetry, output: 'web, pdf'}
-    - {title: Spin Hamiltonian, url: /hamiltonian, output: 'web, pdf'}
     - {title: Magnetic structure, url: /magstr, output: 'web, pdf'}
+    - {title: Spin Hamiltonian, url: /hamiltonian, output: 'web, pdf'}
+    - {title: Symmetry and tensors, url: /symmetry, output: 'web, pdf'}
     - {title: Solvers, url: /spinwave, output: 'web, pdf'}
     - {title: Correlation function post processing and fitting, url: /spec, output: 'web,
       - pdf'}
@@ -218,6 +218,7 @@ entries:
         output: web, pdf
         subfolderitems:
         - {title: sw_freemem, url: /sw_freemem, output: 'web, pdf'}
+        - {title: sw_markdown, url: /sw_markdown, output: 'web, pdf'}
         - {title: sw_mex, url: /sw_mex, output: 'web, pdf'}
         - {title: sw_readparam, url: /sw_readparam, output: 'web, pdf'}
         - {title: sw_rootdir, url: /sw_rootdir, output: 'web, pdf'}
@@ -295,10 +296,14 @@ entries:
       - title: []
         output: []
         subfolderitems: []
-      - title: Files
+      - title: Methods
         output: web, pdf
         subfolderitems:
+        - {title: swpref.export, url: /swpref_export, output: 'web, pdf'}
+        - {title: swpref.get, url: /swpref_get, output: 'web, pdf'}
         - {title: swpref.getpref, url: /swpref_getpref, output: 'web, pdf'}
+        - {title: swpref.import, url: /swpref_import, output: 'web, pdf'}
+        - {title: swpref.set, url: /swpref_set, output: 'web, pdf'}
         - {title: swpref.setpref, url: /swpref_setpref, output: 'web, pdf'}
   - title: swsym
     output: web, pdf

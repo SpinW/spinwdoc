@@ -22,7 +22,7 @@
 ### Output Arguments
   
 `latVect`
-: Vetor with elements `[a, b, c, α, β, γ]`,
+: Vector with elements `[a, b, c, α, β, γ]`,
   contains the lattice parameters and angles by default in Å and
   degree units respectively (see [spinw.unit](spinw_unit) for details).
   

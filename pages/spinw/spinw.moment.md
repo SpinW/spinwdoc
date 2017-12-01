@@ -37,7 +37,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.2614
+    0.2612
 ```
  
  
@@ -57,7 +57,7 @@ dS = 1-M.moment
 *Output*
 ```
 dS =
-    0.1969    0.1969    0.1969    0.1969
+    0.1966    0.1966    0.1966    0.1966
 ```
  
  
@@ -88,7 +88,7 @@ dS =
  
 `'fid'`
 : Defines whether to provide text output. The default value is determined
-  by the `fid` preference stored in [swpref]. The possible values are:
+  by the `fid` preference stored in [swpref](swpref). The possible values are:
   * `0`   No text output is generated.
   * `1`   Text output in the MATLAB Command Window.
   * `fid` File ID provided by the `fopen` command, the output is written

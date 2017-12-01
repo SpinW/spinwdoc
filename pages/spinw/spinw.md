@@ -114,7 +114,7 @@ of public methods is below.
     
 #### Matrix operations
  
-* [spinw.addmatrix](spinw_addmatrix) adds new [3x3] matrix
+* [spinw.addmatrix](spinw_addmatrix) adds new 3x3 matrix
 * [spinw.getmatrix](spinw_getmatrix) determines the symmetry allowed tensor elements
 * [spinw.setmatrix](spinw_setmatrix) sets exchange tensor values
     
@@ -123,7 +123,6 @@ of public methods is below.
 * [spinw.quickham](spinw_quickham) quickly generate magnetic Hamiltonian
 * [spinw.gencoupling](spinw_gencoupling) generates bond list
 * [spinw.addcoupling](spinw_addcoupling) assigns an exchange matrix to a bond
-  spinw.couplingtable
 * [spinw.addaniso](spinw_addaniso) assigns anisotropy to magnetic sites
 * [spinw.addg](spinw_addg) assigns g-tensor to magnetic atoms
 * [spinw.field](spinw_field) get/set magnetic field value
@@ -140,7 +139,6 @@ of public methods is below.
 * [spinw.moment](spinw_moment) calculates quantum correction on ordered moment
 * [spinw.spinwavesym](spinw_spinwavesym) calculates symbolic spin wave dispersion
 * [spinw.symbolic](spinw_symbolic) switches between symbolic/numeric mode
-  spinw.meanfield
 * [spinw.fourier](spinw_fourier) calculates the Fourier transformation of the Hamiltonian
 * [spinw.fouriersym](spinw_fouriersym) calculates the Fourier transformation of the symbolic Hamiltonian
  

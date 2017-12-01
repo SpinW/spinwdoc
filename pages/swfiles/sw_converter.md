@@ -54,10 +54,12 @@ sw_converter(7.5,'keV','A','photon')
 `unitIn`
 : Units of the input value, one of the following string:
   * `'A-1'`        momentum in Å$$^{-1}$$,
+  * `'A^-1'`       momentum in Å$$^{-1}$$,
   * `'k'`          momentum in Å$$^{-1}$$,
   * `'Angstrom'`   wavelength in Å,
   * `'lambda'`     wavelength in Å,
   * `'A'`          wavelength in Å,
+  * `'Å'`          wavelength in Å,
   * `'K'`          temperature in Kelvin,
   * `'m/s'`        speed in m/s,
   * `'J'`          energy in Joule,

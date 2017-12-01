@@ -52,6 +52,11 @@ The fastest way to get help is to access this documentation via the [swdoc](swdo
 ```matlab
 swdoc funName
 ```
+Alternatively the [swhelp](swhelp) command will show the help text in the MATLAB Command Window that works the same way as the MATLAB built-in [matlab:help] command:
+ 
+```matlab
+swhelp funName
+```
 If you didn't find the answer, you can ask questions on the [SpinW Forum](https://groups.google.com/forum/#!categories/spinwforum) as well.
  
 If you find a bug, please submit a bug report on [GitHub](https://github.com/tsdev/spinw), this is the fastest route to have it fixed. 

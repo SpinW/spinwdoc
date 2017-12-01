@@ -45,6 +45,18 @@ pretty(symSpec.omega)
 ```
 *Output*
 ```
+/ -#1 \
+|     |
+\  #1 /
+where
+   #1 == (sqrt(2) J_1 exp(-4 pi #2) sqrt(exp(2 pi #2) + #6 + #5 + exp(4 pi #2) 3 + #4 + #3
+      + exp(6 pi #2)) sqrt(- exp(2 pi #2) - #6 - #5 + exp(4 pi #2) 6 - #4 - #3
+      - exp(6 pi #2)))/2
+   #2 == h 1i + k 1i
+   #3 == exp(2 pi (h 3i + k 2i))
+   #4 == exp(2 pi (h 2i + k 3i))
+   #5 == exp(2 pi (h 2i + k 1i))
+   #6 == exp(2 pi (h 1i + k 2i))
 ```
  
 ```matlab
@@ -101,7 +113,7 @@ title('Spin wave dispersion of the TLHAF')
   
 `'fid'`
 : Defines whether to provide text output. The default value is determined
-  by the `fid` preference stored in [swpref]. The possible values are:
+  by the `fid` preference stored in [swpref](swpref). The possible values are:
   * `0`   No text output is generated.
   * `1`   Text output in the MATLAB Command Window.
   * `fid` File ID provided by the `fopen` command, the output is written
